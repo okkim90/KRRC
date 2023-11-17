@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+<title>KoNECT</title>
+<link rel="stylesheet" href="../css/swiper.min.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/modal.css">
+<link rel="stylesheet" href="../css/page.css">
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.easing.1.3.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/script.js"></script>
+<script>
+    $(function(){
+		var swiper1 = new Swiper(".js-swiper", {
+			slidesPerView: 1,
+        	spaceBetween: 24,
+			speed : 700,
+			autoHeight: true,
+			pagination: {
+				el: ".js-swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+			  nextEl: ".js-swiper-next",
+			  prevEl: ".js-swiper-prev",
+			},
+			breakpoints: {
+			  1280: {
+				slidesPerView: 2,
+			  },
+			}
+		});
+    });
+</script>
+</head>
+<body>
+
+<!--참여의향서 신청 모달창-->
+<div class="dim-layer js-modal">
+	<div class="modal-group">
+		<div class="dim-bg"></div>
+		<div id="layer" class="modal-layer modal-layer-v1">
+			<div class="modal-container">
+				<div class="box-modal">
+					<div class="modal-message">
+						<div class="txt">
+							<p>임상시험 참여 신청을 위해서는 <br>참여의향서를 먼저 신청하셔야 합니다.</p>
+							<p>참여의향서를 신청 하시겠습니까?</p>
+						</div>
+					</div>
+					
+					<div class="btn-group">
+						<button type="button" class="btn btn-custom btn-custom-v1 js-modal-master-close">취소</button>
+						<button type="button" class="btn btn-custom js-modal-master-close js-modal5-open">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--이미 참여 안내 모달창-->
+<div class="dim-layer js-modal2">
+	<div class="modal-group">
+		<div class="dim-bg"></div>
+		<div id="layer" class="modal-layer modal-layer-v1">
+			<div class="modal-container">
+				<div class="box-modal">
+					<div class="modal-message">
+						<div class="txt">이미 참여 신청하신 임상시험입니다.</div>
+					</div>
+					
+					<div class="btn-group">
+						<button type="button" class="btn-custom js-modal-master-close">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--신청 완료 모달창-->
+<div class="dim-layer js-modal3">
+	<div class="modal-group">
+		<div class="dim-bg"></div>
+		<div id="layer" class="modal-layer modal-layer-v1">
+			<div class="modal-container">
+				<div class="box-modal">
+					<div class="modal-message">
+						<div class="txt">임상시험 참여 신청이 완료되었습니다. <br>담당 연구자가 연락 예정입니다.</div>
+					</div>
+					
+					<div class="btn-group">
+						<button type="button" class="btn-custom js-modal-master-close">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--신청 실패 모달창-->
+<div class="dim-layer js-modal4">
+	<div class="modal-group">
+		<div class="dim-bg"></div>
+		<div id="layer" class="modal-layer modal-layer-v1">
+			<div class="modal-container">
+				<div class="box-modal">
+					<div class="modal-message">
+						<div class="txt">임상시험 참여 신청에 실패하였습니다. <br>잠시 후 다시 시도하세요.</div>
+					</div>
+					
+					<div class="btn-group">
+						<button type="button" class="btn-custom js-modal-master-close">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--참여자 정보 모달창-->
+<div class="dim-layer js-modal5">
+	<div class="modal-group">
+		<div class="dim-bg"></div>
+		<div id="layer" class="modal-layer modal-layer-v2">
+			<button type="button" class="modal-close modal-close-v1 js-modal-master-close"></button>
+
+			<div class="modal-container">
+				<div class="box-modal">
+					<div class="table-group">
+						<div class="modal-top">참여자 정보</div>
+
+						<table class="tbl tbl-v2">
+							<tr>
+								<th>이름</th>
+								<td>홍*동</td>
+							</tr>
+
+							<tr>
+								<th>전화번호</th>
+								<td>010-****-5678</td>
+							</tr>
+
+							<tr>
+								<th>이메일</th>
+								<td>hong****@gmail.com</td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="policy-group">
+						<div class="box">
+							<div class="ck-group">
+								<input id="op_ck4_1" type="checkbox" name="op_ck4" class="ck-custom4">
+								<label for="op_ck4_1"><span class="custom"></span><span class="label">개인정보의 제3자 제공에 관한 설명을 모두 이해하였고, 이에 동의합니다. (필수)</span></label>
+							</div>
+							
+							<div class="policy-content">
+								<table class="tbl">
+									<tr>
+										<th>제공받는자</th>
+										<td>
+											<p class="v2">○○병원</p>
+											<p class="v2">API 연동을 통한 ○○병원 CTMS</p>
+										</td>
+									</tr>
+									
+									<tr>
+										<th>제공 목적</th>
+										<td>임상시험 참여 의향 전달</td>
+									</tr>
+									
+									<tr>
+										<th>제공 항목</th>
+										<td>본인 여부, 이름, 나이, 성별, 핸드폰번호, 이메일 주소, 기타 신청 내용</td>
+									</tr>
+									
+									<tr>
+										<th>보유 기간</th>
+										<td>모집 종료시까지</td>
+									</tr>
+								</table>
+								
+								<div class="txt txt-v1">
+									<p class="v1">위의 개인정보 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 임상시험 참여에 제한을 받을 수 있습니다.</p>
+									<p>위와 같이 개인정보를 제3자에게 제공 하는데 동의하십니까?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="modal-warn">
+						<div class="txt">'<a href="#">참여의향서</a>'에 신청하신 연락처 정보입니다. 연락처 정보를 정확히 확인하시고 정보 수정이 필요하시면 '<a href="#">참여의향서</a>'에서 정보를 수정하신 수 참여 신청해주시기 바랍니다.</div>
+						<div class="txt">신청하신 참여 신청 내역은 '<a href="#">마이페이지</a> > <a href="#">임상시험 참여 내역</a>' 페이지에서 확인 가능하며, 언제든지 참여신청을 취소할 수 있습니다.</div>
+					</div>
+					
+					<div class="btn-group">
+						<button type="button" class="btn-custom js-modal-master-close">임상시험 참여 신청</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="header">
+	<div class="hd">
+		<div class="inner">
+			<a href="../index.html" class="hd-logo"></a>
+			
+			<ol class="gnb js-gnb">
+				<li><a href="#">서비스 소개</a></li>
+				<li><a href="#">임상시험 정보</a></li>
+				<li><a href="#">참여의향서</a></li>
+				<li><a href="#">알림마당</a></li>
+			</ol>
+			
+			<ol class="hd-menu">
+				<li><a href="#">마이페이지</a></li>
+				<li><a href="#">로그아웃</a></li>
+			</ol>
+			
+			<button type="button" class="hd-hamburger js-hamburger"></button>
+		</div>
+	</div>
+	
+	<div class="depth">
+		<ol class="lnb js-lnb">
+			<li>
+				<a href="#">서비스 안내</a>
+				<a href="#">참여방법 안내</a>
+			</li>
+			
+			<li>
+				<a href="#">모집 임상시험</a>
+				<a href="#">임상시험 승인정보</a>
+			</li>
+			
+			<li>
+				<a href="#">참여의향서 신청</a>
+			</li>
+			
+			<li>
+				<a href="#">공지사항</a>
+				<a href="#">쉬운 용어 설명</a>
+				<a href="#">병원 안내</a>
+				<a href="#">뉴스레터</a>
+				<a href="#">FAQ</a>
+			</li>
+		</ol>
+	</div>
+</header>
+
+
+
+<section>
+	<div class="container">
+		<div class="sub-visual">
+			<div class="bg"></div>
+			<div class="tit">임상시험 정보</div>
+		</div>
+		
+		<div class="wrap">
+			<div class="ly-group">
+				<div class="ly-l">
+					<div class="snb3">
+						<button type="button" class="btn-back" onclick="location.href='javascript:history.back(-1);'"></button>
+						
+						<div class="list-nav js-menu">
+							<a href="#sec1" class="active">요약 정보</a>
+							<a href="#sec2">연구 설명</a>
+							<a href="#sec3">선정/제외 기준</a>
+							<a href="#sec4">연구 소개</a>
+							<a href="#sec5">임상시험 진행 방법</a>
+							<a href="#sec6">연락처</a>
+							<a href="#sec7">참여신청</a>
+						</div>
+					</div>
+					
+					<div class="m-snb">
+						<div class="dropdown">
+							<div class="tit fold js-fold">
+								<div class="menu">모집 임상시험</div>
+							</div>
+							
+							<div class="list js-unfold">
+								<a href="#">임상시험 승인정보</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ly-r">
+					<div class="breadcrumb">
+						<a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
+						<a href="recruit.html">임상시험 정보</a>
+						<a href="recruit.html">모집 임상시험</a>
+					</div>
+					
+					<div class="recruit-view">
+						<div class="top-page">
+							<div class="tit">모집 임상시험</div>
+							
+							<ol class="btn-group-util">
+								<li><a href="#" class="btn"><img src="../img/ico_location1.svg" alt=" "></a></li>
+								
+								<li>
+									<div class="ck-group">
+										<input id="bookmark_ck1" type="checkbox" name="bookmark_ck" class="ck-custom2">
+										<label for="bookmark_ck1"></label>
+									</div>
+								</li>
+								
+								<li><a href="#" class="btn"><img src="../img/ico_download1.svg" alt=" "></a></li>
+							</ol>
+						</div>
+						
+						<div class="section-group">
+							<div id="sec1" class="sec sec1 scroll">
+								<div class="recruit-group2">
+									<div class="box">
+										<div class="recruit-info">
+											<div class="state state-v1">모집중</div>
+											<div class="date">2022-12-16 ~ 2023-01-31</div>
+										</div>
+										
+										<div class="recruit-tit">성인 비만환자에서 MTS-Z011 또는 MTS-Z01R의 유효성 및 안전성을 평가하기 위한 다기관, 층화 무작위배정, 이중 눈가림, 전향적, 병행, 3상 임상시험</div>
+										
+										<div class="recruit-category">
+											<a href="#">구강, 인후 암종</a>
+											<a href="#">간 암종</a>
+											<a href="#">대장 및 위암종</a>
+										</div>
+										
+										<div class="recruit-tag">
+											<a href="#">#구강암</a>
+											<a href="#">#인후암</a>
+											<a href="#">#암</a>
+										</div>
+									</div>
+									
+									<div class="recruit-detail">
+										<div class="txt-group">
+											<div class="tit">대상</div>
+											<div class="txt">건강인</div>
+										</div>
+										
+										<div class="txt-group">
+											<div class="tit">나이</div>
+											<div class="txt">19~65세</div>
+										</div>
+										
+										<div class="txt-group">
+											<div class="tit">성별</div>
+											<div class="txt">전체</div>
+										</div>
+										
+										<div class="txt-group">
+											<div class="tit">임상시험 단계</div>
+											<div class="txt">1상</div>
+										</div>
+										
+										<div class="txt-group">
+											<div class="tit">지역</div>
+											<div class="txt">경기</div>
+										</div>
+										
+										<div class="txt-group">
+											<div class="tit">모집인원</div>
+											<div class="txt">100명</div>
+										</div>
+										
+										<div class="txt-group">
+											<div class="tit">수행기관</div>
+											<div class="txt">고려대학교 안암병원</div>
+										</div>
+										
+										<div class="txt-group">
+											<div class="tit">등록일</div>
+											<div class="txt">2022-12-16</div>
+										</div>
+									</div>
+								</div>
+								
+								<a href="#" class="btn-link">식약처 임상시험 승인정보 조회<img src="../img/ico_arrow_right2.svg" alt=" "></a>
+								
+								<div class="recruit-warn">
+									<div class="txt">본 임상시험 정보는 해당 연구책임자가 IRB(임상시험심사위원회) 승인을 거쳐 직접 작성한 내용이며, 「약사법」 에 따른 식약처 임상시험 대상자 모집 공고문 표준안을 준수하고 있습니다. <br>‘임상시험 참여신청’은 실제 임상시험 참여가 아닌 ‘참여 의향 전달’이며, 신청 후 실시기관에서 시험 안내를 위해 연락을 드립니다.</div>
+								</div>
+							</div>
+							
+							<div id="sec2" class="sec sec2 scroll">
+								<div class="top-section">
+									<div>
+										<div class="num">01</div>
+										<div class="tit">연구 설명 요약</div>
+									</div>
+								</div>
+								
+								<div class="content">
+									<div class="txt-group">
+										<div class="txt">체질량지수(BMI) 30 kg/m² 이상의 비만환자 또는 체질량지수(BMI) 27 kg/m² 이상 30 kg/m² 미만이면서 다른 위험인자(예, 고혈압, 당뇨병, 이상지질혈증)가 있는 과체중 환자에서 시험약인 MTS-Z01T 과 대조약인 MTS-Z01R을 1일 3회 12주 동안 복용한 후 안전성과 유효성을 비교하여 두 약제의 동등성을 평가</div>
+									</div>
+								</div>
+							</div>
+							
+							<div id="sec3" class="sec sec3 scroll">
+								<div class="top-section">
+									<div>
+										<div class="num">02</div>
+										<div class="tit">선정 / 제외 기준</div>
+									</div>
+								</div>
+								
+								<div class="content">
+									<div class="table-group">
+										<div class="tit-table">선정 기준</div>
+										
+										<table class="tbl">
+											<tr>
+												<th>대상자</th>
+												<td>건강인</td>
+											</tr>
+
+											<tr>
+												<th>나이</th>
+												<td>19 ~65세</td>
+											</tr>
+
+											<tr>
+												<th>성별</th>
+												<td>전체</td>
+											</tr>
+
+											<tr>
+												<th>기타</th>
+												<td>
+													<p class="v1">1) 스크리닝 방문 시 연령이 만 19세 이상인 자</p>
+													<p class="v1">2) 스크리닝 방문 시 체중이 50kg 이상(여성의 경우 45k 이상)이면서 체질량지수(BMI)가 18.0kg/m2이상 30.0kg/m2 이하인 자</p>
+													<p class="v1">3) 임상적으로 유의한 선천성 또는 만성질환이 없고 내과적인 진찰결과(필요한 경우 뇌파, 심전도, 흉부 및 위 내시경 또는 위장 방사선 검사 등) 병적증상 또는 소견이 없는 자</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+									<div class="table-group">
+										<div class="tit-table">제외 기준</div>
+										
+										<table class="tbl">
+											<tr>
+												<th>투여 약물</th>
+												<td>
+													<p class="v2">디히드로피리딘계 약물</p>
+													<p class="v2">알리스키렌 함유제</p>
+													<p class="v2">ACE억제제</p>
+												</td>
+											</tr>
+
+											<tr>
+												<th>기타</th>
+												<td>
+													<p class="v1">1) 소화기계, 심혈관계, 내분비계, 호흡기계, 혈액·종양, 감염질환, 신장 및 비뇨생식기계, 정신·신경계, 근골격계, 면역계, 이비인후계, 피부계, 안과계 등에 임상적으로 유의한 질환이 있거나 과거력이 있는 자</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							
+							<div id="sec4" class="sec sec4 scroll">
+								<div class="top-section">
+									<div>
+										<div class="num">03</div>
+										<div class="tit">연구 소개</div>
+									</div>
+								</div>
+								
+								<div class="content">
+									<table class="tbl">
+										<tr>
+											<th>연구 제목</th>
+											<td>성인 비만환자에서 MTS-Z01T또는 MTS-Z01R의 유효성 및 안전성을 평가하기 위한 다기관, 층화 무작위배정, 이중 눈가림, 전향적, 병행, 3상 임상시험</td>
+										</tr>
+
+										<tr>
+											<th>연구 목적</th>
+											<td>체질량지수(BMI) 30 kg/m² 이상의 비만환자 또는 체질량지수(BMI) 27 kg/m² 이상 30 kg/m² 미만이면서 다른 위험인자(예, 고혈압, 당뇨병, 이상지질혈증)가 있는 과체중 환자에서 시험약인 MTS-Z01T 과 대조약인 MTS-Z01R을 1일 3회 12주 동안 복용한 후 안전성과 유효성을 비교하여 두 약제의 동등성을 평가</td>
+										</tr>
+
+										<tr>
+											<th>시험 약물</th>
+											<td>
+												혈관주사(IV)
+												<div class="bg">[혈관주사(IV) / 근육주사(IM) / 피하주사(SC) / 먹는약(PO) / 기타(패치, 연고, 흡입제, 의료기기 등)]</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th>목표 모집자 수</th>
+											<td>150명</td>
+										</tr>
+
+										<tr>
+											<th>대상 질환</th>
+											<td>암 > 구강, 인후 암종</td>
+										</tr>
+
+										<tr>
+											<th>임상시험 단계</th>
+											<td>1상</td>
+										</tr>
+
+										<tr>
+											<th>식약처 연구 승인일</th>
+											<td>2022-12-05</td>
+										</tr>
+
+										<tr>
+											<th>IRB 연구 승인일</th>
+											<td>2022-12-08</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							
+							<div id="sec5" class="sec sec5 scroll">
+								<div class="top-section">
+									<div>
+										<div class="num">04</div>
+										<div class="tit">임상시험 진행 방법</div>
+									</div>
+								</div>
+								
+								<div class="content">
+									<div class="table-group">
+										<table class="tbl">
+											<tr>
+												<th>진행방법<span>(대조군 배정 방법 등)</span></th>
+												<td>자유롭게 서술된 진행 방법을 표시합니다.</td>
+											</tr>
+
+											<tr>
+												<th>나이<span>(복약기간 및 방문 일정 등)</span></th>
+												<td>복약기간 및 방문 일정 등을 표시합니다.</td>
+											</tr>
+
+											<tr>
+												<th>참여 기간</th>
+												<td>참여 기간을 표시합니다.</td>
+											</tr>
+
+											<tr>
+												<th>투여 경로</th>
+												<td>
+													혈관주사(IV)
+													<div class="bg">[혈관주사(IV) / 근육주사(IM) / 피하주사(SC) / 먹는약(PO) / 기타(패치, 연고, 흡입제, 의료기기 등)]</div>
+												</td>
+											</tr>
+
+											<tr>
+												<th>방문 횟수</th>
+												<td>방문 횟수를 표시합니다.</td>
+											</tr>
+
+											<tr>
+												<th>기타</th>
+												<td>
+													<p class="v1">1) 기타 연구자가 입력한 내용을 표시합니다.</p>
+													<p class="v1">2) 기타 연구자가 입력한 내용을 표시합니다.</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+									
+									<div class="table-group">
+										<div class="tit-table">예측 가능한 부작용</div>
+										
+										<table class="tbl">
+											<tr>
+												<th>예측 가능한 부작용</th>
+												<td>
+													<p class="v2">예측 가능한 부작용을 표시합니다.</p>
+													<p class="v2">예측 가능한 부작용을 표시합니다.</p>
+													<p class="v2">예측 가능한 부작용을 표시합니다.</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							
+							<div id="sec6" class="sec sec6 scroll">
+								<div class="top-section">
+									<div>
+										<div class="num">05</div>
+										<div class="tit">연구 담당자 연락처</div>
+									</div>
+								</div>
+								
+								<div class="content">
+									<div class="table-group">
+										<div class="tit-table">임상시험 의뢰기관</div>
+										
+										<table class="tbl">
+											<tr>
+												<th>의뢰기관 명</th>
+												<td>㈜다고쳐제약</td>
+											</tr>
+
+											<tr>
+												<th>의뢰기관 주소</th>
+												<td>서울시 강남구 역삼동 1234 다고쳐빌딩 6층</td>
+											</tr>
+
+											<tr>
+												<th>의뢰기간 전화번호</th>
+												<td>02-1234-5678</td>
+											</tr>
+										</table>
+									</div>
+									
+									<div class="table-group">
+										<div class="tit-table">임상시험 수행기관</div>
+										
+										<table class="tbl">
+											<tr>
+												<th>수행기관 명</th>
+												<td>고려대학교 안암병원</td>
+											</tr>
+
+											<tr>
+												<th>주소</th>
+												<td>서울특별시 관악구 남부순환로 1636  , 남부순환로 1653</td>
+											</tr>
+
+											<tr>
+												<th>시험책임자 명</th>
+												<td>홍길동</td>
+											</tr>
+
+											<tr>
+												<th>연락처</th>
+												<td>02-456-7890</td>
+											</tr>
+
+											<tr>
+												<th>이메일</th>
+												<td>hong@korea.ac.kr</td>
+											</tr>
+										</table>
+									</div>
+									
+									<div class="table-group">
+										<div class="tit-table">실시기관 지도보기</div>
+										
+										<div class="map-group">
+											<!-- * 카카오맵 - 지도퍼가기 -->
+											<!-- 1. 지도 노드 -->
+											<div id="daumRoughmapContainer1668352319358" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+											<!--
+												2. 설치 스크립트
+												* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+											-->
+											<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+											<!-- 3. 실행 스크립트 -->
+											<script charset="UTF-8">
+												new daum.roughmap.Lander({
+													"timestamp" : "1668352319358",
+													"key" : "2cij6",
+													"mapWidth" : "640",
+													"mapHeight" : "360"
+												}).render();
+											</script>
+										</div>
+									</div>
+									
+									<div class="table-group">
+										<div class="tit-table">기타</div>
+										
+										<table class="tbl">
+											<tr>
+												<th>임상시험 형태</th>
+												<td>Cross-over</td>
+											</tr>
+
+											<tr>
+												<th>무작위 배정여부</th>
+												<td>Randomized</td>
+											</tr>
+										</table>
+									</div>
+									
+									<div class="table-group">
+										<div class="tit-table">원외 모집 공고문</div>
+										
+										<table class="tbl">
+											<tr>
+												<th>첨부 파일</th>
+												<td><a href="#">임상시험모집공고문_20221216.pdf</a></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							
+							<div id="sec7" class="sec sec7 scroll">
+								<div class="top-section">
+									<div>
+										<div class="num">06</div>
+										<div class="tit">임상시험 참여 신청</div>
+									</div>
+								</div>
+								
+								<div class="content">
+									<div class="txt-group2">
+										<div class="txt">임상시험에 참여하시려면 “참여의향서” 신청서를 먼저 작성하시고 “임상시험 참여 신청”을 하시면 해당 임상시험 실시기관 연구자가 시험안내를 위해서 전화 또는 이메일로 연락 드립니다.</div>
+										<button type="button" class="btn js-modal-open">임상시험 참여 신청</button>
+									</div>
+									
+									<div class="slide-item">
+										<div class="top-slide">
+											<div class="tit">구강, 인후 암종 분야 유사 임상시험</div>
+
+											<div class="navigation-group">
+												<div class="swiper-button-prev js-swiper-prev"></div>
+												<span></span>
+												<div class="swiper-button-next js-swiper-next"></div>
+											</div>
+										</div>
+										
+										<div class="swiper js-swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="recruit-group">
+														<div class="box">
+															<div class="recruit-info">
+																<div class="state">모집중</div>
+																<div class="source">서울 삼성 병원</div>
+															</div>
+															
+															<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+
+															<div class="recruit-category">
+																<a href="#">구강, 인후 암종</a>
+																<a href="#">피부 암종</a>
+																<a href="#">간 암종</a>
+															</div>
+															
+															<div class="recruit-tag">
+																<a href="#">#구강암</a>
+																<a href="#">#인후암</a>
+																<a href="#">#암</a>
+															</div>
+														</div>
+														
+														<div class="recruit-detail">
+															<div class="txt-group">
+																<div class="tit">나이</div>
+																<div class="txt">18~65세</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">성별</div>
+																<div class="txt">남성</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">대상</div>
+																<div class="txt">건강인</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">조회</div>
+																<div class="txt">192명</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="swiper-slide">
+													<div class="recruit-group">
+														<div class="box">
+															<div class="recruit-info">
+																<div class="state">모집중</div>
+																<div class="source">서울 삼성 병원</div>
+															</div>
+															
+															<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+															
+															<div class="recruit-category">
+																<a href="#">구강, 인후 암종</a>
+																<a href="#">피부 암종</a>
+																<a href="#">간 암종</a>
+															</div>
+															
+															<div class="recruit-tag">
+																<a href="#">#구강암</a>
+																<a href="#">#인후암</a>
+																<a href="#">#암</a>
+															</div>
+														</div>
+														
+														<div class="recruit-detail">
+															<div class="txt-group">
+																<div class="tit">나이</div>
+																<div class="txt">18~65세</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">성별</div>
+																<div class="txt">남성</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">대상</div>
+																<div class="txt">건강인</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">조회</div>
+																<div class="txt">192명</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="swiper-slide">
+													<div class="recruit-group">
+														<div class="box">
+															<div class="recruit-info">
+																<div class="state">모집중</div>
+																<div class="source">서울 삼성 병원</div>
+															</div>
+															
+															<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+															
+															<div class="recruit-category">
+																<a href="#">구강, 인후 암종</a>
+																<a href="#">피부 암종</a>
+																<a href="#">간 암종</a>
+															</div>
+															
+															<div class="recruit-tag">
+																<a href="#">#구강암</a>
+																<a href="#">#인후암</a>
+																<a href="#">#암</a>
+															</div>
+														</div>
+														
+														<div class="recruit-detail">
+															<div class="txt-group">
+																<div class="tit">나이</div>
+																<div class="txt">18~65세</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">성별</div>
+																<div class="txt">남성</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">대상</div>
+																<div class="txt">건강인</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">조회</div>
+																<div class="txt">192명</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="swiper-slide">
+													<div class="recruit-group">
+														<div class="box">
+															<div class="recruit-info">
+																<div class="state">모집중</div>
+																<div class="source">서울 삼성 병원</div>
+															</div>
+															
+															<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+															
+															<div class="recruit-category">
+																<a href="#">구강, 인후 암종</a>
+																<a href="#">피부 암종</a>
+																<a href="#">간 암종</a>
+															</div>
+															
+															<div class="recruit-tag">
+																<a href="#">#구강암</a>
+																<a href="#">#인후암</a>
+																<a href="#">#암</a>
+															</div>
+														</div>
+														
+														<div class="recruit-detail">
+															<div class="txt-group">
+																<div class="tit">나이</div>
+																<div class="txt">18~65세</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">성별</div>
+																<div class="txt">남성</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">대상</div>
+																<div class="txt">건강인</div>
+															</div>
+															
+															<div class="txt-group">
+																<div class="tit">조회</div>
+																<div class="txt">192명</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="pagination-group">
+											<div class="swiper-pagination js-swiper-pagination"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="ft">
+		<div class="inner">
+			<div class="fnb">
+				<div class="ft-logo">
+					<img src="../img/img_logo2.svg" alt="KoNECT">
+				</div>
+
+				<div class="ft-menu">
+					<a href="#">이용약관</a>
+					<a href="#"><span>개인정보 처리방침</span></a>
+					<a href="#">이메일무단수집거부</a>
+				</div>
+			</div>
+			
+			<div class="ft-info">
+				<div class="company-info">
+					<div class="txt-group">
+						<div class="tit">대표번호</div>
+						<div class="txt">1577-7858</div>
+					</div>
+
+					<div class="txt-group">
+						<div class="tit">팩스번호</div>
+						<div class="txt">02-3675-4777</div>
+					</div>
+
+					<div class="txt-group">
+						<div class="tit">이메일</div>
+						<div class="txt">15777858@konect.or.kr</div>
+					</div>
+
+					<div class="txt-group">
+						<div class="tit">주소</div>
+						<div class="txt">서울특별시 마포구 마포대로 137, KPX빌딩 6층</div>
+					</div>
+				</div>
+				
+				<div class="copyright">Copyrightⓒ KoNECT All Rights Reserved.</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="m-footer">
+	<a href="../index.html">
+		<div class="ico"></div>
+		<div class="tit">홈</div>
+	</a>
+	
+	<a href="#">
+		<div class="ico"></div>
+		<div class="tit">참여의향서</div>
+	</a>
+	
+	<a href="#" class="active">
+		<div class="ico"></div>
+		<div class="tit">임상시험 검색</div>
+	</a>
+	
+	<a href="#">
+		<div class="ico"></div>
+		<div class="tit">마이페이지</div>
+	</a>
+</div>
+
+</body>
+</html>

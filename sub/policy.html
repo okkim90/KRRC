@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+<title>KoNECT</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/modal.css">
+<link rel="stylesheet" href="../css/page.css">
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.easing.1.3.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="hd">
+		<div class="inner">
+			<a href="../index.html" class="hd-logo"></a>
+			
+			<ol class="gnb js-gnb">
+				<li><a href="#">서비스 소개</a></li>
+				<li><a href="#">장비정보</a></li>
+				<li><a href="#">커뮤니티</a></li>
+				<li><a href="#">알림마당</a></li>
+			</ol>
+			
+			<ol class="hd-menu">
+				<!--[D] 로그인 상태 -->
+				<li><a href="#"><i class="ico ico-mypage"></i> 마이페이지</a></li>
+				<li><a href="#"><i class="ico ico-logout"></i>로그아웃</a></li> 
+				<!-- 
+				[D] 로그아웃상태일때 
+				<li><a href="#"><i class="ico ico-join"></i>회원가입</a></li>
+				<li><a href="#"><i class="ico ico-login"></i>로그인</a></li> 
+				-->
+			</ol>
+			
+			<button type="button" class="hd-hamburger js-hamburger"></button>
+		</div>
+	</div>
+	
+	<div class="depth">
+		<ol class="lnb js-lnb">
+			<li>
+				<a href="#">플랫폼 소개</a>
+				<a href="#">센터 안내</a>
+				<a href="#">지원기관 안내</a>
+			</li>
+			
+			<li>
+				<a href="#">장비 통합 검색</a>
+				<a href="#">시험분석 장비</a>
+				<a href="#">시제품 제작 장비</a>
+				<a href="#">설계/해석 소프트웨어</a>
+				<a href="#">예약 현황</a>
+				<a href="#">장비 홍보</a>
+			</li>
+			
+			<li>
+				<a href="#">참여의향서 신청</a>
+				<a href="#">장비·S/W 정보 공유</a>
+				<a href="#">세미나/교육안내</a>
+				<a href="#">노하우 공유</a>
+				<a href="#">구인구직</a>
+				<a href="#">자유게시판</a>
+				<a href="#">Q&amp;A</a>
+			</li>
+			
+			<li>
+				<a href="#">공지사항</a>
+				<a href="#">자료실</a>
+				<a href="#">FAQ</a>
+				<a href="#">동향정보</a>
+			</li>
+		</ol>
+	</div>
+</header>
+
+<!--모바일 메뉴-->
+<div class="m-gnb">
+	<div class="top">
+		<a href="../index.html" class="m-logo"><img src="../img/common/logo_w.svg" alt="IAE 디지털 융합기술지원 플랫폼"></a>
+		<input type="button" value=" " class="m-gnb-close js-hamburger-close">
+	</div>
+	
+	<!--로그인 전-->
+	<div class="btn-group-bottom">
+		<!--[D] 로그인 상태 -->
+		<a href="#" class="btn"><i class="ico ico-join"></i> 회원가입</a>
+		<a href="#" class="btn"><i class="ico ico-login"></i> 로그인</a>
+		
+		<!--
+		[D] 로그아웃 상태 
+		<a href="#" class="btn"><i class="ico ico-join"></i> 회원가입</a>
+		<a href="#" class="btn"><i class="ico ico-login"></i> 로그인</a>
+		-->
+	</div>
+	
+	<ol class="list-m-gnb">
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">서비스 소개</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">플랫폼 소개</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">센터 안내</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">지원기관 안내</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">장비정보</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">장비 통합 검색</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">시험분석 장비</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">시제품 제작 장비</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">설계/해석 소프트웨어</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">예약 현황</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">장비 홍보</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">커뮤니티</div>
+
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">장비·S/W 정보 공유</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">세미나/교육안내</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">노하우 공유</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">구인구직</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">자유게시판</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">Q&amp;A</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">알림마당</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">공지사항</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">자료실</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">FAQ</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">동향정보</a>
+				</div>
+			</div>
+		</li>
+	</ol>
+</div>
+
+<div class="m-gnb-bg js-hamburger-close"></div>
+<!--//모바일 메뉴-->
+
+<section>
+	<div class="container">
+		<div class="wrap">
+			<div class="policy">
+				<div class="top-page">
+					<div class="tit">개인정보처리방침</div>
+				</div>
+				
+				<div class="policy-content">
+					<div class="txt">
+						<p>국가임상시험지원재단(이하 “재단”)은 개인정보보호 관련 주요 법률인 ‘개인정보보호법’, ‘정보통신망 이용촉진 및 정보보호 등에 관한 법률’ 을 준수하고 있으며, ‘개인정보 처리방침’을 홈페이지에 공개하여 이용자가 보다 쉽게 열람할 수 있도록 하고 있습니다. 재단의 ‘개인정보처리방침’은 관련 법률 또는 내부운영방침의 변경에 따라 변경될 수 있으며, 회사는 변경된 ‘개인정보처리방침’을 재단 홈페이지 및 온라인 서비스를 통하여 공지합니다.</p>
+						<p>재단이 운영하고 있는 홈페이지는 아래와 같습니다.</p>
+					</div>
+					
+					<div class="tit">제1조. 개인정보의 수집 및 이용 목적</div>
+					
+					<div class="txt">
+						<p>“재단”은 아래와 같은 목적을 위해 개인정보를 처리합니다. 단, “재단”은 회원가입을 만 14세 이상인 경우에만 가능하도록 하며, 개인정보의 수집 및 이용에 법정대리인의 동의가 필요한 만 14세미만 아동의 개인정보는 원칙적으로 수집하지 않습니다. 다만 대리인의 참여의향서 작성 시 작성되는 정보의 경우 수집될 수 있습니다.</p>
+						<p>정보주체가 제공한 모든 정보는 아래의 목적 이외로는 사용되지 않으며 이용 목적이 변경될 시에는 사전에 동의를 구할 것입니다. <br>여기서 '정보주체'란 처리되는 정보에 의하여 확인될 수 있는 사람으로서 그 정보의 주체가 되는 사람을 말합니다.</p>
+					</div>
+					
+					<table class="tbl tbl-v6">
+						<tr>
+							<th>목적</th>
+							<th>활용내역</th>
+						</tr>
+						
+						<tr>
+							<td>이용자 관리</td>
+							<td>- 임상시험 참여의향자 데이터베이스 구축 및 보관 <br>- 관심분야 또는 신청이력과 연관된 임상시험 정보 추천 및 뉴스레터 등 제공(정보 수신 동의시) <br>- 회원제 서비스 이용에 따른 본인 확인, 개인식별, 가입의사 확인, 고지사항 전달, 불만처리 등을 위한 의사소통 경로로 이용 <br>- 정보 참여 실시기관 연계(제3자 정보 제공 동의 시)</td>
+						</tr>
+						
+						<tr>
+							<td>통계자료 활용</td>
+							<td>- 인구통계학적 특성에 따른 서비스 제공을 위한 이용자별 통계분석자료 활용 <br>- 접속통계 확인을 위한 회원의 웹사이트 방문 기록(로그인, 접속기록)</td>
+						</tr>
+					</table>
+					
+					<div class="tit">제2조. 개인정보의 처리 및 보유 기간</div>
+
+					<div class="txt">
+						<p>정보주체의 개인정보는 원칙적으로 개인정보의 수집 및 이용 목적이 달성되면 지체없이 파기합니다. <br>단, 아래의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다. <br>“재단”은 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집할 때 동의 받은 개인정보 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
+						<p>가. 회사 내부 방침에 의한 정보보유 사유</p>
+					</div>
+					
+					<table class="tbl tbl-v7">
+						<tr>
+							<th>보관 정보</th>
+							<th>보존 이유</th>
+							<th>보존 기간</th>
+						</tr>
+						
+						<tr>
+							<td>참여의향서 필수 작성 항목 <br>(이름, 휴대전화번호, 이메일, 생년월일, 성별, 주소, 건강인 여부, 관심질환, 참여 희망지역)</td>
+							<td>실시기관 연계 및 모니터링 서비스</td>
+							<td>참여의향서 철회 시까지</td>
+						</tr>
+						
+						<tr>
+							<td>참여의향서 선택 작성 항목 (신청 내용)</td>
+							<td>실시기관 연계</td>
+							<td>참여의향서 철회 시까지</td>
+						</tr>
+						
+						<tr>
+							<td>콜센터를 통해 수집한 상담 기록</td>
+							<td>실시기관 연계 및 모니터링 서비스</td>
+							<td>임상시험 모집종료일로부터 1년 까지 <br>(기간 변경 시 별도 동의 구함)</td>
+						</tr>
+						
+						<tr>
+							<td>참여자의 지원(신청) 기록</td>
+							<td>참여자의 권익 보호와 분쟁처리</td>
+							<td>개인정보의 제공 목적을 달성할 때까지 <br>(기간 변경 시 별도 동의 구함)</td>
+						</tr>
+						
+						<tr>
+							<td>통화 녹취</td>
+							<td>민원 처리 등</td>
+							<td>5년</td>
+						</tr>
+						
+						<tr>
+							<td>회원의 불만 또는 분쟁처리에 관한 기록</td>
+							<td>민원 처리 등</td>
+							<td>5년</td>
+						</tr>
+						
+						<tr>
+							<td>부정이용 등에 관한 기록</td>
+							<td>부정 이용 방지</td>
+							<td>5년</td>
+						</tr>
+					</table>
+					
+					<div class="txt">
+						<p>나. 관련 법령에 의한 정보보유 사유</p>
+					</div>
+					
+					<table class="tbl tbl-v7">
+						<tr>
+							<th>보관 정보</th>
+							<th>보존 이유</th>
+							<th>보존 기간</th>
+						</tr>
+						
+						<tr>
+							<td>계약 또는 청약철회 등에 관한 기록</td>
+							<td>전자상거래 등에서의 소비자 보호에 관한 법률</td>
+							<td>5년</td>
+						</tr>
+						
+						<tr>
+							<td>불만 또는 분쟁 처리에 관한 기록</td>
+							<td>전자상거래 등에서의 소비자 보호에 관한 법률</td>
+							<td>3년</td>
+						</tr>
+						
+						<tr>
+							<td>표시에 관한 기록</td>
+							<td>전자상거래 등에서의 소비자 보호에 관한 법률</td>
+							<td>6개월</td>
+						</tr>
+						
+						<tr>
+							<td>웹사이트 방문에 관한 기록</td>
+							<td>통신비밀보호법</td>
+							<td>2년</td>
+						</tr>
+					</table>
+					
+					<div class="txt">
+						<p>다만, 수집목적 또는 제공받은 목적이 달성된 경우에도 임상시험과 관련된 법률 및 상법 등 법령의 규정에 의하여 보존할 필요성이 있는 경우에는 정보주체의 개인정보를 보유할 수 있습니다.</p>
+					</div>
+					
+					<div class="tit">제3조. 개인정보의 제3자 제공</div>
+					
+					<div class="txt">
+						<p>“재단”은 개인정보를 『제1조. 개인정보의 수집 및 이용 목적』에서 고지한 범위 내에서 사용하며, 이용자의 사전 동의 없이 범위를 초과하여 이용하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.</p>
+						<p>- 이용자가 해당 임상시험 실시기관과의 개인정보 공유에 사전에 동의한 경우 <br>- 개인정보 보호 관련 법령의 규정에 의거하거나, 수사 목적으로 개인정보 보호 관련 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우 <br>- 통계작성·학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 가공하여 제공하는 경우</p>
+					</div>
+					
+					<div class="txt">
+						<p>가. 이용자가 제3자 정보제공에 동의한 경우</p>
+					</div>
+					
+					<table class="tbl tbl-v8">
+						<tr>
+							<th>제공받는 자</th>
+							<th>이용목적</th>
+							<th>제공하는 개인정보 항목</th>
+							<th>보유 및 이용기간</th>
+						</tr>
+						
+						<tr>
+							<td>이용자가 지원한 <br>임상시험 실시기관</td>
+							<td>- 임상시험 대상자 선정 및 실시를 위한 정보 취득 <br>- 임상시험 참여일정 안내</td>
+							<td>(필수) <br>신청구분, 이름, 성별, 생년월일, 휴대폰번호, 이메일주소 <br><br>(선택) <br>대리인 신청 시 작성 된 신청내용</td>
+							<td>* 제공 동의일로부터 개인정보의 제공 목적을 달성할 때까지</td>
+						</tr>
+					</table>
+					
+					<div class="txt">
+						<p>나. 제공하는 개인정보의 수집 근거</p>
+						<p>- 이름 : 본인 확인에 필요 <br>- 성별 : 임상시험 대상자 선정을 위한 정보 취득 <br>- 생년월일 : 임상시험 대상자 선정을 위한 정보 취득 <br>- 휴대폰번호 : 신청 후 상담을 위한 정보 취득 <br>- 이메일주소 : 신청 후 상담을 위한 정보 취득 <br>- 신청내용 : 임상시험 대상자 선정을 위한 정보 취득</p>
+						<p>* 그 외 특정 목적을 위해 단기적으로 개인정보를 수집할 경우에는 별도로 고지하고 필요한 경우 동의 획득 후 진행합니다.</p>
+					</div>
+					
+					<div class="tit">제4조. 개인정보의 처리 위탁</div>
+					
+					<div class="txt">
+						<p>“재단”이 외부전문기관에 개인정보를 취급 위탁하는 경우 위탁하는 업무의 내용과 수탁자를 알려드립니다. 위탁업무의 목적이나 수탁자가 변경될 경우 지체없이 본 개인정보 처리방침을 통하여 공개하겠습니다.</p>
+					</div>
+					
+					<table class="tbl tbl-v8">
+						<tr>
+							<th>수탁자</th>
+							<th>위탁 목적</th>
+							<th>위탁하는 항목</th>
+							<th>보유기간</th>
+						</tr>
+						
+						<tr>
+							<td>문자조아</td>
+							<td>이용자의 참여 의사에 따른 문자메세지 및 메일, 알림톡 발송, 정보 제공에 동의한 이용자에게 추가 정보 안내</td>
+							<td>이메일(전자우편), 휴대폰번호</td>
+							<td>위탁계약 종료 시 까지</td>
+						</tr>
+						
+						<tr>
+							<td>카카오톡</td>
+							<td>카카오톡 알림톡 발송</td>
+							<td>휴대폰번호</td>
+							<td>위탁계약 종료 시 까지</td>
+						</tr>
+						
+						<tr>
+							<td>나이스신용평가</td>
+							<td>본인인증 서비스 이용</td>
+							<td>이름, 생년월일, 성별, 휴대폰번호</td>
+							<td>위탁계약 종료 시 까지</td>
+						</tr>
+						
+						<tr>
+							<td>재단 CTMS 사용 기관</td>
+							<td>API 연동을 통한 참여 신청자 정보 확인</td>
+							<td>이름, 생년월일, 성별, 휴대폰번호, 이메일주소</td>
+							<td>위탁계약 종료 시 까지</td>
+						</tr>
+					</table>
+					
+					<div class="tit">제5조. 정보주체와 법정대리인의 권리.의무 및 행사방법</div>
+					
+					<div class="txt">
+						<p>① 정보주체는 “재단”에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다. <br>- 개인정보 열람요구 <br>- 오류 등이 있을 경우 정정 요구 <br>- 삭제요구 <br>- 처리정지 요구</p>
+						<p>② 제①항에 따른 권리 행사는 “재단”에 대해 개인정보 보호법 시행규칙 별지 제8호 서식에 따라 서면, 전자우편 등을 통하여 하실 수 있으며 “재단”은 이에 대해 지체없이 조치하겠습니다.</p>
+						<p>③ 제①항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호 법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</p>
+						<p>④ 개인정보 열람 및 처리정지 요구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한될 수 있습니다.</p>
+						<p>⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</p>
+						<p>⑥ “재단”은 정보주체 권리에 따른 열람의 요구, 정정.삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</p>
+					</div>
+					
+					<div class="tit">제6조. 처리하는 개인정보의 항목</div>
+					
+					<div class="txt">
+						<p>‘재단’이 처리하는 개인정보 항목은 아래와 같습니다. </p>
+					</div>
+					
+					<table class="tbl tbl-v6">
+						<tr>
+							<th>서비스 구분</th>
+							<th>개인정보 수집항목</th>
+						</tr>
+						
+						<tr>
+							<td>재단 포털  회원가입</td>
+							<td>(필수) <br>이메일주소, 비밀번호, 이름, 휴대폰 번호, 성별, 생년월일, 소속기관명, 국가 <br><br>(선택) <br>주소, 소속기관종류, 부서, 직위, 직군, 경력, 최종학력, 전공, 직능, 임상시험종사자 교육단계</td>
+						</tr>
+						
+						<tr>
+							<td>임상시험 참여의향서 작성 및 신청</td>
+							<td>(필수) <br>이름, 생년월일, 성별, 휴대폰 번호, 이메일주소 , 주소, 관심 또는 보유질환, 참여희망지역</td>
+						</tr>
+						
+						<tr>
+							<td>서비스 문의</td>
+							<td>(필수) <br>이름, 이메일, 휴대폰번호, 이메일주소</td>
+						</tr>
+						
+						<tr>
+							<td>국가임상시험 지원재단 콜센터</td>
+							<td>(필수) <br>이름, 생년월일, 나이, 성별, 휴대폰번호, 선호지역 <br><br>(선택) <br>상담 시 확인이 필요하다고 승인한 건강정보(질환정보, 복용약물, 설문조사 응답 양식을 통해 수집된 데이터 등)-연구에 따라 건강정보 항목은 다를 수 있음</td>
+						</tr>
+					</table>
+					
+					<div class="tit">제7조. 동의철회 / 회원탈퇴 방법</div>
+					
+					<div class="txt">
+						<p>회원가입 시 개인정보의 수집ㆍ이용 및 제공에 대해 동의하신 내용을 언제든지 철회하실 수 있습니다. 회원탈퇴는 각 홈페이지 내 마이페이지 또는 회원정보수정에서 『회원탈퇴』를 클릭하여 직접 회원탈퇴를 하시거나, 서면, 전화 등으로 연락하시면 지체 없이 개인정보를 파기하는 등 필요한 조치를 하겠습니다.</p>
+					</div>
+					
+					<div class="tit">제8조. 개인정보의 파기</div>
+					
+					<div class="txt">
+						<p>① “재단”은 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기 합니다.</p>
+						<p>② 정보주체로부터 동의받은 개인정보 보유기간이 경과하거나 처리 목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 DB에 분리하여 보관합니다.</p>
+						<p>③ “재단”은 개인정보 파기 사유 발생 시 개인정보 보호책임자의 승인을 받아 개인정보를 파기하되, 파기방법은 다음과 같습니다. <br>- 전자적 파일 형태인 경우 : 복원이 불가능한 방법으로 영구 삭제 <br>- 전자적 파일의 형태 외의 기록물, 인쇄물, 서면, 그 밖의 기록매체인 경우 : 파쇄 또는 소각</p>
+					</div>
+					
+					<div class="tit">제9조. 개인정보 보호책임자 및 관리담당자</div>
+					
+					<div class="txt">
+						<p>“재단”은 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자 및 관리담당자를 지정하고 있습니다.</p>
+						<p>개인정보 보호책임자 <br>- 직 책 : 실장 <br>- 담당자 : 이영일 <br>- 연락처 : 1577-7858 <br>- 이메일주소 : 15777858@konect.or.kr</p>
+						<p>개인정보 관리담당자</p>
+						<p>- 직 책 : 팀장 <br>- 담당자 : 유지영 <br>- 연락처 : 02-398-5047 <br>- 이메일주소 : jy.yoo@konect.or.kr</p>
+					</div>
+					
+					<div class="tit">제10조. 개인정보의 안전성 확보 조치</div>
+					
+					<div class="txt">
+						<p>“재단”은 개인정보보호법 제 29조에 따라 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.</p>
+						<p><strong>[관리적 조치]</strong></p>
+						<p>내부관리계획을 수립하여 시행하고, 개인정보 취급자의 지정을 최소화하여 관리하고 있으며, 정기적인 직원 교육을 시행하고 있습니다.</p>
+						<p><strong>[기술적 조치]</strong></p>
+						<p>① 개인정보를 처리하는 데이터베이스 시스템에 대한 접근권한의 부여, 변경, 말소를 통하여 개인정보에 대한 접근을 통제하고, 필요한 조치를 하고 있습니다.</p>
+						<p>② 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적인 갱신·점검을 통해 관리하고 있습니다.</p>
+						<p>③ 회원의 개인정보 중 비밀번호는 암호화 되어 저장 및 관리되고 있어 본인만이 알 수 있으며 중요한 데이터는 파일 및 전송 데이터를 암호화 하는 등의 별도 보안기능을 사용하고 있습니다.</p>
+						<p><strong>[물리적 조치]</strong></p>
+						<p>① 외부로부터 접근이 통제된 구역에 시스템을 설치하고, 침입차단시스템을 통해 무단 접근을 통제하고 있습니다.</p>
+						<p>② 개인정보가 포함된 기밀문서는 잠금장치가 있는 물리적 보관장소를 별도로 두고 이에 대해 출입통제 절차를 수립, 운영하고 있습니다.</p>
+						<p><strong>[접속기록의 보관 및 위변조 방지]</strong></p>
+						<p>개인정보처리시스템에 접속한 기록을 최소 1년 이상 보관, 관리하고 있으며, 접속 기록이 위변조 및 도난, 분실되지 않도록 월 1회 이상 정기적으로 점검, 감독하고 있습니다.</p>
+					</div>
+					
+					<div class="tit">제11조. 개인정보 자동 수집의 설치, 운영 및 거부</div>
+					
+					<div class="txt">
+						<p>“재단”은 이용자에게 임상시험 관련 서비스를 제공하기 위해서 이용자의 정보를 수시로 저장하고 불러오는 쿠키(cookie)를 운용합니다. <br>쿠키란 서비스를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 아주 작은 텍스트 파일로서 회원의 컴퓨터 하드디스크에 저장됩니다. <br>“재단”은 다음과 같은 목적을 위해 쿠키를 사용합니다.</p>
+						<p>① 쿠키의 사용 <br>이용자의 접속 빈도나 방문 시간 등을 분석, 회원의 임상시험 모집 지원현황 및 자취 추적, 방문 횟수 파악 등을 통한 개인 맞춤 서비스 쿠키 설치 선택권을 가지고 있습니다. <br>따라서, 이용자는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</p>
+						<p>② 쿠키 설정 거부방법 <br>쿠키 설정을 거부하는 방법으로는 이용자가 사용하는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다. <br>설정방법 예(인터넷 익스플로어의 경우) : 웹 브라우저 상단의 도구>인터넷 옵션>개인정보 <br>단, 쿠키 설치를 거부하였을 경우 로그인이 필요한 일부 서비스 이용에 어려움이 있을 수 있습니다.</p>
+						<p>③ 이용자는 “재단”에서 수집하는 개인정보에 대해 동의를 거부할 권리가 있으며 동의 거부 시에는 회원가입 및 일부 서비스 이용이 제한됩니다.</p>
+					</div>
+					
+					<div class="tit">제12조. 권익침해 구제방법</div>
+					
+					<div class="txt">
+						<p>정보주체는 개인정보침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다.</p>
+						<p>개인정보침해신고센터 ( http://privacy.kisa.or.kr / 국번없이 118 ) <br>정보보호마크인증위원회 ( http://www.eprivacy.or.kr / 02-580-0533~4 ) <br>대검찰청 사이버범죄수사단 ( http://www.spo.go.kr / 02-3480-3571 ) <br>경찰청 사이버안전국 ( http://cyberbureau.police.go.kr / 국번없이 182 ) </p>
+					</div>
+					
+					<div class="tit">제13조. 개인정보 처리방침의 변경</div>
+					
+					<div class="txt">
+						<p>본 방침은 시행일로부터 적용되면, 법령, 정책 또는 보안 기술의 변경 등에 따라 내용의 추가, 삭제 및 수정이 있는 경우에는 변경사항의 시행 7일 전부터 홈페이지의 「공지사항」을 통하여 고지할 것 입니다.</p>
+						<p>이 개인정보 처리방침은 2022년 12월 31일부터 적용됩니다. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="ft">
+		<div class="inner">
+			<div class="fnb">
+				<div class="ft-menu">
+					<a href="#">센터소개</a>
+					<a href="#">이용약관</a>
+					<a href="#"><b>개인정보취급방침</b></a>
+				</div>
+			</div>
+			
+			<div class="ft-info">
+				<div class="company-info">
+					<div class="txt-group">
+						<div class="tit">대표번호</div>
+						<div class="txt">031-330-7114</div>
+					</div>
+					
+					<div class="txt-group">
+						<div class="tit">팩스</div>
+						<div class="txt">031-330-7111</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">사업자등록번호</div>
+						<div class="txt">104-82-04565</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">대표자</div>
+						<div class="txt">김덕중</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">상호</div>
+						<div class="txt">고등기술연구원연구조합</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">정보관리책임명</div>
+						<div class="txt">이정승</div>
+					</div>
+				</div>
+				
+				<div class="ft-cs">
+					<strong class="tit">고객센터</strong>
+					<p class="tel">031-330-7455</p>
+					<p class="desc">월~금 10:00~18:00 토,일,공휴일 휴무</p>
+				</div>
+			</div>
+			
+			<div class="ft-bottom">
+				<button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+				<p class="ft-address">경기도 용인시 처인구 백암면 고안로 51번길 175-28 고등기술연구원연구조합</p>
+				<div class="copyright">ⓒ 고등기술연구원 시험분석센터. All Rights Reserved.</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

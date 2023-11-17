@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="radio_btn" transform="translate(-529 -549)">
+    <g id="radio_btn-2" data-name="radio_btn" transform="translate(529 549)" fill="#fff" stroke="#dfdfdf" stroke-width="1">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="11.5" fill="none"/>
+    </g>
+    <circle id="point" cx="4" cy="4" r="4" transform="translate(537 557)" fill="#23a0ef"/>
+  </g>
+</svg>

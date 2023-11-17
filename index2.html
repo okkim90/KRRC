@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+<title>KoNECT</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/mobile.css">
+<link rel="stylesheet" href="css/modal.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(function(){
+		var swiper1 = new Swiper(".js-swiper", {
+			speed : 700,
+			loop: true,
+			autoplay: {
+				delay: 4000,
+			  	disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".js-swiper-pagination",
+				clickable: true,
+			},
+			on: {
+				slideChangeTransitionStart: function () {
+				  $(".motion").hide(0);
+				  $(".motion").removeClass("aos-init").removeClass("aos-animate");
+				},
+				slideChangeTransitionEnd: function () {
+				  $(".motion").show(0);
+				  AOS.init();
+				},
+		  	}
+		});
+		
+		$(".js-swiper-pause").click(function(){
+			swiper1.autoplay.stop();
+			$(this).hide();
+			$(".js-swiper-play").show();
+		});
+		$(".js-swiper-play").click(function(){
+			swiper1.autoplay.start();
+			$(this).hide();
+			$(".js-swiper-pause").show();
+		});
+		
+		
+		var swiper2 = new Swiper(".js-swiper2", {
+			slidesPerView: 1,
+        	spaceBetween: 10,
+			centeredSlides: true,
+			speed : 700,
+			autoHeight: true,
+		});
+    });
+</script>
+</head>
+<body>
+
+<!--메인 모달창-->
+<div class="dim-layer dim-layer-on js-modal">
+	<div class="modal-group">
+		<div id="layer" class="modal-layer modal-layer-v4">
+			<div class="modal-container">
+				<div class="box-modal">
+					<a href="sub/participation-intro.html">
+						<img src="img/tmp/img_pop1.png" alt=" ">
+					</a>
+					
+					<div class="modal-util">
+						<div class="ck-group">
+							<input id="close_ck1" type="checkbox" name="close_ck" class="ck-custom4">
+							<label for="close_ck1"><span class="custom"></span><span class="label">오늘 하루 안보기</span></label>
+						</div>
+						
+						<button type="button" class="btn-close js-modal-master-close"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="header">
+	<div class="hd">
+		<div class="inner">
+			<a href="index.html" class="hd-logo"></a>
+			<button type="button" class="hd-hamburger js-hamburger"></button>
+		</div>
+	</div>
+</header>
+
+<!--모바일 메뉴-->
+<div class="m-gnb">
+	<div class="top">
+		<a href="index.html" class="m-logo"><img src="img/img_logo1.svg" alt="KoNECT"></a>
+		<input type="button" value=" " class="m-gnb-close js-hamburger-close">
+	</div>
+	
+	<ol class="list-m-gnb">
+		<li>
+			<div class="menu js-fold">서비스 소개</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">서비스 안내</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">참여방법 안내</a>
+
+					<div class="box">
+						<a href="#" class="menu3">참여방법</a>
+						<a href="#" class="menu3">홍보 영상</a>
+						<a href="#" class="menu3">카드뉴스</a>
+					</div>
+				</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="menu js-fold">임상시험 정보</div>
+
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">모집 임상시험</a>
+				</div>
+
+				<div class="menu-group">
+					<a href="#" class="menu2">임상시험 승인정보</a>
+				</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="menu js-fold">참여의향서</div>
+
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">참여의향서 신청</a>
+				</div>
+			</div>
+		</li>
+		
+		<li>
+			<div class="menu js-fold">알림마당</div>
+
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">공지사항</a>
+				</div>
+
+				<div class="menu-group">
+					<a href="#" class="menu2">쉬운 용어 설명</a>
+				</div>
+
+				<div class="menu-group">
+					<a href="#" class="menu2">병원 안내</a>
+				</div>
+
+				<div class="menu-group">
+					<a href="#" class="menu2">뉴스레터</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">FAQ</a>
+				</div>
+			</div>
+		</li>
+	</ol>
+</div>
+
+<div class="m-gnb-bg js-hamburger-close"></div>
+<!--//모바일 메뉴-->
+
+<section class="main">
+	<div class="container">
+		<div class="sec1">
+			<div class="slide-banner">
+				<div class="swiper js-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/img_transparent1.png" alt="썸네일" class="thumb" style="background-image: url('img/img_banner1.png');">
+							<div class="wrap">
+								<div class="tit-group">
+									<div class="tit motion" data-aos="fade-up" data-aos-duration="700">신약개발 임상시험에 지원하여 <br>환자에게 더 나은 치료 기회를 제공해주세요.</div>
+									<div class="motion" data-aos="fade-up" data-aos-duration="1000">
+										<a href="#" class="btn">임상시험 찾아보기<img src="img/ico_arrow_right1.svg" alt=" "></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<img src="img/img_transparent1.png" alt="썸네일" class="thumb" style="background-image: url('img/img_banner3_m.png');">
+						</div>
+						
+						<div class="swiper-slide">
+							<img src="img/img_transparent1.png" alt="썸네일" class="thumb" style="background-image: url('img/img_banner5_m.png');">
+						</div>
+						
+						<div class="swiper-slide">
+							<img src="img/img_transparent1.png" alt="썸네일" class="thumb" style="background-image: url('img/img_banner3_m.png');">
+						</div>
+						
+						<div class="swiper-slide">
+							<img src="img/img_transparent1.png" alt="썸네일" class="thumb" style="background-image: url('img/img_banner5_m.png');">
+						</div>
+					</div>
+				</div>
+				
+				<div class="pagination-group">
+					<div class="swiper-pagination js-swiper-pagination"></div>
+					<div class="swiper-button-pause js-swiper-pause"></div>
+					<div class="swiper-button-play js-swiper-play"></div>
+				</div>
+			</div>
+			
+			<div class="search-group">
+				<div class="box">
+					<div class="inp-group-search">
+						<input type="text" placeholder="파킨스병, 관절염, 간암" class="inp-search js-search">
+						<button type="button" class="btn-search"></button>
+					</div>
+
+					<div class="search-result">
+						<ol class="list-result">
+							<li><a href="#">간<span class="keyword">암</span></a></li>
+							<li><a href="#">췌장<span class="keyword">암</span></a></li>
+							<li><a href="#">구강, 인후 <span class="keyword">암</span>종</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="sec2">
+			<div class="top-page">
+				<div class="tit">임상시험 정보</div>
+				<a href="#">더보기<img src="img/ico_arrow_right3.svg" alt=" "></a>
+			</div>
+			
+			<div class="slide-item">
+				<div class="swiper js-swiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="recruit-group">
+								<div class="box">
+									<div class="recruit-info">
+										<div class="state">모집중</div>
+										<div class="source">서울삼성병원</div>
+									</div>
+									
+									<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+									
+									<div class="recruit-category">
+										<a href="#">구강, 인후 암종</a>
+										<a href="#">피부 암종</a>
+										<a href="#">간 암종</a>
+									</div>
+									
+									<div class="recruit-tag">
+										<a href="#">#구강암</a>
+										<a href="#">#인후암</a>
+										<a href="#">#암</a>
+									</div>
+								</div>
+								
+								<div class="recruit-detail">
+									<div class="txt-group">
+										<div class="tit">나이</div>
+										<div class="txt">18~65세</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">성별</div>
+										<div class="txt">남성</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">대상</div>
+										<div class="txt">건강인</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">조회</div>
+										<div class="txt">192명</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="recruit-group">
+								<div class="box">
+									<div class="recruit-info">
+										<div class="state">모집중</div>
+										<div class="source">서울 삼성 병원</div>
+									</div>
+									
+									<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+									
+									<div class="recruit-category">
+										<a href="#">구강, 인후 암종</a>
+										<a href="#">피부 암종</a>
+										<a href="#">간 암종</a>
+									</div>
+									
+									<div class="recruit-tag">
+										<a href="#">#구강암</a>
+										<a href="#">#인후암</a>
+										<a href="#">#암</a>
+									</div>
+								</div>
+								
+								<div class="recruit-detail">
+									<div class="txt-group">
+										<div class="tit">나이</div>
+										<div class="txt">18~65세</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">성별</div>
+										<div class="txt">남성</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">대상</div>
+										<div class="txt">건강인</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">조회</div>
+										<div class="txt">192명</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="recruit-group">
+								<div class="box">
+									<div class="recruit-info">
+										<div class="state">모집중</div>
+										<div class="source">서울 삼성 병원</div>
+									</div>
+									
+									<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+									
+									<div class="recruit-category">
+										<a href="#">구강, 인후 암종</a>
+										<a href="#">피부 암종</a>
+										<a href="#">간 암종</a>
+									</div>
+									
+									<div class="recruit-tag">
+										<a href="#">#구강암</a>
+										<a href="#">#인후암</a>
+										<a href="#">#암</a>
+									</div>
+								</div>
+								
+								<div class="recruit-detail">
+									<div class="txt-group">
+										<div class="tit">나이</div>
+										<div class="txt">18~65세</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">성별</div>
+										<div class="txt">남성</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">대상</div>
+										<div class="txt">건강인</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">조회</div>
+										<div class="txt">192명</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="recruit-group">
+								<div class="box">
+									<div class="recruit-info">
+										<div class="state">모집중</div>
+										<div class="source">서울 삼성 병원</div>
+									</div>
+									
+									<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+									
+									<div class="recruit-category">
+										<a href="#">구강, 인후 암종</a>
+										<a href="#">피부 암종</a>
+										<a href="#">간 암종</a>
+									</div>
+									
+									<div class="recruit-tag">
+										<a href="#">#구강암</a>
+										<a href="#">#인후암</a>
+										<a href="#">#암</a>
+									</div>
+								</div>
+								
+								<div class="recruit-detail">
+									<div class="txt-group">
+										<div class="tit">나이</div>
+										<div class="txt">18~65세</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">성별</div>
+										<div class="txt">남성</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">대상</div>
+										<div class="txt">건강인</div>
+									</div>
+									
+									<div class="txt-group">
+										<div class="tit">조회</div>
+										<div class="txt">192명</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="ft">
+		<div class="inner">
+			<div class="fnb">
+				<div class="ft-logo">
+					<img src="img/img_logo2.svg" alt="KoNECT">
+				</div>
+
+				<div class="ft-menu">
+					<a href="#">이용약관</a>
+					<a href="#"><span>개인정보 처리방침</span></a>
+					<a href="#">이메일무단수집거부</a>
+				</div>
+			</div>
+			
+			<div class="ft-info">
+				<div class="company-info">
+					<div class="txt-group">
+						<div class="tit">대표번호</div>
+						<div class="txt">1577-7858</div>
+					</div>
+
+					<div class="txt-group">
+						<div class="tit">팩스번호</div>
+						<div class="txt">02-3675-4777</div>
+					</div>
+
+					<div class="txt-group">
+						<div class="tit">이메일</div>
+						<div class="txt">15777858@konect.or.kr</div>
+					</div>
+
+					<div class="txt-group">
+						<div class="tit">주소</div>
+						<div class="txt">서울특별시 마포구 마포대로 137, KPX빌딩 6층</div>
+					</div>
+				</div>
+				
+				<div class="copyright">Copyrightⓒ KoNECT All Rights Reserved.</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="m-footer">
+	<a href="index.html" class="active">
+		<div class="ico"></div>
+		<div class="tit">홈</div>
+	</a>
+	
+	<a href="#">
+		<div class="ico"></div>
+		<div class="tit">참여의향서</div>
+	</a>
+	
+	<a href="#">
+		<div class="ico"></div>
+		<div class="tit">임상시험 검색</div>
+	</a>
+	
+	<a href="#">
+		<div class="ico"></div>
+		<div class="tit">마이페이지</div>
+	</a>
+</div>
+
+<script>
+	AOS.init({
+		easing: 'ease-in-out-sine',
+		disable: function () {
+		var desktop = 1280;
+		return window.innerWidth < desktop;
+		} // 1280px 이하일 때 disable
+	});
+</script>
+
+</body>
+</html>

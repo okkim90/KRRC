@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+<title>디지털 융합 기술지원 플랫폼</title>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/modal.css">
+<link rel="stylesheet" href="../css/page.css">
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.easing.1.3.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="hd">
+		<div class="inner">
+			<a href="../index.html" class="hd-logo"></a>
+			
+			<ol class="gnb js-gnb">
+				<li><a href="#">서비스 소개</a></li>
+				<li><a href="#">장비정보</a></li>
+				<li><a href="#">커뮤니티</a></li>
+				<li><a href="#">알림마당</a></li>
+			</ol>
+			
+			<ol class="hd-menu">
+				<!--[D] 로그인 상태 -->
+				<li><a href="#"><i class="ico ico-mypage"></i> 마이페이지</a></li>
+				<li><a href="#"><i class="ico ico-logout"></i>로그아웃</a></li> 
+				<!-- 
+				[D] 로그아웃상태일때 
+				<li><a href="#"><i class="ico ico-join"></i>회원가입</a></li>
+				<li><a href="#"><i class="ico ico-login"></i>로그인</a></li> 
+				-->
+			</ol>
+			
+			<button type="button" class="hd-hamburger js-hamburger"></button>
+		</div>
+	</div>
+	
+	<div class="depth">
+		<ol class="lnb js-lnb">
+			<li>
+				<a href="#">플랫폼 소개</a>
+				<a href="#">센터 안내</a>
+				<a href="#">지원기관 안내</a>
+			</li>
+			
+			<li>
+				<a href="#">장비 통합 검색</a>
+				<a href="#">시험분석 장비</a>
+				<a href="#">시제품 제작 장비</a>
+				<a href="#">설계/해석 소프트웨어</a>
+				<a href="#">예약 현황</a>
+				<a href="#">장비 홍보</a>
+			</li>
+			
+			<li>
+				<a href="#">참여의향서 신청</a>
+				<a href="#">장비·S/W 정보 공유</a>
+				<a href="#">세미나/교육안내</a>
+				<a href="#">노하우 공유</a>
+				<a href="#">구인구직</a>
+				<a href="#">자유게시판</a>
+				<a href="#">Q&amp;A</a>
+			</li>
+			
+			<li>
+				<a href="#">공지사항</a>
+				<a href="#">자료실</a>
+				<a href="#">FAQ</a>
+				<a href="#">동향정보</a>
+			</li>
+		</ol>
+	</div>
+</header>
+
+<!--모바일 메뉴-->
+<div class="m-gnb">
+	<div class="top">
+		<a href="../index.html" class="m-logo"><img src="../img/common/logo_w.svg" alt="IAE 디지털 융합기술지원 플랫폼"></a>
+		<input type="button" value=" " class="m-gnb-close js-hamburger-close">
+	</div>
+	
+	<!--로그인 전-->
+	<div class="btn-group-bottom">
+		<!--[D] 로그인 상태 -->
+		<a href="#" class="btn"><i class="ico ico-join"></i> 회원가입</a>
+		<a href="#" class="btn"><i class="ico ico-login"></i> 로그인</a>
+		
+		<!--
+		[D] 로그아웃 상태 
+		<a href="#" class="btn"><i class="ico ico-join"></i> 회원가입</a>
+		<a href="#" class="btn"><i class="ico ico-login"></i> 로그인</a>
+		-->
+	</div>
+	
+	<ol class="list-m-gnb">
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">서비스 소개</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">플랫폼 소개</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">센터 안내</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">지원기관 안내</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">장비정보</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">장비 통합 검색</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">시험분석 장비</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">시제품 제작 장비</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">설계/해석 소프트웨어</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">예약 현황</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">장비 홍보</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">커뮤니티</div>
+
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">장비·S/W 정보 공유</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">세미나/교육안내</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">노하우 공유</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">구인구직</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">자유게시판</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">Q&amp;A</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">알림마당</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">공지사항</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">자료실</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">FAQ</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">동향정보</a>
+				</div>
+			</div>
+		</li>
+	</ol>
+</div>
+
+<div class="m-gnb-bg js-hamburger-close"></div>
+<!--//모바일 메뉴-->
+
+<section class="find">
+	<div class="container">
+		<div class="wrap">
+			<div class="box">
+				<div class="top-page">
+					<div class="tit">아이디 / 비밀번호 찾기</div>
+				</div>
+				
+				<div class="tab-menu2">
+					<a href="find-id.html" class="tab active">아이디</a>
+					<a href="find-pw.html" class="tab">비밀번호</a>
+				</div>
+				
+				<div class="frm-group-find">
+					<input type="text" placeholder="이름을 입력해 주세요." class="inp-frm">
+					<input type="text" placeholder="이메일 주소를 입력해 주세요." class="inp-frm">
+					<div class="frm-message">
+						<div class="txt"><img src="../img/ico_alert1.svg" alt=" ">입력하신 정보와 일치하는 회원정보가 없습니다.</div>
+					</div>
+					<button type="button" class="btn-custom" onclick="location.href='find-id2.html'">아이디 찾기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="ft">
+		<div class="inner">
+			<div class="fnb">
+				<div class="ft-menu">
+					<a href="#">센터소개</a>
+					<a href="#">이용약관</a>
+					<a href="#"><b>개인정보취급방침</b></a>
+				</div>
+			</div>
+			
+			<div class="ft-info">
+				<div class="company-info">
+					<div class="txt-group">
+						<div class="tit">대표번호</div>
+						<div class="txt">031-330-7114</div>
+					</div>
+					
+					<div class="txt-group">
+						<div class="tit">팩스</div>
+						<div class="txt">031-330-7111</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">사업자등록번호</div>
+						<div class="txt">104-82-04565</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">대표자</div>
+						<div class="txt">김덕중</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">상호</div>
+						<div class="txt">고등기술연구원연구조합</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">정보관리책임명</div>
+						<div class="txt">이정승</div>
+					</div>
+				</div>
+				
+				<div class="ft-cs">
+					<strong class="tit">고객센터</strong>
+					<p class="tel">031-330-7455</p>
+					<p class="desc">월~금 10:00~18:00 토,일,공휴일 휴무</p>
+				</div>
+			</div>
+			
+			<div class="ft-bottom">
+				<button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+				<p class="ft-address">경기도 용인시 처인구 백암면 고안로 51번길 175-28 고등기술연구원연구조합</p>
+				<div class="copyright">ⓒ 고등기술연구원 시험분석센터. All Rights Reserved.</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

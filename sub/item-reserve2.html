@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+<title>디지털 융합 기술지원 플랫폼</title>
+<link rel="stylesheet" href="../css/jquery.datetimepicker.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/modal.css">
+<link rel="stylesheet" href="../css/page.css">
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.easing.1.3.js"></script>
+<script src="../js/index.global.js"></script>
+<script src="../js/jquery.datetimepicker.full.js"></script>
+<script src="../js/script.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		var calendarEl = document.getElementById('calendar');
+
+		var calendar = new FullCalendar.Calendar(calendarEl, {
+			headerToolbar: {
+				left: false,
+				center: 'title',
+				right: 'prev,next'
+			},
+			navLinks: true, // can click day/week names to navigate views
+			editable: true,
+			selectable: true,
+			locale: 'ko',
+			events: [
+			{
+			  title: '시험분석 장비',
+			  start: '2023-02-03',
+			  end: '2023-02-05',
+			  constraint: 'businessHours',
+			  color: '#1a95ce'
+			},
+			{
+			  title: '시제품 제작 장비',
+			  start: '2023-02-13',
+			  end: '2023-02-15',
+			  constraint: 'availableForMeeting', // defined below
+			  color: '#f17e26'
+			},
+			{
+			  title: '설계/해석 소프트웨어',
+			  start: '2023-02-21',
+			  end: '2023-02-24',
+			  color: '#59b856'
+			},
+			]
+		});
+
+		calendar.render();
+	});
+	
+	
+    $(function(){
+		$(".inp-date").datetimepicker({
+			format: 'Y-m-d H:i',
+		});
+		$(".inp-date-start").datetimepicker();
+		$(".inp-date-end").datetimepicker();
+    });
+</script>
+</head>
+<body>
+
+<header class="header">
+	<div class="hd">
+		<div class="inner">
+			<a href="../index.html" class="hd-logo"></a>
+			
+			<ol class="gnb js-gnb">
+				<li><a href="#">서비스 소개</a></li>
+				<li><a href="#">장비정보</a></li>
+				<li><a href="#">커뮤니티</a></li>
+				<li><a href="#">알림마당</a></li>
+			</ol>
+			
+			<ol class="hd-menu">
+				<!--[D] 로그인 상태 -->
+				<li><a href="#"><i class="ico ico-mypage"></i> 마이페이지</a></li>
+				<li><a href="#"><i class="ico ico-logout"></i>로그아웃</a></li> 
+				<!-- 
+				[D] 로그아웃상태일때 
+				<li><a href="#"><i class="ico ico-join"></i>회원가입</a></li>
+				<li><a href="#"><i class="ico ico-login"></i>로그인</a></li> 
+				-->
+			</ol>
+			
+			<button type="button" class="hd-hamburger js-hamburger"></button>
+		</div>
+	</div>
+	
+	<div class="depth">
+		<ol class="lnb js-lnb">
+			<li>
+				<a href="#">플랫폼 소개</a>
+				<a href="#">센터 안내</a>
+				<a href="#">지원기관 안내</a>
+			</li>
+			
+			<li>
+				<a href="#">장비 통합 검색</a>
+				<a href="#">시험분석 장비</a>
+				<a href="#">시제품 제작 장비</a>
+				<a href="#">설계/해석 소프트웨어</a>
+				<a href="#">예약 현황</a>
+				<a href="#">장비 홍보</a>
+			</li>
+			
+			<li>
+				<a href="#">참여의향서 신청</a>
+				<a href="#">장비·S/W 정보 공유</a>
+				<a href="#">세미나/교육안내</a>
+				<a href="#">노하우 공유</a>
+				<a href="#">구인구직</a>
+				<a href="#">자유게시판</a>
+				<a href="#">Q&amp;A</a>
+			</li>
+			
+			<li>
+				<a href="#">공지사항</a>
+				<a href="#">자료실</a>
+				<a href="#">FAQ</a>
+				<a href="#">동향정보</a>
+			</li>
+		</ol>
+	</div>
+</header>
+
+<!--모바일 메뉴-->
+<div class="m-gnb">
+	<div class="top">
+		<a href="../index.html" class="m-logo"><img src="../img/common/logo_w.svg" alt="IAE 디지털 융합기술지원 플랫폼"></a>
+		<input type="button" value=" " class="m-gnb-close js-hamburger-close">
+	</div>
+	
+	<!--로그인 전-->
+	<div class="btn-group-bottom">
+		<!--[D] 로그인 상태 -->
+		<a href="#" class="btn"><i class="ico ico-join"></i> 회원가입</a>
+		<a href="#" class="btn"><i class="ico ico-login"></i> 로그인</a>
+		
+		<!--
+		[D] 로그아웃 상태 
+		<a href="#" class="btn"><i class="ico ico-join"></i> 회원가입</a>
+		<a href="#" class="btn"><i class="ico ico-login"></i> 로그인</a>
+		-->
+	</div>
+	
+	<ol class="list-m-gnb">
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">서비스 소개</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">플랫폼 소개</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">센터 안내</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">지원기관 안내</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">장비정보</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">시험분석 장비</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">장비 통합 검색</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">시제품 제작 장비</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">설계/해석 소프트웨어</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">예약 현황</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">장비 홍보</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">커뮤니티</div>
+
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">장비·S/W 정보 공유</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">세미나/교육안내</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">노하우 공유</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">구인구직</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">자유게시판</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">Q&amp;A</a>
+				</div>
+			</div>
+		</li>
+		
+		<li class="list-m-gnb-item">
+			<div class="menu js-fold">알림마당</div>
+			
+			<div class="depth js-unfold">
+				<div class="menu-group">
+					<a href="#" class="menu2">공지사항</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">자료실</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">FAQ</a>
+				</div>
+				
+				<div class="menu-group">
+					<a href="#" class="menu2">동향정보</a>
+				</div>
+			</div>
+		</li>
+	</ol>
+</div>
+
+<div class="m-gnb-bg js-hamburger-close"></div>
+<!--//모바일 메뉴-->
+
+<section>
+	<div class="container">
+		<div class="sub-visual">
+			<div class="bg"></div>
+			<div class="tit-group">
+				<div class="tit">장비정보</div>
+
+				<div class="breadcrumb">
+					<a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
+					<a href="#">장비정보</a>
+					<a href="item-list4.html">설계/해석 소프트웨어</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="wrap">
+				<div class="ly-group">
+					<div class="ly-l">
+						<div class="snb">
+							<div class="top">
+								<div class="tit">장비정보</div>
+							</div>
+
+							<div class="box">
+								<a href="#" class="menu">장비 통합 검색</a>
+							</div>
+
+							<div class="box">
+								<a href="#" class="menu">시험분석 장비</a>
+							</div>
+
+							<div class="box">
+								<a href="#" class="menu">시제품 제작 장비</a>
+							</div>
+
+							<div class="box">
+								<a href="#" class="menu active">설계/해석 소프트웨어</a>
+							</div>
+							
+							<div class="box">
+								<a href="#" class="menu">예약 현황</a>
+							</div>
+							
+							<div class="box">
+								<a href="#" class="menu">장비 홍보</a>
+							</div>
+						</div>
+
+						<div class="m-snb">
+							<div class="dropdown">
+								<div class="tit fold js-fold">
+									<div class="menu">설계/해석 소프트웨어</div>
+								</div>
+
+								<div class="list js-unfold">
+									<a href="#">장비 통합 검색</a>
+									<a href="#">시험분석 장비</a>
+									<a href="#">시제품 제작 장비</a>
+									<a href="#">예약 현황</a>
+									<a href="#">장비 홍보</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="ly-r">
+						<div class="top-page">
+							<div class="tit">설계/해석 소프트웨어 예약</div>
+						</div>
+						
+						<div class="item-reserve">
+							<div class="item-basic item-basic-v1">
+								<div class="img-group">
+									<img src="../img/img_transparent1.png" alt="썸네일" class="thumb" style="background-image: url('../img/tmp/img_picture2.png');">
+								</div>
+								
+								<div class="item-info">
+									<div class="item-name">장비명</div>
+									<div class="item-name2">Universal Material Testing Machine</div>
+									<div class="item-detail">
+										<div>
+											<div class="txt-group">
+												<div class="tit">설치기관</div>
+												<div class="txt">고등기술연구원</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">제작사</div>
+												<div class="txt">GALDABINI</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">모델명</div>
+												<div class="txt">Q600</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">담당자</div>
+												<div class="txt">홍길동</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">연락처</div>
+												<div class="txt">02-1234-4578</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">주소</div>
+												<div class="txt">강원도 강릉시 과학단지로 106-40</div>
+											</div>
+										</div>
+										
+										<div>
+											<div class="txt-group">
+												<div class="tit">사용료</div>
+												<div class="txt">20,000원</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">사용료 기준</div>
+												<div class="txt">1시간</div>
+											</div>
+										</div>
+									</div>
+									
+									<button type="button" class="btn-state js-reserve2">예약현황</button>
+								</div>
+							</div>
+							
+							<div class="reserve-group reserve-group-v1">
+								<div class="box">
+									<button type="button" class="btn-close js-reserve-close"></button>
+									
+									<div class="calendar-group">
+										<div id="calendar"></div>
+										<div class="state">
+											<div class="v1">예약있음</div>
+											<div class="v2">예약불가</div>
+										</div>
+									</div>
+
+									<div class="state-group">
+										<div class="box-table">
+											<table class="tbl tbl-state">
+												<tr>
+													<th>구분</th>
+													<th>예약현황</th>
+													<th>상태</th>
+													<th>예약구분</th>
+												</tr>
+
+												<tr>
+													<td>1</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>분석의뢰</td>
+												</tr>
+
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+												
+												<tr>
+													<td>2</td>
+													<td>10:00~14:00</td>
+													<td>예약</td>
+													<td>장비사용</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="article-container">
+								<div class="article-group">
+									<div class="form-group">
+										<div class="frm">
+											<div class="top-frm">
+												<div class="tit">예약자 정보</div>
+											</div>
+											
+											<ol class="list-frm">
+												<li class="tr s1">
+													<div class="th"><div class="tit">회사명<span class="required"></span></div></div>
+													<div class="td">
+														<input type="text" class="inp-frm" readonly>
+													</div>
+												</li>
+
+												<li class="tr s1">
+													<div class="th"><div class="tit">이름<span class="required"></span></div></div>
+													<div class="td">
+														<input type="text" placeholder="이름을 입력하세요." class="inp-frm">
+													</div>
+												</li>
+
+												<li class="tr s1">
+													<div class="th"><div class="tit">이메일<span class="required"></span></div></div>
+													<div class="td">
+														<div class="inp-group-mail">
+															<div>
+																<input type="text" class="inp-frm">
+																<span class="unit"><img src="../img/ico_at1.svg" alt=" "></span>
+																<input type="text" class="inp-frm">
+															</div>
+
+															<select class="select-custom2">
+																<option>직접입력</option>
+															</select>
+														</div>
+													</div>
+												</li>
+
+												<li class="tr s1">
+													<div class="th"><div class="tit">연락처<span class="required"></span></div></div>
+													<div class="td">
+														<input type="text" placeholder="연락처를 입력하세요." class="inp-frm">
+														<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+													</div>
+												</li>
+											</ol>
+										</div>
+										
+										<div class="frm">
+											<div class="top-frm">
+												<div class="tit">장비 예약 정보</div>
+											</div>
+											
+											<ol class="list-frm">
+												<li class="tr s1">
+													<div class="th"><div class="tit">장비명<span class="required"></span></div></div>
+													<div class="td">
+														<input type="text" class="inp-frm" readonly>
+													</div>
+												</li>
+
+												<li class="tr s1">
+													<div class="th"><div class="tit">예약일시<span class="required"></span></div></div>
+													<div class="td">
+														<div class="inp-group-date2">
+															<div><input type="text" class="inp-date inp-date-start"></div>
+															<span class="unit">~</span>
+															<div><input type="text" class="inp-date inp-date-end"></div>
+														</div>
+													</div>
+												</li>
+
+												<li class="tr s1">
+													<div class="th"><div class="tit">의뢰 내용<span class="required"></span></div></div>
+													<div class="td">
+														<input type="text" placeholder="의뢰 내용을 입력하세요." class="inp-frm">
+													</div>
+												</li>
+
+												<li class="tr s1">
+													<div class="th"><div class="tit">결제방법<span class="required"></span></div></div>
+													<div class="td">
+														<ol class="list-ck2">
+															<li>
+																<div class="ck-group">
+																	<input id="op_ck4_1" type="radio" name="op_ck4" class="ck-custom3">
+																	<label for="op_ck4_1"><span class="custom"></span><span class="label">무통장입금(전자세금계산서 – 기업)</span></label>
+																</div>
+															</li>
+
+															<li>
+																<div class="ck-group">
+																	<input id="op_ck4_2" type="radio" name="op_ck4" class="ck-custom3">
+																	<label for="op_ck4_2"><span class="custom"></span><span class="label">실시간계좌이체(현금영수증 – 개인)</span></label>
+																</div>
+															</li>
+														</ol>
+													</div>
+												</li>
+
+												<li class="tr s1">
+													<div class="th"><div class="tit">세금계산서 이메일<span class="required"></span></div></div>
+													<div class="td">
+														<div class="inp-group-mail">
+															<div>
+																<input type="text" class="inp-frm">
+																<span class="unit"><img src="../img/ico_at1.svg" alt=" "></span>
+																<input type="text" class="inp-frm">
+															</div>
+
+															<select class="select-custom2">
+																<option>직접입력</option>
+															</select>
+														</div>
+													</div>
+												</li>
+											</ol>
+										</div>
+
+										<div class="board-warn">
+											<div class="txt">장비 예약 후 연락 없이 방문하지 않거나 장비 예약시간 이후에 담당자의 허가 없이 무단 사용할 경우 장비 예약 및 이용이 어려울 수 있습니다. <a href="#">☞ 장비 예약 및 이용 안내</a></div>
+										</div>
+									</div>
+
+									<div class="btn-group">
+										<button type="button" class="btn btn-custom">예약 신청하기</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="ft">
+		<div class="inner">
+			<div class="fnb">
+				<div class="ft-menu">
+					<a href="#">센터소개</a>
+					<a href="#">이용약관</a>
+					<a href="#"><b>개인정보취급방침</b></a>
+				</div>
+			</div>
+			
+			<div class="ft-info">
+				<div class="company-info">
+					<div class="txt-group">
+						<div class="tit">대표번호</div>
+						<div class="txt">031-330-7114</div>
+					</div>
+					
+					<div class="txt-group">
+						<div class="tit">팩스</div>
+						<div class="txt">031-330-7111</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">사업자등록번호</div>
+						<div class="txt">104-82-04565</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">대표자</div>
+						<div class="txt">김덕중</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">상호</div>
+						<div class="txt">고등기술연구원연구조합</div>
+					</div>
+					
+					<div class="txt-group w100">
+						<div class="tit">정보관리책임명</div>
+						<div class="txt">이정승</div>
+					</div>
+				</div>
+				
+				<div class="ft-cs">
+					<strong class="tit">고객센터</strong>
+					<p class="tel">031-330-7455</p>
+					<p class="desc">월~금 10:00~18:00 토,일,공휴일 휴무</p>
+				</div>
+			</div>
+			
+			<div class="ft-bottom">
+				<button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+				<p class="ft-address">경기도 용인시 처인구 백암면 고안로 51번길 175-28 고등기술연구원연구조합</p>
+				<div class="copyright">ⓒ 고등기술연구원 시험분석센터. All Rights Reserved.</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
