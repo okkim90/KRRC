@@ -2003,19 +2003,22 @@ textarea.inp-frm {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 70px;
-	padding: 0 20px;
+	height: 64px;
+	padding: 20px;
 	box-sizing: border-box;
-	font-size: 20px;
-	font-weight: 400;
-	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	color: #666;
 	transition: 0.1s all ease-out;
 	cursor: pointer;
 }
-.snb .menu:hover,
+.snb .menu:hover {
+	color: #1cb0d4;
+}
 .snb .menu.active {
-	font-weight: 700;
-	color: #1a95ce;
+	/* font-weight: 700; */
+	color: #fff;
+	background: url('../img/ico_arrow_r.svg') right 20px center no-repeat #1cb0d4;
 }
 
 .snb .menu.active + .depth {
@@ -2433,14 +2436,15 @@ textarea.inp-frm {
 
 /*top page style*/
 .top-page {
-	margin-bottom: 25px;
+	margin-bottom: 40px;
 }
 .top-page .tit {
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: 700;
-	color: #333;
+	color: #000;
+	line-height: 48px;
 }
-.top-page .txt {
+/* .top-page .txt {
 	margin-top: 24px;
 	font-size: 16px;
 	font-weight: 400;
@@ -2449,7 +2453,7 @@ textarea.inp-frm {
 .top-page .txt a {
 	color: #1a95ce;
 	text-decoration: underline;
-}
+} */
 
 /*article style*/
 .article-group {
