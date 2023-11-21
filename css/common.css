@@ -1978,27 +1978,6 @@ textarea.inp-frm {
 }
 
 /*snb style*/
-.snb {
-	/* margin-top: -40px; */
-}
-/* .snb .top {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 160px;
-	margin-bottom: 20px;
-	background: #1a95ce;
-}
-.snb .top .tit {
-	font-size: 28px;
-	font-weight: 400;
-	color: #fff;
-	text-align: center;
-}
-.snb .box {
-	border-bottom: 1px solid #eaeaea;
-	box-sizing: border-box;
-} */
 .snb .menu {
 	display: flex;
 	justify-content: space-between;
@@ -2009,6 +1988,7 @@ textarea.inp-frm {
 	font-size: 16px;
 	font-weight: 500;
 	color: #666;
+	border-bottom: 1px solid #eaeaea;
 	transition: 0.1s all ease-out;
 	cursor: pointer;
 }
@@ -2016,8 +1996,8 @@ textarea.inp-frm {
 	color: #1cb0d4;
 }
 .snb .menu.active {
-	/* font-weight: 700; */
 	color: #fff;
+	border-color: #1cb0d4;
 	background: url('../img/ico_arrow_r.svg') right 20px center no-repeat #1cb0d4;
 }
 
