@@ -1371,6 +1371,7 @@ textarea.inp-frm {
 .header:hover .depth {
 	display: block;
 }
+/* 
 
 .header.on .hd {
 	background-color: #1a95ce;
@@ -1383,7 +1384,7 @@ textarea.inp-frm {
 }
 .header.on .hd .hd-menu a {
 	color: #fff;
-}
+} */
 
 /* .header.on .hd .hd-menu a .ico.ico-mypage {
 	background-image: url(../img/common/ico_mypage_m.svg);
@@ -1397,9 +1398,9 @@ textarea.inp-frm {
 .header.on .hd .hd-menu a .ico.ico-login {
 	background-image: url(../img/common/ico_login_m.svg);
 } */
-.header.on .hd .hd-menu li::after {
+/* .header.on .hd .hd-menu li::after {
 	background-color: #fff;
-}
+} */
 /* 
 .header.on:hover .hd .hd-menu a .ico.ico-mypage {
 	background-image: url(../img/common/ico_mypage.svg);
@@ -1413,7 +1414,7 @@ textarea.inp-frm {
 .header.on:hover .hd .hd-menu a .ico.ico-login {
 	background-image: url(../img/common/ico_login.svg);
 } */
-.header.on:hover .hd .hd-menu li::after {
+/* .header.on:hover .hd .hd-menu li::after {
 	background-color: #bababa;
 }
 
@@ -1434,7 +1435,7 @@ textarea.inp-frm {
 }
 .header.on:hover .hd .hd-menu a {
 	color: #333;
-}
+} */
 
 .hd {
 	position: relative;
