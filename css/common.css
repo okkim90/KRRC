@@ -225,8 +225,8 @@ select {
 	appearance: none; /* 화살표 없애기 공통*/
 	background-image: url('../img/ico_arrow_select1.svg');
 	background-repeat: no-repeat;
-	background-position: calc(100% - 16px) center;
-	background-size: 16px;
+	background-position: right 8px center;
+	background-size: 24px;
 	background-color: #fff;
 	cursor: pointer;
 }
@@ -676,16 +676,16 @@ a.btn-custom-v1:focus {
 	display: block;
 	width: 100%;
 	height: 48px;
-	padding: 0 30px 0 16px;
-	border: 1px solid #e8e8e8;
+	padding: 0 40px 0 16px;
+	border: 1px solid #dfdfdf;
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
-	color: #333;
+	color: #999;
 	transition: 0.2s all ease-out;
 }
 .select-custom:hover {
-	border-color: #333;
+	border-color: #666;
 }
 .select-custom:disabled {
 	border-color: #e8e8e8;
@@ -2480,10 +2480,10 @@ textarea.inp-frm {
 /*search style*/
 .board-search {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	margin-bottom: 40px;
-	padding: 24px 40px;
+	padding: 28px 0;
 	box-sizing: border-box;
 	background: #f9f9f9;
 }
@@ -2492,8 +2492,8 @@ textarea.inp-frm {
 	align-items: center;
 }
 .board-search .filter-group .select-custom {
-	width: 119px;
-	height: 48px;
+	width: 160px;
+	height: 40px;
 	margin-right: 8px;
 }
 .board-search .filter-group .select-custom:last-child {
@@ -2501,23 +2501,23 @@ textarea.inp-frm {
 }
 .board-search .search-group {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
-	width: calc(100% - 127px);
 }
 .board-search .search-group .inp-search {
-	width: calc(100% - 78px);
-	height: 48px;
-	padding: 0 16px;
-	border: 1px solid #e8e8e8;
+	width: 400px;
+	height: 40px;
+	padding: 0 14px;
+	margin-right: 12px;
+	border: 1px solid #dfdfdf;
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
-	color: #333;
+	color: #999;
 	transition: 0.2s all ease-out;
 }
 .board-search .search-group .inp-search:hover {
-	border-color: #333;
+	border-color: #666;
 }
 .board-search .search-group .inp-search:disabled {
 	border-color: #e8e8e8;
@@ -2525,17 +2525,17 @@ textarea.inp-frm {
 	color: #bababa;
 }
 .board-search .search-group .btn-search {
-	width: 70px;
-	height: 48px;
+	width: 120px;
+	height: 40px;
 	border: none;
-	background: #1a95ce;
-	font-size: 16px;
+	background: #0f80a1;
+	font-size: 14px;
 	font-weight: 400;
 	color: #fff;
 	transition: 0.2s all ease-out;
 }
 .board-search .search-group .btn-search:hover {
-	background: #1f7eaa;
+	background: #0f80a1;
 }
 .board-search .search-group .btn-search:focus {
 	background: #12516e;
