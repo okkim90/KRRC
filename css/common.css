@@ -1750,6 +1750,13 @@ textarea.inp-frm {
 		no-repeat transparent;
 	background-size: 16px auto;
 }
+.ft .ft-site .ft-site-btn.active {
+	color: #000;
+	border: 1px solid #eaeaea;
+	background: url('../img/common/ico_site_arrow2.svg') right 12px center
+		no-repeat #fff;
+	background-size: 16px auto;
+}
 .ft .ft-site .ft-site-links {
 	display: none;
 	position: absolute;
@@ -1809,12 +1816,6 @@ textarea.inp-frm {
 	align-items: center;
 	margin: 40px 0;
 }
-.ft .ft-info .company-info {
-	/* display: flex;
-	flex-wrap: wrap;
-	margin-left: -12px;
-	margin-top: -8px; */
-}
 .ft .ft-info .company-info .txt-group {
 	display: flex;
 	font-size: 16px;
@@ -1870,13 +1871,6 @@ textarea.inp-frm {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #ccc;
-}
-.ft .ft-bottom .copyright {
-	/* margin-top: 9px; */
-}
-
-.ft .fnb {
-	/* margin-bottom: 32px; */
 }
 .ft .fnb .ft-menu {
 	display: flex;
@@ -3531,10 +3525,21 @@ textarea.inp-frm {
 .w200 {
 	width: 200px;
 }
+@media only screen and (max-width: 1324px) {
+	.wrap {
+		padding: 0 40px;
+	}
+	.ft .inner {
+		padding: 0 40px;
+	}
+}
 
 @media only screen and (max-width: 1280px) {
 	/*공통 CSS*/
 	/*layout style*/
+	.wrap {
+		padding: 0;
+	}
 	.container {
 		padding-top: 68px;
 		box-sizing: border-box;

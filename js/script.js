@@ -6,13 +6,10 @@ function scrollToTop() {
 $(window).on('load scroll', function () {
 	let pos = this.scrollY;
 	let ftBtnTop = $('.ft-btn-top');
-	// let header = $('.header');
 	if (pos > 100) {
 		ftBtnTop.addClass('on');
-		// header.addClass('on');
 	} else {
 		ftBtnTop.removeClass('on');
-		// header.removeClass('on');
 	}
 });
 
@@ -91,15 +88,6 @@ $(function () {
 	$('.js-hamburger-close').click(function () {
 		$('.m-gnb').animate({ right: '-100%' }, 500, 'easeInOutCubic');
 		$('.m-gnb-bg').hide();
-	});
-
-	// footer 관련사이트 드롭다운
-	$('.ft-site-btn').click(function (e) {
-		e.preventDefault(e);
-		$('.ft-site').toggleClass('open');
-	});
-	$('.ft-site-links a').click(function () {
-		$('.ft-site').removeClass('open');
 	});
 
 	/*search*/
