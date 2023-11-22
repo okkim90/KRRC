@@ -268,7 +268,6 @@ select::-ms-expand {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 80px;
-	/* margin-top: -80px; */
 }
 .ly-group > div {
 	position: relative;
@@ -278,7 +277,6 @@ select::-ms-expand {
 }
 .ly-group .ly-r {
 	width: calc(100% - 296px);
-	/* padding-top: 80px; */
 	box-sizing: border-box;
 }
 
@@ -1388,12 +1386,15 @@ textarea.inp-frm {
 }
 .hd .hd-logo {
 	position: relative;
+	width: 248px;
+	height: 28px;
 	z-index: 1;
 }
 .hd .hd-logo a {
 	display: block;
-	width: 248px;
-	height: 28px;
+}
+.hd .hd-logo a img {
+	width: 100%;
 }
 
 .gnb {
@@ -1544,7 +1545,6 @@ textarea.inp-frm {
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	/* background: #1a95ce; */
 }
 .m-gnb-bg {
 	display: none;
@@ -1725,6 +1725,7 @@ textarea.inp-frm {
 	justify-content: space-between;
 }
 .ft .inner .ft-top .ft-logo {
+	display: block;
 	text-indent: -9999em;
 	width: 247px;
 	height: 28px;
@@ -1819,11 +1820,11 @@ textarea.inp-frm {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #ccc;
-	/* margin-left: 12px; */
-	margin-bottom: 12px;
+	align-items: center;
+	margin-top: 12px;
 }
-.ft .ft-info .company-info .txt-group:last-child {
-	margin-bottom: 0;
+.ft .ft-info .company-info .txt-group:first-child {
+	margin-top: 0;
 }
 .ft .ft-info .company-info .txt-group .tit {
 	color: #959595;
@@ -2305,7 +2306,6 @@ textarea.inp-frm {
 	display: flex;
 	align-items: center;
 	position: relative;
-	/* margin-right: 30px; */
 	font-size: 14px;
 	font-weight: 400;
 	color: #666;
@@ -2316,9 +2316,6 @@ textarea.inp-frm {
 .breadcrumb a:after {
 	content: '';
 	display: block;
-	/* position: absolute; */
-	/* top: calc(50% - 7px);
-	right: calc(0% - 22px); */
 	margin: 0 4px;
 	width: 20px;
 	height: 20px;
@@ -2339,16 +2336,6 @@ textarea.inp-frm {
 	color: #000;
 	line-height: 48px;
 }
-/* .top-page .txt {
-	margin-top: 24px;
-	font-size: 16px;
-	font-weight: 400;
-	color: #666;
-}
-.top-page .txt a {
-	color: #1a95ce;
-	text-decoration: underline;
-} */
 
 /*article style*/
 .article-group {
@@ -3912,14 +3899,15 @@ textarea.inp-frm {
 	}
 	.hd .hd-logo {
 		width: 220px;
+		height: 24px;
 	}
 	.hd .hd-menu {
 		display: none;
 	}
 	.hd .hd-hamburger {
 		display: block;
-		width: 18px;
-		height: 16px;
+		width: 30px;
+		height: 24px;
 		border: none;
 		background: url('../img/ico_hamburger1.svg') center center no-repeat;
 	}
@@ -3935,57 +3923,80 @@ textarea.inp-frm {
 		box-sizing: border-box;
 	}
 	.ft .inner {
-		padding: 0 16px;
+		padding: 0 20px;
 		box-sizing: border-box;
 	}
+	.ft .inner .ft-top {
+		display: block;
+	}
+	.ft .ft-site .ft-site-btn {
+		width: 100%;
+		height: 44px;
+		font-size: 14px;
+		padding: 12px 12px 12px 16px;
+		margin-top: 24px;
+	}
+	.ft .ft-site .ft-site-links {
+		top: 44px;
+	}
 	.ft .inner .ft-btn-top {
-		width: 34px;
-		height: 34px;
-		bottom: 16px;
-		right: 16px;
+		bottom: 80px;
+		right: 20px;
 		transform: translateY(60px);
 	}
 	.ft .fnb {
-		margin-bottom: 24px;
+		margin-top: 16px;
 	}
 	.ft .fnb .ft-menu a {
 		font-size: 14px;
 	}
 	.ft .ft-info {
 		display: block;
-	}
-	.ft .ft-info .company-info {
-		margin-top: -7px;
+		margin: 24px 0;
 	}
 	.ft .ft-info .company-info .txt-group {
 		font-size: 12px;
-		margin-top: 7px;
+		margin-top: 8px;
+		line-height: 1.3;
+	}
+	.ft .ft-info .company-info .txt-group a {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.3;
+		padding: 2px 8px;
+		margin-left: 8px;
+	}
+	.ft .ft-info .company-info .txt-group .txt {
+		margin-left: 16px;
 	}
 
 	.ft .ft-info .ft-cs {
-		margin-top: 23px;
+		margin-top: 24px;
+		text-align: left;
 	}
 	.ft .ft-info .ft-cs .tit {
-		font-size: 12px;
-		line-height: 18px;
+		font-size: 14px;
+		line-height: 20px;
 	}
 	.ft .ft-info .ft-cs .tel {
-		font-size: 20px;
-		margin: 7px 0;
-		line-height: 24px;
+		font-size: 32px;
+		line-height: 44px;
 	}
 	.ft .ft-info .ft-cs .desc {
 		font-size: 12px;
-		line-height: 18px;
+		line-height: 1.3;
 	}
 
 	.ft .ft-bottom {
+		display: block;
 		font-size: 12px;
-		margin-top: 39px;
+		padding-top: 24px;
+	}
+	.ft .ft-bottom .copyright {
+		line-height: 1.3;
 	}
 
 	/*m-footer style*/
-	/* .m-footer { display: flex; } */
 
 	/*snb style*/
 	.snb,
