@@ -3,18 +3,18 @@ function scrollToTop() {
 	$('html, body').animate({ scrollTop: 0 }, 500, 'easeInOutCubic');
 }
 
-// $(window).on('load scroll', function () {
-// 	let pos = this.scrollY;
-// 	let ftBtnTop = $('.ft-btn-top');
-// 	let header = $('.header');
-// 	if (pos > 100) {
-// 		ftBtnTop.addClass('on');
-// 		header.addClass('on');
-// 	} else {
-// 		ftBtnTop.removeClass('on');
-// 		header.removeClass('on');
-// 	}
-// });
+$(window).on('load scroll', function () {
+	let pos = this.scrollY;
+	let ftBtnTop = $('.ft-btn-top');
+	// let header = $('.header');
+	if (pos > 100) {
+		ftBtnTop.addClass('on');
+		// header.addClass('on');
+	} else {
+		ftBtnTop.removeClass('on');
+		// header.removeClass('on');
+	}
+});
 
 /*체크박스 전체선택해제*/
 function allCheckFunc(obj) {
@@ -77,7 +77,7 @@ $(function () {
 		$('.js-lnb li').eq($(this).index()).removeClass('active');
 	});
 
-	// mypage 버튼
+	// header mypage 버튼
 	$('.hd-btn-mypage').click(function (e) {
 		e.preventDefault();
 		$('.hd-menu-sub').toggleClass('open');
@@ -91,6 +91,15 @@ $(function () {
 	$('.js-hamburger-close').click(function () {
 		$('.m-gnb').animate({ right: '-100%' }, 500, 'easeInOutCubic');
 		$('.m-gnb-bg').hide();
+	});
+
+	// footer 관련사이트 드롭다운
+	$('.ft-site-btn').click(function (e) {
+		e.preventDefault(e);
+		$('.ft-site').toggleClass('open');
+	});
+	$('.ft-site-links a').click(function () {
+		$('.ft-site').removeClass('open');
 	});
 
 	/*search*/

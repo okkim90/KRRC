@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path data-name="사각형 1560" style="fill:none" d="M0 0h24v24H0z"/>
-    <path data-name="사각형 1561" transform="translate(2 2)" style="fill:none" d="M0 0h20v20H0z"/>
-    <path data-name="빼기 3" d="M11586 20735h-9a2 2 0 0 1-2-2v-16a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v5h-2v-5h-9v16h9v-5h2v5a2 2 0 0 1-2 2z" transform="translate(-11573 -20713)" style="fill:#fff"/>
-    <path data-name="패스 7064" d="m1520.5 57.5 2.5 2.5m0 0-2.5 2.5m2.5-2.5h-8.5" transform="translate(-1502 -48)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Layer_1" clip-path="url(#clip0_241_16951)">
+<path id="Vector" d="M15.4811 6L9.46571 1.5V4.5H5.89258V7.5H9.46571V10.5L15.4811 6Z" fill="white"/>
+<path id="Vector_2" d="M1.0993 0H4.0957V12H1.0993V0Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_241_16951">
+<rect width="15" height="12" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
 </svg>

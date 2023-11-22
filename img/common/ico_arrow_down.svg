@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path data-name="사각형 862" style="opacity:.4;fill:none" d="M0 0h24v24H0z"/>
-    <path data-name="사각형 865" transform="translate(2 2)" style="opacity:.4;fill:none" d="M0 0h20v20H0z"/>
-    <path data-name="패스 4159" d="m3 7 9 10 9-10" style="stroke:#999;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_arrow_2px-down">
+<path id="Vector 28 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M16.1379 17.3104L22.5284 10.9199L24.4141 12.8055L16.1379 21.0817L7.86178 12.8055L9.7474 10.9199L16.1379 17.3104Z" fill="#BEBEBE"/>
+</g>
 </svg>

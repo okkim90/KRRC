@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path data-name="사각형 857" style="fill:none" d="M0 0h24v24H0z"/>
-    <path data-name="사각형 860" transform="translate(2 2)" style="fill:none" d="M0 0h20v20H0z"/>
-    <rect data-name="사각형 960" width="16" height="18" rx="2" transform="translate(4 3)" style="stroke:#fff;stroke-width:2px;fill:none"/>
-    <path data-name="합치기 3" d="M9 17a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2z" style="fill:#fff" />
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 9960">
+<g id="Group 9575">
+<circle id="Ellipse 78" cx="12" cy="7.5" r="3" fill="white"/>
+<path id="Rectangle 5469" d="M6 14.5C6 13.9477 6.44772 13.5 7 13.5H17C17.5523 13.5 18 13.9477 18 14.5V19.5H6V14.5Z" fill="white"/>
+</g>
+</g>
 </svg>
