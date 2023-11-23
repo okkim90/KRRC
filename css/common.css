@@ -446,10 +446,7 @@ a.btn-custom-v2:disabled {
 .btn-upload label:focus {
 	background: #f0f0f0;
 }
-.paging-wrap {
-	position: relative;
-	margin: 40px 0;
-}
+
 .btn-group-r {
 	position: absolute;
 	right: 0;
@@ -3309,6 +3306,10 @@ textarea.inp-frm {
 }
 
 /*paging style*/
+.paging-wrap {
+	position: relative;
+	margin: 40px 0;
+}
 .paging {
 	display: flex;
 	justify-content: center;
@@ -4796,10 +4797,13 @@ textarea.inp-frm {
 	}
 
 	/*paging style*/
-	.paging {
+	.paging-wrap {
 		margin-top: 30px;
 	}
-	.paging a {
+	/* .paging {
+		margin-top: 30px;
+	} */
+	/* .paging a {
 		width: 30px;
 		height: 30px;
 		margin: 0 2px;
@@ -4807,7 +4811,7 @@ textarea.inp-frm {
 	}
 	.paging .btn-paging {
 		background-size: 12px;
-	}
+	} */
 	.paging .num {
 		margin: 0;
 	}
