@@ -452,7 +452,7 @@ a.btn-custom-v2:disabled {
 	right: 0;
 	top: 0;
 }
-.btn-wrtie {
+a.btn-wrtie {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -4798,7 +4798,7 @@ textarea.inp-frm {
 
 	/*paging style*/
 	.paging-wrap {
-		margin-top: 30px;
+		margin-bottom: 0;
 	}
 	/* .paging {
 		margin-top: 30px;
@@ -4814,6 +4814,26 @@ textarea.inp-frm {
 	} */
 	.paging .num {
 		margin: 0;
+	}
+	.paging .num a:not(:nth-child(-n + 3)) {
+		display: none;
+	}
+	.paging .btn-paging-prev {
+		margin-right: auto;
+	}
+	.paging .btn-paging-next {
+		margin-left: auto;
+	}
+	.paging .btn-paging-prev2,
+	.paging .btn-paging-next2 {
+		display: none;
+	}
+	.paging-wrap .btn-group-r {
+		position: static;
+		margin-top: 40px;
+	}
+	.btn-group-r .btn-wrtie {
+		width: 100%;
 	}
 
 	/*board style*/
