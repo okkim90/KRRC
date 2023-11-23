@@ -379,7 +379,7 @@ a.btn-custom-v2:disabled {
 	margin-right: 0;
 }
 
-.btn-group2 {
+.btn-group {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -446,7 +446,7 @@ a.btn-custom-v2:disabled {
 .btn-upload label:focus {
 	background: #f0f0f0;
 }
-.paging-bottom {
+.paging-wrap {
 	position: relative;
 	margin: 40px 0;
 }
@@ -3874,11 +3874,11 @@ textarea.inp-frm {
 		font-size: 16px;
 	}
 
-	.btn-group2 {
+	.btn-group {
 		display: block;
 	}
 
-	.btn-group2 .btn-group {
+	.btn-group .btn-group {
 		margin-top: 8px;
 	}
 
