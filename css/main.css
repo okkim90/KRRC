@@ -1,7 +1,9 @@
 .m_only {
 	display: none;
 }
-
+.main .container {
+	padding-bottom: 0;
+}
 .main_visual {
 	position: relative;
 	padding: 0 80px;
