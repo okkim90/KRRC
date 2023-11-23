@@ -1,666 +1,670 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
-<title>KoNECT</title>
-<link rel="stylesheet" href="../css/common.css">
-<link rel="stylesheet" href="../css/modal.css">
-<link rel="stylesheet" href="../css/page.css">
-<script src="../js/jquery-1.11.1.min.js"></script>
-<script src="../js/jquery.easing.1.3.js"></script>
-<script src="../js/script.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+	<title>KoNECT</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/modal.css">
+	<link rel="stylesheet" href="../css/page.css">
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<script src="../js/script.js"></script>
 </head>
+
 <body>
 
-<div class="dim-layer js-modal">
-	<div class="modal-group">
-		<div class="dim-bg"></div>
-		<div id="layer" class="modal-layer">
-			<button type="button" class="modal-close js-modal-master-close"></button>
-			
-			<div class="modal-container">
-				<div class="box-modal">
-					<div class="snb2">
-						<button type="button" class="btn-reset"><img src="../img/ico_reset1.svg" alt=" ">전체 필터 초기화</button>
+	<div class="dim-layer js-modal">
+		<div class="modal-group">
+			<div class="dim-bg"></div>
+			<div id="layer" class="modal-layer">
+				<button type="button" class="modal-close js-modal-master-close"></button>
 
-						<div class="search-group">
-							<div class="box">
-								<div class="inp-group-search">
-									<input type="text" placeholder="검색어를 입력하세요." class="inp-search js-search">
-									<button type="button" class="btn-search"></button>
-								</div>
+				<div class="modal-container">
+					<div class="box-modal">
+						<div class="snb2">
+							<button type="button" class="btn-reset"><img src="../img/ico_reset1.svg" alt=" ">전체 필터 초기화</button>
 
-								<div class="search-result">
-									<ol class="list-result">
-										<li><a href="#">간 <span class="keyword">암</span>종</a></li>
-										<li><a href="#">골 <span class="keyword">암</span>종</a></li>
-										<li><a href="#">피부 <span class="keyword">암</span>종</a></li>
-									</ol>
+							<div class="search-group">
+								<div class="box">
+									<div class="inp-group-search">
+										<input type="text" placeholder="검색어를 입력하세요." class="inp-search js-search">
+										<button type="button" class="btn-search"></button>
+									</div>
+
+									<div class="search-result">
+										<ol class="list-result">
+											<li><a href="#">간 <span class="keyword">암</span>종</a></li>
+											<li><a href="#">골 <span class="keyword">암</span>종</a></li>
+											<li><a href="#">피부 <span class="keyword">암</span>종</a></li>
+										</ol>
+									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">질환명</div>
-							</div>
 
-							<ol class="list-category">
-								<li>
-									<a href="#">
-										<div class="tit">건강인 임상시험</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-
-								<li>
-									<a href="#">
-										<div class="tit">암</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">뇌, 신경계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">흉부, 호흡계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">심장/ 순환계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">혈액, 면역계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">소화계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">간, 담도, 췌장</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">호르몬, 대사</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">근골격계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">신경퇴행</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">시력, 눈 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">귀, 코, 목</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">신장, 방광</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">당뇨</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">유전병보</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">소아 및 발달계통</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">치매</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">치과, 구강 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">피부과</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">정신 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">감염, 기생충</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">산과, 영유아</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">여성 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">남성 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">노인 돌봄</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">보건, 연구</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">생활건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">수술, 마취</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">약물 안전성 검사</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">통증 관리</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">손상, 부상</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">코로나19</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-							</ol>
-							
-							<!--active 클래스 추가시 노출-->
-							<div class="depth">
+							<div class="filter-group">
 								<div class="top">
-									<div class="tit"><button type="button" class="btn-back"></button>질환명</div>
+									<div class="tit">질환명</div>
 								</div>
-								
-								<div class="top-category">
-									<div class="tit">코로나19</div>
-									<div class="count">(10)</div>
-								</div>
-								
+
 								<ol class="list-category">
 									<li>
 										<a href="#">
-											<div class="tit">모든 코로나19 연구</div>
+											<div class="tit">건강인 임상시험</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 혈전증</div>
+											<div class="tit">암</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 암환자</div>
+											<div class="tit">뇌, 신경계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 의료종사자</div>
+											<div class="tit">흉부, 호흡계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 정신건강</div>
+											<div class="tit">심장/ 순환계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 다발성 경화증</div>
+											<div class="tit">혈액, 면역계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 입원환자</div>
+											<div class="tit">소화계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 심혈관</div>
+											<div class="tit">간, 담도, 췌장</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 진단검사</div>
+											<div class="tit">호르몬, 대사</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">임산부에서의 코로나19</div>
+											<div class="tit">근골격계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 연관 미각, 후각 소실</div>
+											<div class="tit">신경퇴행</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 기타 연구</div>
+											<div class="tit">시력, 눈 건강</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 감염률</div>
+											<div class="tit">귀, 코, 목</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 예방</div>
+											<div class="tit">신장, 방광</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 치료 연구</div>
+											<div class="tit">당뇨</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 취약 계층</div>
+											<div class="tit">유전병보</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 백신 연구</div>
+											<div class="tit">소아 및 발달계통</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">장기 코로나 감염</div>
+											<div class="tit">치매</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">치과, 구강 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">피부과</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">정신 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">감염, 기생충</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">산과, 영유아</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">여성 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">남성 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">노인 돌봄</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">보건, 연구</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">생활건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">수술, 마취</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">약물 안전성 검사</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">통증 관리</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">손상, 부상</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">코로나19</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
 								</ol>
+
+								<!--active 클래스 추가시 노출-->
+								<div class="depth">
+									<div class="top">
+										<div class="tit"><button type="button" class="btn-back"></button>질환명</div>
+									</div>
+
+									<div class="top-category">
+										<div class="tit">코로나19</div>
+										<div class="count">(10)</div>
+									</div>
+
+									<ol class="list-category">
+										<li>
+											<a href="#">
+												<div class="tit">모든 코로나19 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 혈전증</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 암환자</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 의료종사자</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 정신건강</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 다발성 경화증</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 입원환자</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 심혈관</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 진단검사</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">임산부에서의 코로나19</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 연관 미각, 후각 소실</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 기타 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 감염률</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 예방</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 치료 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 취약 계층</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 백신 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">장기 코로나 감염</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+									</ol>
+								</div>
 							</div>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">나이</div>
-							</div>
-							
-							<ol class="list-ck list-ck-v1">
-								<li>
-									<div class="ck-group">
-										<input id="age_ck2_1" type="radio" name="age_ck2" class="ck-custom">
-										<label for="age_ck2_1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="age_ck2_2" type="radio" name="age_ck2" class="ck-custom">
-										<label for="age_ck2_2">성인(만 19세~)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="age_ck2_3" type="radio" name="age_ck2" class="ck-custom">
-										<label for="age_ck2_3">소아청소년(만 7~18세</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="age_ck2_4" type="radio" name="age_ck2" class="ck-custom">
-										<label for="age_ck2_4">유아(1~6세)</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">성별</div>
-							</div>
-							
-							<ol class="list-ck list-ck-v3">
-								<li>
-									<div class="ck-group">
-										<input id="gender_ck2_1" type="radio" name="gender_ck2" class="ck-custom">
-										<label for="gender_ck2_1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="gender_ck2_2" type="radio" name="gender_ck2" class="ck-custom">
-										<label for="gender_ck2_2">남자</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="gender_ck2_3" type="radio" name="gender_ck2" class="ck-custom">
-										<label for="gender_ck2_3">여자</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">모집상태</div>
-							</div>
-							
-							<ol class="list-ck list-ck-v2">
-								<li>
-									<div class="ck-group">
-										<input id="state_ck2_1" type="radio" name="state_ck2" class="ck-custom">
-										<label for="state_ck2_1">모집중</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="state_ck2_2" type="radio" name="state_ck2" class="ck-custom">
-										<label for="state_ck2_2">모집 완료</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="state_ck2_3" type="radio" name="state_ck2" class="ck-custom">
-										<label for="state_ck2_3">모집 예정</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="state_ck2_4" type="radio" name="state_ck2" class="ck-custom">
-										<label for="state_ck2_4">모집 중단</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">임상시험 단계</div>
-							</div>
-							
-							<ol class="list-ck list-ck-v3">
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2_1" type="radio" name="step_ck2" class="ck-custom">
-										<label for="step_ck2_1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2_2" type="radio" name="step_ck2" class="ck-custom">
-										<label for="step_ck2_2">1상</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2_3" type="radio" name="step_ck2" class="ck-custom">
-										<label for="step_ck2_3">2상</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2_4" type="radio" name="step_ck2" class="ck-custom">
-										<label for="step_ck2_4">3상</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2_5" type="radio" name="step_ck2" class="ck-custom">
-										<label for="step_ck2_5">생동성</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2_6" type="radio" name="step_ck2" class="ck-custom">
-										<label for="step_ck2_6">PMS</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2_7" type="radio" name="step_ck2" class="ck-custom">
-										<label for="step_ck2_7">기타
-											<div class="tip-group">
-												<button type="button" class="btn-tip"></button>
-												
-												<div class="bubble">
-													<div class="txt">패치, 연고, 흡입제, 의료기기 등</div>
-												</div>
-											</div>
-										</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">시험 약물</div>
-							</div>
-							
-							<ol class="list-ck list-ck-v2">
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck2_1" type="radio" name="drug_ck2" class="ck-custom">
-										<label for="drug_ck2_1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck2_2" type="radio" name="drug_ck2" class="ck-custom">
-										<label for="drug_ck2_2">혈관주사(IV)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck2_3" type="radio" name="drug_ck2" class="ck-custom">
-										<label for="drug_ck2_3">근육주사(IM)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck2_4" type="radio" name="drug_ck2" class="ck-custom">
-										<label for="drug_ck2_4">피하주사(SC)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck2_5" type="radio" name="drug_ck2" class="ck-custom">
-										<label for="drug_ck2_5">먹는약(PO)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck2_6" type="radio" name="step_ck2" class="ck-custom">
-										<label for="drug_ck2_6">기타
-											<div class="tip-group">
-												<button type="button" class="btn-tip"></button>
-												
-												<div class="bubble">
-													<div class="txt">코호트, 관찰연구 등</div>
-												</div>
-											</div>
-										</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">지역</div>
-							</div>
-							
-							<div class="region-group">
-								<div class="ck-group">
-									<input id="location_ck2_1" type="checkbox" name="location_ck2" class="ck-custom">
-									<label for="location_ck2_1">내주변</label>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">나이</div>
 								</div>
 
-								<select class="select-custom">
-									<option>전체</option>
-									<option>옵션 1</option>
-									<option>옵션 2</option>
-									<option>옵션 3</option>
-								</select>
+								<ol class="list-ck list-ck-v1">
+									<li>
+										<div class="ck-group">
+											<input id="age_ck2_1" type="radio" name="age_ck2" class="ck-custom">
+											<label for="age_ck2_1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="age_ck2_2" type="radio" name="age_ck2" class="ck-custom">
+											<label for="age_ck2_2">성인(만 19세~)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="age_ck2_3" type="radio" name="age_ck2" class="ck-custom">
+											<label for="age_ck2_3">소아청소년(만 7~18세</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="age_ck2_4" type="radio" name="age_ck2" class="ck-custom">
+											<label for="age_ck2_4">유아(1~6세)</label>
+										</div>
+									</li>
+								</ol>
+							</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">성별</div>
+								</div>
+
+								<ol class="list-ck list-ck-v3">
+									<li>
+										<div class="ck-group">
+											<input id="gender_ck2_1" type="radio" name="gender_ck2" class="ck-custom">
+											<label for="gender_ck2_1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="gender_ck2_2" type="radio" name="gender_ck2" class="ck-custom">
+											<label for="gender_ck2_2">남자</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="gender_ck2_3" type="radio" name="gender_ck2" class="ck-custom">
+											<label for="gender_ck2_3">여자</label>
+										</div>
+									</li>
+								</ol>
+							</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">모집상태</div>
+								</div>
+
+								<ol class="list-ck list-ck-v2">
+									<li>
+										<div class="ck-group">
+											<input id="state_ck2_1" type="radio" name="state_ck2" class="ck-custom">
+											<label for="state_ck2_1">모집중</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="state_ck2_2" type="radio" name="state_ck2" class="ck-custom">
+											<label for="state_ck2_2">모집 완료</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="state_ck2_3" type="radio" name="state_ck2" class="ck-custom">
+											<label for="state_ck2_3">모집 예정</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="state_ck2_4" type="radio" name="state_ck2" class="ck-custom">
+											<label for="state_ck2_4">모집 중단</label>
+										</div>
+									</li>
+								</ol>
+							</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">임상시험 단계</div>
+								</div>
+
+								<ol class="list-ck list-ck-v3">
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2_1" type="radio" name="step_ck2" class="ck-custom">
+											<label for="step_ck2_1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2_2" type="radio" name="step_ck2" class="ck-custom">
+											<label for="step_ck2_2">1상</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2_3" type="radio" name="step_ck2" class="ck-custom">
+											<label for="step_ck2_3">2상</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2_4" type="radio" name="step_ck2" class="ck-custom">
+											<label for="step_ck2_4">3상</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2_5" type="radio" name="step_ck2" class="ck-custom">
+											<label for="step_ck2_5">생동성</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2_6" type="radio" name="step_ck2" class="ck-custom">
+											<label for="step_ck2_6">PMS</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2_7" type="radio" name="step_ck2" class="ck-custom">
+											<label for="step_ck2_7">기타
+												<div class="tip-group">
+													<button type="button" class="btn-tip"></button>
+
+													<div class="bubble">
+														<div class="txt">패치, 연고, 흡입제, 의료기기 등</div>
+													</div>
+												</div>
+											</label>
+										</div>
+									</li>
+								</ol>
+							</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">시험 약물</div>
+								</div>
+
+								<ol class="list-ck list-ck-v2">
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck2_1" type="radio" name="drug_ck2" class="ck-custom">
+											<label for="drug_ck2_1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck2_2" type="radio" name="drug_ck2" class="ck-custom">
+											<label for="drug_ck2_2">혈관주사(IV)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck2_3" type="radio" name="drug_ck2" class="ck-custom">
+											<label for="drug_ck2_3">근육주사(IM)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck2_4" type="radio" name="drug_ck2" class="ck-custom">
+											<label for="drug_ck2_4">피하주사(SC)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck2_5" type="radio" name="drug_ck2" class="ck-custom">
+											<label for="drug_ck2_5">먹는약(PO)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck2_6" type="radio" name="step_ck2" class="ck-custom">
+											<label for="drug_ck2_6">기타
+												<div class="tip-group">
+													<button type="button" class="btn-tip"></button>
+
+													<div class="bubble">
+														<div class="txt">코호트, 관찰연구 등</div>
+													</div>
+												</div>
+											</label>
+										</div>
+									</li>
+								</ol>
+							</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">지역</div>
+								</div>
+
+								<div class="region-group">
+									<div class="ck-group">
+										<input id="location_ck2_1" type="checkbox" name="location_ck2" class="ck-custom">
+										<label for="location_ck2_1">내주변</label>
+									</div>
+
+									<select class="select-custom">
+										<option>전체</option>
+										<option>옵션 1</option>
+										<option>옵션 2</option>
+										<option>옵션 3</option>
+									</select>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -668,1030 +672,1037 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<header class="header">
-	<div class="hd">
-		<div class="inner">
-			<a href="../index.html" class="hd-logo"></a>
-			
-			<ol class="gnb js-gnb">
-				<li><a href="#">서비스 소개</a></li>
-				<li><a href="#">임상시험 정보</a></li>
-				<li><a href="#">참여의향서</a></li>
-				<li><a href="#">알림마당</a></li>
-			</ol>
-			
-			<ol class="hd-menu">
-				<li><a href="#">마이페이지</a></li>
-				<li><a href="#">로그아웃</a></li>
-			</ol>
-			
-			<button type="button" class="hd-hamburger js-hamburger"></button>
+	<header class="header">
+		<div class="hd">
+			<div class="inner">
+				<a href="../index.html" class="hd-logo"></a>
+
+				<ol class="gnb js-gnb">
+					<li><a href="#">서비스 소개</a></li>
+					<li><a href="#">임상시험 정보</a></li>
+					<li><a href="#">참여의향서</a></li>
+					<li><a href="#">알림마당</a></li>
+				</ol>
+
+				<ol class="hd-menu">
+					<li><a href="#">마이페이지</a></li>
+					<li><a href="#">로그아웃</a></li>
+				</ol>
+
+				<button type="button" class="hd-hamburger js-hamburger"></button>
+			</div>
 		</div>
-	</div>
-	
-	<div class="depth">
-		<ol class="lnb js-lnb">
-			<li>
-				<a href="#">서비스 안내</a>
-				<a href="#">참여방법 안내</a>
-			</li>
-			
-			<li>
-				<a href="#">모집 임상시험</a>
-				<a href="#">임상시험 승인정보</a>
-			</li>
-			
-			<li>
-				<a href="#">참여의향서 신청</a>
-			</li>
-			
-			<li>
-				<a href="#">공지사항</a>
-				<a href="#">쉬운 용어 설명</a>
-				<a href="#">병원 안내</a>
-				<a href="#">뉴스레터</a>
-				<a href="#">FAQ</a>
-			</li>
-		</ol>
-	</div>
-</header>
 
+		<div class="depth">
+			<ol class="lnb js-lnb">
+				<li>
+					<a href="#">서비스 안내</a>
+					<a href="#">참여방법 안내</a>
+				</li>
 
-<section>
-	<div class="container">
-		<div class="sub-visual">
-			<div class="bg"></div>
-			<div class="tit">임상시험 정보</div>
+				<li>
+					<a href="#">모집 임상시험</a>
+					<a href="#">임상시험 승인정보</a>
+				</li>
+
+				<li>
+					<a href="#">참여의향서 신청</a>
+				</li>
+
+				<li>
+					<a href="#">공지사항</a>
+					<a href="#">쉬운 용어 설명</a>
+					<a href="#">병원 안내</a>
+					<a href="#">뉴스레터</a>
+					<a href="#">FAQ</a>
+				</li>
+			</ol>
 		</div>
-		
-		<div class="wrap">
-			<div class="ly-group">
-				<div class="ly-l">
-					<div class="snb2">
-						<button type="button" class="btn-reset"><img src="../img/ico_reset1.svg" alt=" ">전체 필터 초기화</button>
+	</header>
 
-						<div class="search-group">
-							<div class="box">
-								<div class="inp-group-search">
-									<input type="text" placeholder="검색어를 입력하세요." class="inp-search js-search">
-									<button type="button" class="btn-search"></button>
-								</div>
 
-								<div class="search-result">
-									<ol class="list-result">
-										<li><a href="#">간 <span class="keyword">암</span>종</a></li>
-										<li><a href="#">골 <span class="keyword">암</span>종</a></li>
-										<li><a href="#">피부 <span class="keyword">암</span>종</a></li>
-									</ol>
+	<section>
+		<div class="container">
+			<div class="sub-visual">
+				<div class="bg"></div>
+				<div class="tit">임상시험 정보</div>
+			</div>
+
+			<div class="wrap">
+				<div class="ly-group">
+					<div class="ly-l">
+						<div class="snb2">
+							<button type="button" class="btn-reset"><img src="../img/ico_reset1.svg" alt=" ">전체 필터 초기화</button>
+
+							<div class="search-group">
+								<div class="box">
+									<div class="inp-group-search">
+										<input type="text" placeholder="검색어를 입력하세요." class="inp-search js-search">
+										<button type="button" class="btn-search"></button>
+									</div>
+
+									<div class="search-result">
+										<ol class="list-result">
+											<li><a href="#">간 <span class="keyword">암</span>종</a></li>
+											<li><a href="#">골 <span class="keyword">암</span>종</a></li>
+											<li><a href="#">피부 <span class="keyword">암</span>종</a></li>
+										</ol>
+									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">질환명</div>
-							</div>
 
-							<ol class="list-category">
-								<li>
-									<a href="#">
-										<div class="tit">건강인 임상시험</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-
-								<li>
-									<a href="#">
-										<div class="tit">암</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">뇌, 신경계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">흉부, 호흡계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">심장/ 순환계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">혈액, 면역계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">소화계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">간, 담도, 췌장</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">호르몬, 대사</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">근골격계</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">신경퇴행</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">시력, 눈 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">귀, 코, 목</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">신장, 방광</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">당뇨</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">유전병보</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">소아 및 발달계통</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">치매</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">치과, 구강 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">피부과</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">정신 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">감염, 기생충</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">산과, 영유아</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">여성 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">남성 건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">노인 돌봄</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">보건, 연구</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">생활건강</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">수술, 마취</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">약물 안전성 검사</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">통증 관리</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">손상, 부상</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-								
-								<li>
-									<a href="#">
-										<div class="tit">코로나19</div>
-										<div class="count">(2)</div>
-									</a>
-								</li>
-							</ol>
-							
-							<!--active 클래스 추가시 노출-->
-							<div class="depth">
+							<div class="filter-group">
 								<div class="top">
-									<div class="tit"><button type="button" class="btn-back"></button>질환명</div>
+									<div class="tit">질환명</div>
 								</div>
-								
-								<div class="top-category">
-									<div class="tit">코로나19</div>
-									<div class="count">(10)</div>
-								</div>
-								
+
 								<ol class="list-category">
 									<li>
 										<a href="#">
-											<div class="tit">모든 코로나19 연구</div>
+											<div class="tit">건강인 임상시험</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 혈전증</div>
+											<div class="tit">암</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 암환자</div>
+											<div class="tit">뇌, 신경계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 의료종사자</div>
+											<div class="tit">흉부, 호흡계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 정신건강</div>
+											<div class="tit">심장/ 순환계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 다발성 경화증</div>
+											<div class="tit">혈액, 면역계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 입원환자</div>
+											<div class="tit">소화계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 심혈관</div>
+											<div class="tit">간, 담도, 췌장</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19와 진단검사</div>
+											<div class="tit">호르몬, 대사</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">임산부에서의 코로나19</div>
+											<div class="tit">근골격계</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 연관 미각, 후각 소실</div>
+											<div class="tit">신경퇴행</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 기타 연구</div>
+											<div class="tit">시력, 눈 건강</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 감염률</div>
+											<div class="tit">귀, 코, 목</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 예방</div>
+											<div class="tit">신장, 방광</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 치료 연구</div>
+											<div class="tit">당뇨</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 취약 계층</div>
+											<div class="tit">유전병보</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">코로나19 백신 연구</div>
+											<div class="tit">소아 및 발달계통</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
-									
+
 									<li>
 										<a href="#">
-											<div class="tit">장기 코로나 감염</div>
+											<div class="tit">치매</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">치과, 구강 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">피부과</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">정신 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">감염, 기생충</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">산과, 영유아</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">여성 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">남성 건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">노인 돌봄</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">보건, 연구</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">생활건강</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">수술, 마취</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">약물 안전성 검사</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">통증 관리</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">손상, 부상</div>
+											<div class="count">(2)</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<div class="tit">코로나19</div>
 											<div class="count">(2)</div>
 										</a>
 									</li>
 								</ol>
+
+								<!--active 클래스 추가시 노출-->
+								<div class="depth">
+									<div class="top">
+										<div class="tit"><button type="button" class="btn-back"></button>질환명</div>
+									</div>
+
+									<div class="top-category">
+										<div class="tit">코로나19</div>
+										<div class="count">(10)</div>
+									</div>
+
+									<ol class="list-category">
+										<li>
+											<a href="#">
+												<div class="tit">모든 코로나19 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 혈전증</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 암환자</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 의료종사자</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 정신건강</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 다발성 경화증</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 입원환자</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 심혈관</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19와 진단검사</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">임산부에서의 코로나19</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 연관 미각, 후각 소실</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 기타 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 감염률</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 예방</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 치료 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 취약 계층</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">코로나19 백신 연구</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#">
+												<div class="tit">장기 코로나 감염</div>
+												<div class="count">(2)</div>
+											</a>
+										</li>
+									</ol>
+								</div>
 							</div>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">나이</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">나이</div>
+								</div>
+
+								<ol class="list-ck list-ck-v1">
+									<li>
+										<div class="ck-group">
+											<input id="age_ck1" type="radio" name="age_ck" class="ck-custom">
+											<label for="age_ck1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="age_ck2" type="radio" name="age_ck" class="ck-custom">
+											<label for="age_ck2">성인(만 19세~)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="age_ck3" type="radio" name="age_ck" class="ck-custom">
+											<label for="age_ck3">소아청소년(만 7~18세</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="age_ck4" type="radio" name="age_ck" class="ck-custom">
+											<label for="age_ck4">유아(1~6세)</label>
+										</div>
+									</li>
+								</ol>
 							</div>
-							
-							<ol class="list-ck list-ck-v1">
-								<li>
-									<div class="ck-group">
-										<input id="age_ck1" type="radio" name="age_ck" class="ck-custom">
-										<label for="age_ck1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="age_ck2" type="radio" name="age_ck" class="ck-custom">
-										<label for="age_ck2">성인(만 19세~)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="age_ck3" type="radio" name="age_ck" class="ck-custom">
-										<label for="age_ck3">소아청소년(만 7~18세</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="age_ck4" type="radio" name="age_ck" class="ck-custom">
-										<label for="age_ck4">유아(1~6세)</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">성별</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">성별</div>
+								</div>
+
+								<ol class="list-ck list-ck-v3">
+									<li>
+										<div class="ck-group">
+											<input id="gender_ck1" type="radio" name="gender_ck" class="ck-custom">
+											<label for="gender_ck1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="gender_ck2" type="radio" name="gender_ck" class="ck-custom">
+											<label for="gender_ck2">남자</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="gender_ck3" type="radio" name="gender_ck" class="ck-custom">
+											<label for="gender_ck3">여자</label>
+										</div>
+									</li>
+								</ol>
 							</div>
-							
-							<ol class="list-ck list-ck-v3">
-								<li>
-									<div class="ck-group">
-										<input id="gender_ck1" type="radio" name="gender_ck" class="ck-custom">
-										<label for="gender_ck1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="gender_ck2" type="radio" name="gender_ck" class="ck-custom">
-										<label for="gender_ck2">남자</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="gender_ck3" type="radio" name="gender_ck" class="ck-custom">
-										<label for="gender_ck3">여자</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">모집상태</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">모집상태</div>
+								</div>
+
+								<ol class="list-ck list-ck-v2">
+									<li>
+										<div class="ck-group">
+											<input id="state_ck1" type="radio" name="state_ck" class="ck-custom">
+											<label for="state_ck1">모집중</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="state_ck2" type="radio" name="state_ck" class="ck-custom">
+											<label for="state_ck2">모집 완료</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="state_ck3" type="radio" name="state_ck" class="ck-custom">
+											<label for="state_ck3">모집 예정</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="state_ck4" type="radio" name="state_ck" class="ck-custom">
+											<label for="state_ck4">모집 중단</label>
+										</div>
+									</li>
+								</ol>
 							</div>
-							
-							<ol class="list-ck list-ck-v2">
-								<li>
-									<div class="ck-group">
-										<input id="state_ck1" type="radio" name="state_ck" class="ck-custom">
-										<label for="state_ck1">모집중</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="state_ck2" type="radio" name="state_ck" class="ck-custom">
-										<label for="state_ck2">모집 완료</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="state_ck3" type="radio" name="state_ck" class="ck-custom">
-										<label for="state_ck3">모집 예정</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="state_ck4" type="radio" name="state_ck" class="ck-custom">
-										<label for="state_ck4">모집 중단</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">임상시험 단계</div>
-							</div>
-							
-							<ol class="list-ck list-ck-v3">
-								<li>
-									<div class="ck-group">
-										<input id="step_ck1" type="radio" name="step_ck" class="ck-custom">
-										<label for="step_ck1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck2" type="radio" name="step_ck" class="ck-custom">
-										<label for="step_ck2">1상</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck3" type="radio" name="step_ck" class="ck-custom">
-										<label for="step_ck3">2상</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck4" type="radio" name="step_ck" class="ck-custom">
-										<label for="step_ck4">3상</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck5" type="radio" name="step_ck" class="ck-custom">
-										<label for="step_ck5">생동성</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck6" type="radio" name="step_ck" class="ck-custom">
-										<label for="step_ck6">PMS</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="step_ck7" type="radio" name="step_ck" class="ck-custom">
-										<label for="step_ck7">기타
-											<div class="tip-group">
-												<button type="button" class="btn-tip"></button>
-												
-												<div class="bubble">
-													<div class="txt">패치, 연고, 흡입제, 의료기기 등</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">임상시험 단계</div>
+								</div>
+
+								<ol class="list-ck list-ck-v3">
+									<li>
+										<div class="ck-group">
+											<input id="step_ck1" type="radio" name="step_ck" class="ck-custom">
+											<label for="step_ck1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck2" type="radio" name="step_ck" class="ck-custom">
+											<label for="step_ck2">1상</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck3" type="radio" name="step_ck" class="ck-custom">
+											<label for="step_ck3">2상</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck4" type="radio" name="step_ck" class="ck-custom">
+											<label for="step_ck4">3상</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck5" type="radio" name="step_ck" class="ck-custom">
+											<label for="step_ck5">생동성</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck6" type="radio" name="step_ck" class="ck-custom">
+											<label for="step_ck6">PMS</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="step_ck7" type="radio" name="step_ck" class="ck-custom">
+											<label for="step_ck7">기타
+												<div class="tip-group">
+													<button type="button" class="btn-tip"></button>
+
+													<div class="bubble">
+														<div class="txt">패치, 연고, 흡입제, 의료기기 등</div>
+													</div>
 												</div>
-											</div>
-										</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">시험 약물</div>
+											</label>
+										</div>
+									</li>
+								</ol>
 							</div>
-							
-							<ol class="list-ck list-ck-v2">
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck1" type="radio" name="drug_ck" class="ck-custom">
-										<label for="drug_ck1">전체</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck2" type="radio" name="drug_ck" class="ck-custom">
-										<label for="drug_ck2">혈관주사(IV)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck3" type="radio" name="drug_ck" class="ck-custom">
-										<label for="drug_ck3">근육주사(IM)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck4" type="radio" name="drug_ck" class="ck-custom">
-										<label for="drug_ck4">피하주사(SC)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck5" type="radio" name="drug_ck" class="ck-custom">
-										<label for="drug_ck5">먹는약(PO)</label>
-									</div>
-								</li>
-								
-								<li>
-									<div class="ck-group">
-										<input id="drug_ck6" type="radio" name="step_ck" class="ck-custom">
-										<label for="drug_ck6">기타
-											<div class="tip-group">
-												<button type="button" class="btn-tip"></button>
-												
-												<div class="bubble">
-													<div class="txt">코호트, 관찰연구 등</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">시험 약물</div>
+								</div>
+
+								<ol class="list-ck list-ck-v2">
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck1" type="radio" name="drug_ck" class="ck-custom">
+											<label for="drug_ck1">전체</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck2" type="radio" name="drug_ck" class="ck-custom">
+											<label for="drug_ck2">혈관주사(IV)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck3" type="radio" name="drug_ck" class="ck-custom">
+											<label for="drug_ck3">근육주사(IM)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck4" type="radio" name="drug_ck" class="ck-custom">
+											<label for="drug_ck4">피하주사(SC)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck5" type="radio" name="drug_ck" class="ck-custom">
+											<label for="drug_ck5">먹는약(PO)</label>
+										</div>
+									</li>
+
+									<li>
+										<div class="ck-group">
+											<input id="drug_ck6" type="radio" name="step_ck" class="ck-custom">
+											<label for="drug_ck6">기타
+												<div class="tip-group">
+													<button type="button" class="btn-tip"></button>
+
+													<div class="bubble">
+														<div class="txt">코호트, 관찰연구 등</div>
+													</div>
 												</div>
+											</label>
+										</div>
+									</li>
+								</ol>
+							</div>
+
+							<div class="filter-group">
+								<div class="top">
+									<div class="tit">지역</div>
+								</div>
+
+								<div class="region-group">
+									<div class="ck-group">
+										<input id="location_ck1" type="checkbox" name="location_ck" class="ck-custom">
+										<label for="location_ck1">내주변</label>
+									</div>
+
+									<select class="select-custom">
+										<option>전체</option>
+										<option>옵션 1</option>
+										<option>옵션 2</option>
+										<option>옵션 3</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="m-snb">
+							<div class="dropdown">
+								<div class="tit fold js-fold">
+									<div class="menu">모집 임상시험</div>
+								</div>
+
+								<div class="list js-unfold">
+									<a href="#">임상시험 승인정보</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="ly-r">
+						<div class="breadcrumb">
+							<a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
+							<a href="#">서비스 소개</a>
+							<a href="#">임상시험 정보</a>
+							<a href="recruit.html">모집 임상시험</a>
+						</div>
+
+						<div class="top-page">
+							<div class="tit">모집 임상시험</div>
+						</div>
+
+						<div class="board-count">총 <span>99</span>건의 임상시험이 검색되었습니다.</div>
+
+						<button type="button" class="btn-filter js-modal-open"><img src="../img/ico_filter1.svg" alt=" ">검색
+							필터</button>
+
+						<ol class="list-recruit">
+							<li>
+								<div class="recruit-group">
+									<div class="box">
+										<div class="recruit-info">
+											<div class="state">모집중</div>
+											<div class="source">서울 삼성 병원</div>
+										</div>
+
+										<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및
+											약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+
+										<div class="recruit-category">
+											<a href="#">구강, 인후 암종</a>
+											<a href="#">피부 암종</a>
+											<a href="#">간 암종</a>
+										</div>
+
+										<div class="recruit-tag">
+											<a href="#">#구강암</a>
+											<a href="#">#인후암</a>
+											<a href="#">#암</a>
+										</div>
+
+										<div class="recruit-data">
+											<div class="txt-group">
+												<div class="tit">조회수</div>
+												<div class="txt">125</div>
 											</div>
-										</label>
-									</div>
-								</li>
-							</ol>
-						</div>
-						
-						<div class="filter-group">
-							<div class="top">
-								<div class="tit">지역</div>
-							</div>
-							
-							<div class="region-group">
-								<div class="ck-group">
-									<input id="location_ck1" type="checkbox" name="location_ck" class="ck-custom">
-									<label for="location_ck1">내주변</label>
-								</div>
 
-								<select class="select-custom">
-									<option>전체</option>
-									<option>옵션 1</option>
-									<option>옵션 2</option>
-									<option>옵션 3</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					
-					<div class="m-snb">
-						<div class="dropdown">
-							<div class="tit fold js-fold">
-								<div class="menu">모집 임상시험</div>
-							</div>
-							
-							<div class="list js-unfold">
-								<a href="#">임상시험 승인정보</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="ly-r">
-					<div class="breadcrumb">
-						<a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
-						<a href="#">서비스 소개</a>
-						<a href="#">임상시험 정보</a>
-						<a href="recruit.html">모집 임상시험</a>
-					</div>
-					
-					<div class="top-page">
-						<div class="tit">모집 임상시험</div>
-					</div>
-					
-					<div class="board-count">총 <span>99</span>건의 임상시험이 검색되었습니다.</div>
-					
-					<button type="button" class="btn-filter js-modal-open"><img src="../img/ico_filter1.svg" alt=" ">검색 필터</button>
-					
-					<ol class="list-recruit">
-						<li>
-							<div class="recruit-group">
-								<div class="box">
-									<div class="recruit-info">
-										<div class="state">모집중</div>
-										<div class="source">서울 삼성 병원</div>
+											<div class="txt-group">
+												<div class="tit">등록일자</div>
+												<div class="txt">2022-12-16</div>
+											</div>
+										</div>
 									</div>
-									
-									<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
-									
-									<div class="recruit-category">
-										<a href="#">구강, 인후 암종</a>
-										<a href="#">피부 암종</a>
-										<a href="#">간 암종</a>
-									</div>
-									
-									<div class="recruit-tag">
-										<a href="#">#구강암</a>
-										<a href="#">#인후암</a>
-										<a href="#">#암</a>
-									</div>
-									
-									<div class="recruit-data">
+
+									<div class="recruit-detail">
 										<div class="txt-group">
-											<div class="tit">조회수</div>
-											<div class="txt">125</div>
+											<div class="tit">대상</div>
+											<div class="txt">건강인</div>
 										</div>
 
 										<div class="txt-group">
-											<div class="tit">등록일자</div>
-											<div class="txt">2022-12-16</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="recruit-detail">
-									<div class="txt-group">
-										<div class="tit">대상</div>
-										<div class="txt">건강인</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">나이</div>
-										<div class="txt">18~65세</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">성별</div>
-										<div class="txt">남성</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">임상시험 단계</div>
-										<div class="txt">1상</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">지역</div>
-										<div class="txt">경기</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						
-						<li>
-							<div class="recruit-group">
-								<div class="box">
-									<div class="recruit-info">
-										<div class="state state-v1">모집예정</div>
-										<div class="source">서울 삼성 병원</div>
-									</div>
-									
-									<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
-									
-									<div class="recruit-category">
-										<a href="#">구강, 인후 암종</a>
-										<a href="#">피부 암종</a>
-										<a href="#">간 암종</a>
-									</div>
-									
-									<div class="recruit-tag">
-										<a href="#">#구강암</a>
-										<a href="#">#인후암</a>
-										<a href="#">#암</a>
-									</div>
-									
-									<div class="recruit-data">
-										<div class="txt-group">
-											<div class="tit">조회수</div>
-											<div class="txt">125</div>
+											<div class="tit">나이</div>
+											<div class="txt">18~65세</div>
 										</div>
 
 										<div class="txt-group">
-											<div class="tit">등록일자</div>
-											<div class="txt">2022-12-16</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="recruit-detail">
-									<div class="txt-group">
-										<div class="tit">대상</div>
-										<div class="txt">건강인</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">나이</div>
-										<div class="txt">18~65세</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">성별</div>
-										<div class="txt">남성</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">임상시험 단계</div>
-										<div class="txt">1상</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">지역</div>
-										<div class="txt">경기</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						
-						<li>
-							<div class="recruit-group">
-								<div class="box">
-									<div class="recruit-info">
-										<div class="state state-v2">모집상태</div>
-										<div class="source">서울 삼성 병원</div>
-									</div>
-									
-									<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및 약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
-									
-									<div class="recruit-category">
-										<a href="#">구강, 인후 암종</a>
-										<a href="#">피부 암종</a>
-										<a href="#">간 암종</a>
-									</div>
-									
-									<div class="recruit-tag">
-										<a href="#">#구강암</a>
-										<a href="#">#인후암</a>
-										<a href="#">#암</a>
-									</div>
-									
-									<div class="recruit-data">
-										<div class="txt-group">
-											<div class="tit">조회수</div>
-											<div class="txt">125</div>
+											<div class="tit">성별</div>
+											<div class="txt">남성</div>
 										</div>
 
 										<div class="txt-group">
-											<div class="tit">등록일자</div>
-											<div class="txt">2022-12-16</div>
+											<div class="tit">임상시험 단계</div>
+											<div class="txt">1상</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">지역</div>
+											<div class="txt">경기</div>
 										</div>
 									</div>
 								</div>
-								
-								<div class="recruit-detail">
-									<div class="txt-group">
-										<div class="tit">대상</div>
-										<div class="txt">건강인</div>
+							</li>
+
+							<li>
+								<div class="recruit-group">
+									<div class="box">
+										<div class="recruit-info">
+											<div class="state state-v1">모집예정</div>
+											<div class="source">서울 삼성 병원</div>
+										</div>
+
+										<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및
+											약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+
+										<div class="recruit-category">
+											<a href="#">구강, 인후 암종</a>
+											<a href="#">피부 암종</a>
+											<a href="#">간 암종</a>
+										</div>
+
+										<div class="recruit-tag">
+											<a href="#">#구강암</a>
+											<a href="#">#인후암</a>
+											<a href="#">#암</a>
+										</div>
+
+										<div class="recruit-data">
+											<div class="txt-group">
+												<div class="tit">조회수</div>
+												<div class="txt">125</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">등록일자</div>
+												<div class="txt">2022-12-16</div>
+											</div>
+										</div>
 									</div>
-									
-									<div class="txt-group">
-										<div class="tit">나이</div>
-										<div class="txt">18~65세</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">성별</div>
-										<div class="txt">남성</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">임상시험 단계</div>
-										<div class="txt">1상</div>
-									</div>
-									
-									<div class="txt-group">
-										<div class="tit">지역</div>
-										<div class="txt">경기</div>
+
+									<div class="recruit-detail">
+										<div class="txt-group">
+											<div class="tit">대상</div>
+											<div class="txt">건강인</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">나이</div>
+											<div class="txt">18~65세</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">성별</div>
+											<div class="txt">남성</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">임상시험 단계</div>
+											<div class="txt">1상</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">지역</div>
+											<div class="txt">경기</div>
+										</div>
 									</div>
 								</div>
+							</li>
+
+							<li>
+								<div class="recruit-group">
+									<div class="box">
+										<div class="recruit-info">
+											<div class="state state-v2">모집상태</div>
+											<div class="source">서울 삼성 병원</div>
+										</div>
+
+										<a href="#" class="recruit-tit">건강한 성인 남성을 대상으로 뉴젠나파모스타트 정(Nafamostat mesilate) 경구 투여 후 안전성, 내약성 및
+											약동학적 특성을 평가하지 위한 공개. 단회 투여(Part 1) 및 단계적 증량 반복 투여(Part 2) 임상 1상 시험 건강한</a>
+
+										<div class="recruit-category">
+											<a href="#">구강, 인후 암종</a>
+											<a href="#">피부 암종</a>
+											<a href="#">간 암종</a>
+										</div>
+
+										<div class="recruit-tag">
+											<a href="#">#구강암</a>
+											<a href="#">#인후암</a>
+											<a href="#">#암</a>
+										</div>
+
+										<div class="recruit-data">
+											<div class="txt-group">
+												<div class="tit">조회수</div>
+												<div class="txt">125</div>
+											</div>
+
+											<div class="txt-group">
+												<div class="tit">등록일자</div>
+												<div class="txt">2022-12-16</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="recruit-detail">
+										<div class="txt-group">
+											<div class="tit">대상</div>
+											<div class="txt">건강인</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">나이</div>
+											<div class="txt">18~65세</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">성별</div>
+											<div class="txt">남성</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">임상시험 단계</div>
+											<div class="txt">1상</div>
+										</div>
+
+										<div class="txt-group">
+											<div class="tit">지역</div>
+											<div class="txt">경기</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ol>
+
+						<div class="recruit-warn">
+							<div class="txt">임상시험 실시기관 및 의뢰사 등에서 직접 등록한 임상시험 모집정보를 제공하고 있으며 국가임상시험지원재단은 게시된 세부 임상시험 정보에 대해 책임이 없습니다.
 							</div>
-						</li>
-					</ol>
-					
-					<div class="recruit-warn">
-						<div class="txt">임상시험 실시기관 및 의뢰사 등에서 직접 등록한 임상시험 모집정보를 제공하고 있으며 국가임상시험지원재단은 게시된 세부 임상시험 정보에 대해 책임이 없습니다.</div>
-					</div>
-					
-					<div class="paging paging-v1">
-						<a href="#" class="btn-paging btn-paging-prev2"></a>
-						<a href="#" class="btn-paging btn-paging-prev"></a>
-						<div class="num">
-							<a href="#" class="active">1</a>
-							<a href="#">2</a>
-							<a href="#">3</a>
-							<a href="#">4</a>
-							<a href="#">5</a>
 						</div>
-						<a href="#" class="btn-paging btn-paging-next"></a>
-						<a href="#" class="btn-paging btn-paging-next2"></a>
-					</div>
-					
-					<div class="recruit-warn recruit-warn-v1">
-						<div class="txt">임상시험 연구자이신가요? <br>임상시험 등록을 원하시는 연구자는 연구자 전환 신청을 하시면 승인 후 연구자의 임상시험을 등록할 수 있습니다.</div>
-					</div>
-					
-					<div class="btn-group-bottom">
-						<a href="#" class="btn-custom">연구자 신청</a>
+
+						<div class="paging-bottom">
+							<div class="paging">
+								<a href="#" class="btn-paging btn-paging-prev2"></a>
+								<a href="#" class="btn-paging btn-paging-prev"></a>
+								<div class="num">
+									<a href="#" class="active">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+								</div>
+								<a href="#" class="btn-paging btn-paging-next"></a>
+								<a href="#" class="btn-paging btn-paging-next2"></a>
+							</div>
+						</div>
+
+						<div class="recruit-warn recruit-warn-v1">
+							<div class="txt">임상시험 연구자이신가요? <br>임상시험 등록을 원하시는 연구자는 연구자 전환 신청을 하시면 승인 후 연구자의 임상시험을 등록할 수 있습니다.</div>
+						</div>
+
+						<div class="btn-group-bottom">
+							<a href="#" class="btn-custom">연구자 신청</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<footer class="footer">
-	<div class="ft">
-		<div class="inner">
-			<div class="fnb">
-				<div class="ft-logo">
-					<img src="../img/img_logo2.svg" alt="KoNECT">
-				</div>
-
-				<div class="ft-menu">
-					<a href="#">이용약관</a>
-					<a href="#"><span>개인정보 처리방침</span></a>
-					<a href="#">이메일무단수집거부</a>
-				</div>
-			</div>
-			
-			<div class="ft-info">
-				<div class="company-info">
-					<div class="txt-group">
-						<div class="tit">대표번호</div>
-						<div class="txt">1577-7858</div>
+	<footer class="footer">
+		<div class="ft">
+			<div class="inner">
+				<div class="fnb">
+					<div class="ft-logo">
+						<img src="../img/img_logo2.svg" alt="KoNECT">
 					</div>
 
-					<div class="txt-group">
-						<div class="tit">팩스번호</div>
-						<div class="txt">02-3675-4777</div>
-					</div>
-
-					<div class="txt-group">
-						<div class="tit">이메일</div>
-						<div class="txt">15777858@konect.or.kr</div>
-					</div>
-
-					<div class="txt-group">
-						<div class="tit">주소</div>
-						<div class="txt">서울특별시 마포구 마포대로 137, KPX빌딩 6층</div>
+					<div class="ft-menu">
+						<a href="#">이용약관</a>
+						<a href="#"><span>개인정보 처리방침</span></a>
+						<a href="#">이메일무단수집거부</a>
 					</div>
 				</div>
-				
-				<div class="copyright">Copyrightⓒ KoNECT All Rights Reserved.</div>
+
+				<div class="ft-info">
+					<div class="company-info">
+						<div class="txt-group">
+							<div class="tit">대표번호</div>
+							<div class="txt">1577-7858</div>
+						</div>
+
+						<div class="txt-group">
+							<div class="tit">팩스번호</div>
+							<div class="txt">02-3675-4777</div>
+						</div>
+
+						<div class="txt-group">
+							<div class="tit">이메일</div>
+							<div class="txt">15777858@konect.or.kr</div>
+						</div>
+
+						<div class="txt-group">
+							<div class="tit">주소</div>
+							<div class="txt">서울특별시 마포구 마포대로 137, KPX빌딩 6층</div>
+						</div>
+					</div>
+
+					<div class="copyright">Copyrightⓒ KoNECT All Rights Reserved.</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</footer>
 
-<div class="m-footer">
-	<a href="../index.html">
-		<div class="ico"></div>
-		<div class="tit">홈</div>
-	</a>
-	
-	<a href="#">
-		<div class="ico"></div>
-		<div class="tit">참여의향서</div>
-	</a>
-	
-	<a href="#" class="active">
-		<div class="ico"></div>
-		<div class="tit">임상시험 검색</div>
-	</a>
-	
-	<a href="#">
-		<div class="ico"></div>
-		<div class="tit">마이페이지</div>
-	</a>
-</div>
+	<div class="m-footer">
+		<a href="../index.html">
+			<div class="ico"></div>
+			<div class="tit">홈</div>
+		</a>
+
+		<a href="#">
+			<div class="ico"></div>
+			<div class="tit">참여의향서</div>
+		</a>
+
+		<a href="#" class="active">
+			<div class="ico"></div>
+			<div class="tit">임상시험 검색</div>
+		</a>
+
+		<a href="#">
+			<div class="ico"></div>
+			<div class="tit">마이페이지</div>
+		</a>
+	</div>
 
 </body>
+
 </html>
