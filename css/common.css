@@ -3692,6 +3692,7 @@ textarea.inp-frm {
 		position: absolute;
 		right: 12px;
 		top: 4px;
+		margin-right: 0;
 	}
 	.upload-group .attach-group .process-group {
 		justify-content: flex-start;
@@ -4144,7 +4145,10 @@ textarea.inp-frm {
 	.list-board-v8 .t-tit {
 		margin-bottom: 12px;
 		flex: auto;
-		width: calc(100% - 40px);
+		padding-right: 40px;
+	}
+	.list-board-v8 .t-status + .t-tit {
+		padding-right: 0;
 	}
 	.list-board-v8 .t-status {
 		font-weight: 700;
