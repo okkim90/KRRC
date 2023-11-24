@@ -3108,6 +3108,7 @@ textarea.inp-frm {
 	color: #666;
 }
 .list-comment .comment-day {
+	flex: 1;
 	color: #959595;
 }
 .list-comment .comment-data {
