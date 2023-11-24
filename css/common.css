@@ -2862,6 +2862,7 @@ textarea.inp-frm {
 }
 .top-board .tit-group {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 16px;
 }
@@ -4250,11 +4251,11 @@ textarea.inp-frm {
 
 	/*board style*/
 	.top-board {
-		padding: 14px 16px;
-		box-sizing: border-box;
+		padding: 20px 0;
+		/* box-sizing: border-box; */
 	}
 	.top-board .tit-group {
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 	}
 	.top-board .tit-group .type {
 		height: 22px;
@@ -4264,7 +4265,12 @@ textarea.inp-frm {
 		font-size: 13px;
 	}
 	.top-board .tit-group .tit {
-		font-size: 16px;
+		font-size: 18px;
+		width: 100%;
+		margin-top: 12px;
+	}
+	.top-board .board-data .txt-group {
+		margin-right: 20px;
 	}
 	.top-board .board-data .txt-group .tit {
 		font-size: 12px;
