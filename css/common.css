@@ -2986,10 +2986,10 @@ textarea.inp-frm {
 .board-content + .btn-group-bottom {
 	margin-top: 40px;
 }
+.file-group + .btn-group-bottom,
 .comment-group + .btn-group-bottom {
 	margin-top: 60px;
 }
-
 .video-group {
 	position: relative;
 	width: 720px;
@@ -4285,11 +4285,11 @@ textarea.inp-frm {
 		padding: 0 8px;
 		box-sizing: border-box;
 		font-size: 13px;
+		margin-bottom: 12px;
 	}
 	.top-board .tit-group .tit {
 		font-size: 18px;
 		width: 100%;
-		margin-top: 12px;
 	}
 	.top-board .board-data .txt-group {
 		margin-right: 20px;
@@ -4315,6 +4315,7 @@ textarea.inp-frm {
 	.board-content + .btn-group-bottom {
 		margin-top: 20px;
 	}
+	.file-group + .btn-group-bottom,
 	.comment-group + .btn-group-bottom {
 		margin-top: 40px;
 	}
