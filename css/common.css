@@ -2163,6 +2163,7 @@ textarea.inp-frm {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-bottom: 24px;
 	padding: 28px 0;
 	box-sizing: border-box;
@@ -2186,6 +2187,7 @@ textarea.inp-frm {
 }
 .board-search .search-group {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
 }
@@ -2732,15 +2734,12 @@ textarea.inp-frm {
 }
 
 .no-data {
-	margin-top: 60px;
+	margin: 40px 0;
 	text-align: center;
-}
-.no-data-v1 {
-	margin-bottom: 60px;
 }
 .no-data img {
 	display: block;
-	margin: 0 auto 20px;
+	margin: 0 auto 12px;
 }
 .no-data .tit {
 	margin-bottom: 10px;
@@ -2751,12 +2750,7 @@ textarea.inp-frm {
 .no-data .txt {
 	font-size: 16px;
 	font-weight: 400;
-	color: #666;
-}
-.no-data .txt a {
-	font-weight: 500;
-	color: #1a95ce;
-	text-decoration: underline;
+	color: #999;
 }
 
 /*video style*/
@@ -3845,14 +3839,19 @@ textarea.inp-frm {
 
 	/*search style*/
 	.board-search {
-		display: block;
 		margin: 0 -20px 40px;
 		padding: 28px 20px;
 		box-sizing: border-box;
+		justify-content: space-between;
 	}
 	.board-search .filter-group {
-		margin-bottom: 10px;
+		flex: 1;
+		margin-bottom: 8px;
 		margin-right: 0;
+	}
+	.board-search .filter-group + .filter-group {
+		width: 50%;
+		margin-left: 8px;
 	}
 	.board-search .filter-group .select-custom {
 		width: 100%;
@@ -3865,7 +3864,6 @@ textarea.inp-frm {
 
 	.board-search .search-group {
 		width: 100%;
-		flex-direction: column;
 	}
 	.board-search .search-group .inp-search {
 		width: 100%;
@@ -4157,22 +4155,12 @@ textarea.inp-frm {
 		background: #bebebe;
 	}
 
-	.no-data {
-		margin-top: 30px;
-	}
-	.no-data-v1 {
-		margin-bottom: 30px;
-	}
 	.no-data img {
-		width: 70px;
-		margin-bottom: 15px;
+		width: 80px;
 	}
 	.no-data .tit {
 		margin-bottom: 5px;
 		font-size: 16px;
-	}
-	.no-data .txt {
-		font-size: 14px;
 	}
 
 	/*video style*/
