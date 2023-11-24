@@ -132,6 +132,16 @@
   width: 15%;
 }
 
+/* view */
+.btn-group-bottom.top_gap {
+  margin-top: 60px;
+}
+@media only screen and (max-width: 1280px) {
+  .btn-group-bottom.top_gap {
+    margin-top: 40px;
+  }
+}
+
 .tab-menu-v3 {
   display: flex;
   flex-wrap: wrap;

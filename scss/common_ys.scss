@@ -14,6 +14,7 @@ $colors: (
     'bg': #f6f6f6,
     'fc_grey' : #666
 );
+
 :root{
     @each $key, $value in $colors {
         --#{$key} : #{$value};
@@ -26,6 +27,7 @@ $colors: (
     }
     @return var(--#{unquote($name)});
 }
+
 
 
 
@@ -168,6 +170,17 @@ $colors: (
     
     .t-count {
         width: 15%;
+    }
+}
+
+
+/* view */ 
+.btn-group-bottom {
+    &.top_gap {
+        margin-top: 60px;
+        @include tablet {
+            margin-top: 40px;
+        }
     }
 }
 
