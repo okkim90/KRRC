@@ -449,6 +449,7 @@ a.btn-custom-v2:disabled {
 	right: 0;
 	top: 0;
 }
+.btn-wrtie,
 a.btn-wrtie {
 	display: flex;
 	justify-content: center;
@@ -456,10 +457,13 @@ a.btn-wrtie {
 	width: 120px;
 	height: 40px;
 	border: none;
-	background: #0f80a1;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	color: #fff;
+	padding-left: 16px;
+	background: url('../img/ico_write.svg') 16px center no-repeat #0f80a1;
+	background-size: 16px auto;
+	box-sizing: border-box;
 	transition: 0.2s all ease-out;
 }
 
@@ -2795,12 +2799,12 @@ textarea.inp-frm {
 /*paging style*/
 .paging-wrap {
 	position: relative;
-	margin: 40px 0;
 }
 .paging {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 40px 0;
 }
 .paging a {
 	display: flex;
@@ -3325,7 +3329,7 @@ textarea.inp-frm {
 		padding: 0;
 	}
 	.container {
-		padding-top: 68px;
+		padding: 68px 0 100px;
 		box-sizing: border-box;
 	}
 	.wrapper:before {
@@ -4137,6 +4141,21 @@ textarea.inp-frm {
 	.list-board-v8 .td.m-mr {
 		margin-right: 15px;
 	}
+	.list-board-v8 .t-view .m-tit {
+		position: relative;
+		padding-right: 12px;
+		margin-right: 12px;
+	}
+	.list-board-v8 .t-view .m-tit::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 4px;
+		right: 0;
+		width: 1px;
+		height: 12px;
+		background: #bebebe;
+	}
 
 	.no-data {
 		margin-top: 30px;
@@ -4190,9 +4209,6 @@ textarea.inp-frm {
 	}
 
 	/*paging style*/
-	.paging-wrap {
-		margin-bottom: 0;
-	}
 	.paging .num {
 		margin: 0;
 	}
@@ -4200,9 +4216,11 @@ textarea.inp-frm {
 		display: none;
 	}
 	.paging .btn-paging-prev {
+		margin: 0;
 		margin-right: auto;
 	}
 	.paging .btn-paging-next {
+		margin: 0;
 		margin-left: auto;
 	}
 	.paging .btn-paging-prev2,
