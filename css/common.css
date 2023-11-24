@@ -1218,7 +1218,6 @@ textarea.inp-frm {
 
 .upload-group .top {
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: center;
 	margin-bottom: 8px;
 }
@@ -1248,7 +1247,6 @@ textarea.inp-frm {
 	align-items: center;
 	margin-bottom: 8px;
 	padding: 4px 4px 4px 12px;
-	/* border-radius: 4px; */
 	box-sizing: border-box;
 	background: #f9f9f9;
 }
@@ -1256,7 +1254,6 @@ textarea.inp-frm {
 	margin-bottom: 0;
 }
 .upload-group .attach-group .tit {
-	/* width: calc(100% - 270px); */
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -1311,8 +1308,6 @@ textarea.inp-frm {
 	color: #fff;
 }
 .upload-group .attach-group .btn-delete {
-	/* position: absolute;
-	right: 0; */
 	width: 60px;
 	height: 32px;
 	padding: 8px 12px;
@@ -3371,8 +3366,6 @@ textarea.inp-frm {
 		width: 100%;
 	}
 	.ly-group .ly-l {
-		/* margin-top: 0;
-		margin-bottom: 40px; */
 		padding-top: 0;
 	}
 	.ly-group .ly-r {
@@ -3399,10 +3392,6 @@ textarea.inp-frm {
 	.btn-group3 {
 		margin-top: 30px;
 	}
-
-	/* .btn-upload label {
-		font-size: 14px;
-	} */
 
 	/*checkbox & radio button style*/
 	.ck-custom2 + label {
@@ -3542,9 +3531,6 @@ textarea.inp-frm {
 	.btn-frm {
 		font-size: 14px;
 	}
-	/* .frm-info {
-		font-size: 14px;
-	} */
 
 	.inp-group-date .inp-date {
 		width: calc(100% - 48px);
@@ -3709,14 +3695,10 @@ textarea.inp-frm {
 	.upload-group .attach-group .process-group {
 		justify-content: flex-start;
 		flex: 1;
-		/* display: none; */
 	}
 	.upload-group .attach-group .process-group .bar-group {
 		width: 1px;
 		flex: 1;
-	}
-	.upload-group .attach-group .btn-delete {
-		/* background-size: 14px; */
 	}
 
 	.list-frm2 .th {
