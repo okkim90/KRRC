@@ -150,43 +150,43 @@
   }
 }
 
-.board-search.ty_detail {
+.board-search.ty_deal {
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
 }
 @media only screen and (max-width: 1280px) {
-  .board-search.ty_detail {
+  .board-search.ty_deal {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.board-search.ty_detail .search-group {
+.board-search.ty_deal .search-group {
   flex: 1;
   justify-content: flex-end;
   margin-left: 40px;
 }
 @media only screen and (max-width: 1280px) {
-  .board-search.ty_detail .search-group {
+  .board-search.ty_deal .search-group {
     margin-left: 0;
   }
 }
-.board-search.ty_detail .search-group .inp-search {
+.board-search.ty_deal .search-group .inp-search {
   flex: 1;
   width: auto;
 }
 @media only screen and (max-width: 1280px) {
-  .board-search.ty_detail .btn-group {
+  .board-search.ty_deal .btn-group {
     display: flex;
     width: 100%;
     margin-bottom: 16px;
   }
 }
-.board-search.ty_detail .btn-group .btn-custom {
+.board-search.ty_deal .btn-group .btn-custom {
   height: 40px;
   font-size: 14px;
 }
-.board-search.ty_detail .btn-group .btn-custom.active {
+.board-search.ty_deal .btn-group .btn-custom.active {
   background-color: var(--key2);
   color: #fff;
   border: none;
