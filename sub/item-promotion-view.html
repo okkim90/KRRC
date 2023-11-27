@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+  <title>디지털 융합 기술지원 플랫폼</title>
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <!-- <link rel="stylesheet" href="../css/page.css"> -->
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/swiper.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    $(function () {
+      var swiper1 = new Swiper(".js-swiper", {
+        pagination: {
+          el: ".js-swiper-pagination",
+          clickable: true,
+        },
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="hd">
+      <div class="inner">
+        <h1 class="hd-logo">
+          <a href="index.html"><img src="../img/logo.svg" alt="로봇리퍼브플랫폼"></a>
+        </h1>
+        <ol class="gnb js-gnb">
+          <li><a href="#">서비스 소개</a></li>
+          <li><a href="#">장비 거래</a></li>
+          <li><a href="#">지원 서비스</a></li>
+          <li><a href="#">커뮤니티</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ol>
+        <ol class="hd-menu">
+          <!--[D] 로그인 상태 -->
+          <li class="hd-btn-mypage"><a href="#">마이페이지</a>
+            <ul class="hd-menu-sub">
+              <li>
+                <a href="#">1:1 문의 내역</a>
+              </li>
+              <li>
+                <a href="#">리버프 로봇/부품 관리</a>
+              </li>
+              <li>
+                <a href="#">상품 등록 관리</a>
+              </li>
+              <li>
+                <a href="#">판매 기본 설정</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">로그아웃</a></li>
+          <!-- [D] 로그아웃상태일때 -->
+          <!-- <li><a href="#">회원가입</a></li>
+					<li><a href="#">로그인</a></li> -->
+        </ol>
+        <button type="button" class="hd-hamburger js-hamburger"></button>
+      </div>
+    </div>
+    <div class="depth">
+      <ol class="lnb js-lnb">
+        <li>
+          <a href="#">센터 소개</a>
+          <a href="#">서비스 안내</a>
+          <a href="#">리버프 사례</a>
+          <a href="#">리버프 공정 소개</a>
+          <a href="#">리버프 기술 소개</a>
+        </li>
+        <li>
+          <a href="#">리버프 로봇</a>
+          <a href="#">리버프 부품</a>
+          <a href="#">신품 로봇</a>
+          <a href="#">신품 부품</a>
+          <a href="#">기타</a>
+        </li>
+        <li>
+          <a href="#">ROI분석 서비스</a>
+          <a href="#">시험성적서 진위여부</a>
+        </li>
+        <li>
+          <a href="#">리버프 동향 정보</a>
+          <a href="#">세미나/교육안내</a>
+          <a href="#">정보공유</a>
+          <a href="#">자유게시판</a>
+          <a href="#">기업 홍보</a>
+          <a href="#">제품 홍보</a>
+        </li>
+        <li>
+          <a href="#">공지사항</a>
+          <a href="#">자료실</a>
+          <a href="#">FAQ</a>
+        </li>
+      </ol>
+    </div>
+  </header>
+  <!--모바일 메뉴-->
+  <div class="m-gnb">
+    <div class="top">
+      <a href="index.html" class="m-logo"><img src="../img/logo.svg" alt="로봇리퍼브플랫폼"></a>
+      <input type="button" value=" " class="m-gnb-close js-hamburger-close">
+    </div>
+    <ol class="list-m-gnb">
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">서비스 소개</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">센터 소개</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">서비스 안내</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 사례</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 공정 소개</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 기술 소개</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">장비 거래</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 로봇</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 부품</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">신품 로봇</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">신품 부품</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">기타</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">지원 서비스</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">ROI분석 서비스</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">시험성적서 진위여부</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">커뮤니티</div>
+
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 동향 정보</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">세미나/교육안내</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">정보공유</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">자유게시판</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">기업 홍보</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">제품 홍보</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">고객센터</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">공지사항</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">자료실</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">FAQ</a>
+          </div>
+        </div>
+      </li>
+      <!-- [D] 로그인 상태 - 마이페이지  -->
+      <li class="list-m-gnb-item" style="display: block;">
+        <div class="menu js-fold">마이페이지</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">1:1 문의 내역</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 로봇/부품 관리</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">상품 등록 관리</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">판매 기본 설정</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class="btn-group-bottom">
+      <!--[D] 로그아웃 상태 -->
+      <a href="#" class="btn"><i class="ico ico-join"></i>회원가입</a>
+      <a href="#" class="btn"><i class="ico ico-login"></i>로그인</a>
+      <!-- [D] 로그인 상태 -->
+      <!-- <a href="#" class="btn"><i class="ico ico-logout"></i>로그아웃</a> -->
+    </div>
+  </div>
+  <div class="m-gnb-bg js-hamburger-close"></div>
+  <!--//모바일 메뉴-->
+
+  <section>
+    <div class="container">
+      <div class="sub-visual">
+        <div class="bg"></div>
+        <div class="tit-group">
+          <div class="tit">커뮤니티</div>
+          <div class="breadcrumb">
+            <a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
+            <a href="#">커뮤니티</a>
+            <a href="share.html">제품홍보</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="wrap">
+          <div class="ly-group">
+            <div class="ly-l">
+              <div class="snb">
+                <div class="box">
+                  <a href="#" class="menu">리버프 동향 안내</a>
+                </div>
+                <div class="box">
+                  <a href="#" class="menu">세미나/교육안내</a>
+                </div>
+                <div class="box">
+                  <a href="#" class="menu">정보공유</a>
+                </div>
+                <div class="box">
+                  <a href="#" class="menu">자유게시판</a>
+                </div>
+                <div class="box">
+                  <a href="#" class="menu">기업홍보</a>
+                </div>
+                <div class="box">
+                  <a href="#" class="menu active">제품홍보</a>
+                </div>
+              </div>
+
+              <div class="m-snb">
+                <div class="dropdown">
+                  <div class="tit fold js-fold">
+                    <div class="menu">커뮤니티</div>
+                  </div>
+                  <div class="list js-unfold">
+                    <a href="#">서비스 소개</a>
+                    <a href="#">장비 거래</a>
+                    <a href="#">지원 서비스</a>
+                    <a href="#">고객센터</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <div class="tit fold js-fold">
+                    <div class="menu">제품홍보</div>
+                  </div>
+                  <div class="list js-unfold">
+                    <a href="#">세미나/교육안내</a>
+                    <a href="#">리버프 동향 안내</a>
+                    <a href="#">정보공유</a>
+                    <a href="#">자유게시판</a>
+                    <a href="#">기업홍보</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ly-r">
+              <div class="top-page">
+                <div class="tit">제품홍보</div>
+              </div>
+              <div class="item-view">
+                <div class="item-basic">
+                  <div class="slide-gallery">
+                    <div class="swiper js-swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="../img/img_transparent1.png" alt="썸네일" class="thumb pc"
+                            style="background: url('../img/tmp/img_picture2.png') center center no-repeat #A2D2DE; background-size: 100px auto;">
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img src="../img/img_transparent1.png" alt="썸네일" class="thumb pc"
+                            style="background: url('../img/tmp/img_picture2.png') center center no-repeat #A2D2DE; background-size: 100px auto;">
+                        </div>
+
+                        <div class="swiper-slide">
+                          <img src="../img/img_transparent1.png" alt="썸네일" class="thumb pc"
+                            style="background: url('../img/tmp/img_picture2.png') center center no-repeat #A2D2DE; background-size: 100px auto;">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="pagination-group">
+                      <div class="swiper-pagination js-swiper-pagination"></div>
+                    </div>
+                  </div>
+
+                  <div class="item-info">
+                    <div class="item-name">협동로봇</div>
+                    <div class="item-detail">
+                      <div class="txt-group">
+                        <div class="tit">장비구분</div>
+                        <div class="txt">로봇</div>
+                      </div>
+                      <div class="txt-group">
+                        <div class="tit">기업명</div>
+                        <div class="txt">레인보우로보틱스</div>
+                      </div>
+                      <div class="txt-group">
+                        <div class="tit">기업주소</div>
+                        <div class="txt">대전광역시 유성구 엑스포로339번길 10-19
+                        </div>
+                      </div>
+                      <div class="txt-group">
+                        <div class="tit">대표연락처</div>
+                        <div class="txt">042-298-7547</div>
+                      </div>
+                      <div class="txt-group">
+                        <div class="tit">대표이메일</div>
+                        <div class="txt">help@rainbow.co.kr
+                        </div>
+                      </div>
+                      <div class="txt-group">
+                        <div class="tit">판매금액</div>
+                        <div class="txt">13,000,000 원 or 별도협의
+                        </div>
+                      </div>
+                      <div class="txt-group">
+                        <div class="tit">등록일자</div>
+                        <div class="txt">2023-10-16
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-container">
+                  <div class="article-group">
+                    <div class="top-article">
+                      <div class="tit">장비 정보</div>
+                    </div>
+                    <table class="tbl">
+                      <tr>
+                        <th>제작사</th>
+                        <td>레인보우로보틱스</td>
+                      </tr>
+                      <tr>
+                        <th>모델명</th>
+                        <td>RB5-850</td>
+                      </tr>
+                      <tr>
+                        <th>요약정보</th>
+                        <td>RB시리즈는 기존 생산라인의 작업 플로우를 방해하지 않고 자연스럽게 작업환경에 녹아들어 주어진 업무 수행이 가능합니다.지루한 반복 작업이나, 위험한 생산 라인에
+                          투입될 수 있으며 제조 생산뿐만 아닌 서비스 산업에도 활용될 수 있습니다.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>용도</th>
+                        <td>협동로봇</td>
+                      </tr>
+                      <tr>
+                        <th>무게</th>
+                        <td>21kg</td>
+                      </tr>
+                      <tr>
+                        <th>크기</th>
+                        <td>435X500X1325 mm
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>홈페이지</th>
+                        <td>https://www.rainbow-robotics.com
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <div class="article-group">
+                    <div class="top-article">
+                      <div class="tit">제품설명</div>
+                    </div>
+                    <div class="article-content">
+                      <div class="txt-group">
+                        <div class="txt">
+                          <p>유압식이 아닌 기계식 제어로 인한 장비의 정밀한 제어 및 구동이 가능함</p>
+                          <p>유압식이 아닌 기계식 제어로 인한 장비의 정밀한 제어 및 구동이 가능함</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="article-group">
+                    <div class="top-article">
+                      <div class="tit">제품 사양 및 성능</div>
+                    </div>
+                    <div class="article-content">
+                      <div class="txt-group">
+                        <div class="txt">
+                          <p>유압식이 아닌 기계식 제어로 인한 장비의 정밀한 제어 및 구동이 가능함</p>
+                          <p>유압식이 아닌 기계식 제어로 인한 장비의 정밀한 제어 및 구동이 가능함</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="article-group">
+                    <div class="top-article">
+                      <div class="tit">제품 자료</div>
+                    </div>
+                    <ul class="file-content">
+                      <li>
+                        <a href="#">첨부파일명이 표시됩니다.ppt</a>
+                      </li>
+                      <li>
+                        <a href="#">첨부파일명이 표시됩니다.ppt</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="btn-group-bottom">
+                    <a href="#" class="btn btn-custom btn-custom-v1">목록으로</a>
+                    <button type="button" class="btn btn-custom btn-custom-v2">수정하기</button>
+                    <button type="button" class="btn btn-custom">삭제하기</button>
+                  </div>
+                  <div class="board-navigation">
+                    <dl>
+                      <dt class="tit">이전</dt>
+                      <dd><a href="#">이전 글의 제목이 표시됩니다.</a></dd>
+                    </dl>
+                    <dl>
+                      <dt class="tit">다음</dt>
+                      <dd><a href="#">다음 글의 제목이 표시됩니다.</a></dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="ft">
+      <div class="inner">
+        <div class="fnb">
+          <div class="ft-menu">
+            <a href="#">센터소개</a>
+            <a href="#">이용약관</a>
+            <a href="#"><b>개인정보취급방침</b></a>
+          </div>
+        </div>
+
+        <div class="ft-info">
+          <div class="company-info">
+            <div class="txt-group">
+              <div class="tit">대표번호</div>
+              <div class="txt">031-330-7114</div>
+            </div>
+
+            <div class="txt-group">
+              <div class="tit">팩스</div>
+              <div class="txt">031-330-7111</div>
+            </div>
+
+            <div class="txt-group w100">
+              <div class="tit">사업자등록번호</div>
+              <div class="txt">104-82-04565</div>
+            </div>
+
+            <div class="txt-group w100">
+              <div class="tit">대표자</div>
+              <div class="txt">김덕중</div>
+            </div>
+
+            <div class="txt-group w100">
+              <div class="tit">상호</div>
+              <div class="txt">고등기술연구원연구조합</div>
+            </div>
+
+            <div class="txt-group w100">
+              <div class="tit">정보관리책임명</div>
+              <div class="txt">이정승</div>
+            </div>
+          </div>
+
+          <div class="ft-cs">
+            <strong class="tit">고객센터</strong>
+            <p class="tel">031-330-7455</p>
+            <p class="desc">월~금 10:00~18:00 토,일,공휴일 휴무</p>
+          </div>
+        </div>
+
+        <div class="ft-bottom">
+          <button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+          <p class="ft-address">경기도 용인시 처인구 백암면 고안로 51번길 175-28 고등기술연구원연구조합</p>
+          <div class="copyright">ⓒ 고등기술연구원 시험분석센터. All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
