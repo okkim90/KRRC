@@ -2711,6 +2711,18 @@ textarea.inp-frm {
 	min-width: 0;
 	justify-content: flex-start;
 }
+.list-board-v8 .t-tit.new a {
+	max-width: calc(100% - 28px);
+}
+.list-board-v8 .t-tit.new::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: 8px;
+	background: url('../img/ico_new.svg') center center no-repeat;
+	background-size: 100% auto;
+}
 .list-board-v8 .t-file {
 	width: 7%;
 }
@@ -2719,6 +2731,9 @@ textarea.inp-frm {
 	min-width: 50px;
 }
 .list-board-v8 .t-date {
+	width: 12%;
+}
+.list-board-v8 .t-date2 {
 	width: 12%;
 }
 .list-board-v8 .t-view {
@@ -2744,6 +2759,19 @@ textarea.inp-frm {
 
 .list-board-v8 .t-count {
 	width: 15%;
+}
+
+.list-board-v8 .t-compony {
+	width: 20%;
+	justify-content: flex-start;
+}
+.list-board-v8 .t-compony span {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.list-board-v8 .t-loca {
+	width: 10%;
 }
 
 .no-data {
@@ -3108,7 +3136,6 @@ textarea.inp-frm {
 	color: #666;
 }
 .list-comment .comment-day {
-	flex: 1;
 	color: #959595;
 }
 .list-comment .comment-data {
@@ -3692,7 +3719,6 @@ textarea.inp-frm {
 		position: absolute;
 		right: 12px;
 		top: 4px;
-		margin-right: 0;
 	}
 	.upload-group .attach-group .process-group {
 		justify-content: flex-start;
@@ -4139,13 +4165,20 @@ textarea.inp-frm {
 	.list-board-v8 .t-writer,
 	.list-board-v8 .t-reserve-date,
 	.list-board-v8 .t-date,
-	.list-board-v8 .t-count {
-		margin-right: 15px;
+	.list-board-v8 .t-date2,
+	.list-board-v8 .t-count,
+	.list-board-v8 .t-view,
+	.list-board-v8 .t-loca {
+		min-width: 0;
+		font-size: 14px;
+		line-height: 1.4;
+		margin-right: 16px;
 	}
-	.list-board-v8 .t-tit {
+	.list-board-v8 .td.t-tit {
 		margin-bottom: 12px;
 		flex: auto;
-		padding-right: 40px;
+		width: 100%;
+		padding-right: 30px;
 	}
 	.list-board-v8 .t-status + .t-tit {
 		padding-right: 0;
@@ -4159,14 +4192,6 @@ textarea.inp-frm {
 		right: 0;
 		width: 40px;
 	}
-	.list-board-v8 .t-writer,
-	.list-board-v8 .t-date,
-	.list-board-v8 .t-view {
-		min-width: 0;
-		font-size: 14px;
-		line-height: 1.4;
-		margin-right: 16px;
-	}
 	.list-board-v8 .t-chk,
 	.list-board-v8 .t-no,
 	.list-board-v8 .t-reserve-no {
@@ -4174,7 +4199,7 @@ textarea.inp-frm {
 	}
 	.list-board-v8 .t-public {
 		order: 1;
-		margin-right: 15px;
+		margin-right: 16px;
 	}
 	.list-board-v8 .t-answer {
 		order: 2;
@@ -4192,17 +4217,38 @@ textarea.inp-frm {
 	.list-board-v8 .td.m-mr {
 		margin-right: 15px;
 	}
+	.list-board-v8 .t-loca .m-tit,
+	.list-board-v8 .t-date2 .m-tit,
 	.list-board-v8 .t-view .m-tit {
 		position: relative;
 		padding-right: 12px;
 		margin-right: 12px;
 	}
+	.list-board-v8 .t-loca .m-tit::after,
+	.list-board-v8 .t-date2 .m-tit::after,
 	.list-board-v8 .t-view .m-tit::after {
 		content: '';
 		display: block;
 		position: absolute;
 		top: 4px;
 		right: 0;
+		width: 1px;
+		height: 12px;
+		background: #bebebe;
+	}
+	.list-board-v8 .t-compony {
+		position: absolute;
+		top: 24px;
+		left: 40px;
+		padding-left: 12px;
+		width: calc(100% - 46px);
+	}
+	.list-board-v8 .t-compony::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: 0;
 		width: 1px;
 		height: 12px;
 		background: #bebebe;

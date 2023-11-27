@@ -216,6 +216,7 @@
   </div>
   <div class="m-gnb-bg js-hamburger-close"></div>
   <!--//모바일 메뉴-->
+
   <section>
     <div class="container">
       <div class="sub-visual">
@@ -225,7 +226,7 @@
           <div class="breadcrumb">
             <a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
             <a href="#">커뮤니티</a>
-            <a href="share.html">리버프 동향 안내</a>
+            <a href="share.html">제품홍보</a>
           </div>
         </div>
       </div>
@@ -235,7 +236,7 @@
             <div class="ly-l">
               <div class="snb">
                 <div class="box">
-                  <a href="#" class="menu active">리버프 동향 안내</a>
+                  <a href="#" class="menu">리버프 동향 안내</a>
                 </div>
                 <div class="box">
                   <a href="#" class="menu">세미나/교육안내</a>
@@ -250,9 +251,10 @@
                   <a href="#" class="menu">기업홍보</a>
                 </div>
                 <div class="box">
-                  <a href="#" class="menu">제품홍보</a>
+                  <a href="#" class="menu active">제품홍보</a>
                 </div>
               </div>
+
               <div class="m-snb">
                 <div class="dropdown">
                   <div class="tit fold js-fold">
@@ -267,67 +269,113 @@
                 </div>
                 <div class="dropdown">
                   <div class="tit fold js-fold">
-                    <div class="menu">리버프 동향 안내</div>
+                    <div class="menu">제품홍보</div>
                   </div>
                   <div class="list js-unfold">
                     <a href="#">세미나/교육안내</a>
+                    <a href="#">리버프 동향 안내</a>
                     <a href="#">정보공유</a>
                     <a href="#">자유게시판</a>
                     <a href="#">기업홍보</a>
-                    <a href="#">제품홍보</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="ly-r">
               <div class="top-page">
-                <div class="tit">리퍼브 동향 안내</div>
+                <div class="tit">제품홍보</div>
               </div>
-              <div class="top-board">
-                <div class="tit-group">
-                  <div class="tit">만능시험기 사용 방법 정보 공유합니다.</div>
+              <div class="board-search">
+                <div class="filter-group">
+                  <select class="select-custom">
+                    <option>구분</option>
+                    <option>로봇</option>
+                    <option>부품</option>
+                    <option>S/W</option>
+                    <option>기타</option>
+                  </select>
                 </div>
-                <div class="board-data">
-                  <div class="txt-group">
-                    <div class="tit">작성자</div>
-                    <div class="txt">hon***</div>
-                  </div>
-                  <div class="txt-group">
-                    <div class="tit">등록일</div>
-                    <div class="txt">2021.01.11</div>
-                  </div>
+                <div class="filter-group">
+                  <select class="select-custom">
+                    <option>전체</option>
+                    <option>제품명</option>
+                    <option>기업명</option>
+                  </select>
+                </div>
+                <div class="search-group">
+                  <input type="text" placeholder="검색어를 입력해주세요." class="inp-search">
+                  <button type="button" class="btn-search">검색</button>
+                </div>
+              </div>
 
-                  <div class="txt-group">
-                    <div class="tit">조회수</div>
-                    <div class="txt">125</div>
+              <div class="board-count">총 <span>99</span>건</div>
+
+              <ol class="list-board list-board-v8">
+                <li>
+                  <div class="th t-no">No</div>
+                  <div class="th t-status">구분</div>
+                  <div class="th t-tit">제목</div>
+                  <div class="th t-compony">기업명</div>
+                  <div class="th t-loca">지역</div>
+                  <div class="th t-date2">등록일</div>
+                </li>
+                <li>
+                  <div class="td t-no"><span class="m-tit">No</span>9999</div>
+                  <div class="td t-status">로봇</div>
+                  <div class="td t-tit new"><a href="#">게시판 제목입니다.</a></div>
+                  <div class="td t-compony"><span>선우이엔지</span></div>
+                  <div class="td t-loca"><span class="m-tit">지역</span>서울</div>
+                  <div class="td t-date2"><span class="m-tit">등록일</span>2021.01.11</div>
+                </li>
+                <li>
+                  <div class="td t-no"><span class="m-tit">No</span>9999</div>
+                  <div class="td t-status">로봇</div>
+                  <div class="td t-tit new"><a href="#">게시판 제목입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다.</a></div>
+                  <div class="td t-compony"><span>한국도키맥주식회사</span></div>
+                  <div class="td t-loca"><span class="m-tit">지역</span>경기</div>
+                  <div class="td t-date2"><span class="m-tit">등록일</span>2021.01.11</div>
+                </li>
+
+                <li>
+                  <div class="td t-no"><span class="m-tit">No</span>9999</div>
+                  <div class="td t-status">로봇</div>
+                  <div class="td t-tit"><a href="#">게시판 제목입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다.</a></div>
+                  <div class="td t-compony"><span>마틴프라우트</span></div>
+                  <div class="td t-loca"><span class="m-tit">지역</span>경남</div>
+                  <div class="td t-date2"><span class="m-tit">등록일</span>2021.01.11</div>
+                </li>
+                <li>
+                  <div class="td t-no c1"><span class="m-tit">No</span>9999</div>
+                  <div class="td t-status">로봇</div>
+                  <div class="td t-tit"><a href="#">게시판 제목입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다.</a></div>
+                  <div class="td t-compony"><span>기업명 표시 한줄 이상일 경우기업명 표시 한줄 이상일 경우</span></div>
+                  <div class="td t-loca"><span class="m-tit">지역</span>전북</div>
+                  <div class="td t-date2"><span class="m-tit">등록일</span>2021.01.11</div>
+                </li>
+              </ol>
+
+              <div class="no-data">
+                <img src="../img/ico_nodata.svg" alt=" ">
+                <div class="txt">검색 결과가 없습니다.</div>
+              </div>
+
+              <div class="paging-wrap">
+                <div class="paging">
+                  <a href="#" class="btn-paging btn-paging-prev2"></a>
+                  <a href="#" class="btn-paging btn-paging-prev"></a>
+                  <div class="num">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
                   </div>
+                  <a href="#" class="btn-paging btn-paging-next"></a>
+                  <a href="#" class="btn-paging btn-paging-next2"></a>
                 </div>
-              </div>
-              <div class="board-content">
-                <div class="txt">만능 시험기 사용방법 입니다. <br><br>내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다. 내용은 여러 줄
-                  들어갑니다. 내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다.
-                  내용은 여러 줄 들어갑니다. 내용은 여러 줄 들어갑니다. <br><br>내용은 여러 줄 들어갑니다.</div>
-              </div>
-              <div class="file-group">
-                <div class="tit"><img src="../img/ico_clip1.svg" alt=" ">첨부파일</div>
-                <div class="download-group">
-                  <a href="#">첨부파일명이 표시됩니다.hwp</a>
-                  <a href="#">첨부파일명이 표시됩니다.ppt</a>
+                <div class="btn-group-r">
+                  <a href="#" class="btn btn-wrtie">글 작성하기</a>
                 </div>
-              </div>
-              <div class="btn-group-bottom">
-                <a href="#" class="btn btn-custom btn-custom-v1">목록으로</a>
-                <button type="button" class="btn btn-custom btn-custom">삭제하기</button>
-              </div>
-              <div class="board-navigation">
-                <dl>
-                  <dt class="tit">이전</dt>
-                  <dd><a href="#">이전 글의 제목이 표시됩니다.</a></dd>
-                </dl>
-                <dl>
-                  <dt class="tit">다음</dt>
-                  <dd><a href="#">다음 글의 제목이 표시됩니다.</a></dd>
-                </dl>
               </div>
             </div>
           </div>
@@ -398,7 +446,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
