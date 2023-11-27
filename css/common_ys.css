@@ -241,6 +241,9 @@
 .list-board-v9 .t-type2 {
   width: 15%;
 }
+.list-board-v9 .t-type3 {
+  width: 10%;
+}
 .list-board-v9 .t-status {
   width: 10%;
 }
@@ -254,6 +257,12 @@
   flex: 1;
   min-width: 0;
   justify-content: flex-start;
+}
+.list-board-v9 .t-tit i {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 10px;
 }
 .list-board-v9 .t-file {
   width: 7%;
@@ -504,13 +513,20 @@
     width: 100%;
     max-width: calc(100% - 40px);
   }
+  .list-board-v9 .t-tit i {
+    margin-left: auto;
+  }
+  .list-board-v9 .t-tit.w100 {
+    max-width: 100%;
+  }
   .list-board-v9 .t-status {
-    font-weight: 700;
+    margin-bottom: 4px;
   }
   .list-board-v9 .t-file {
     width: 40px;
     align-self: flex-start;
   }
+  .list-board-v9 .t-type3,
   .list-board-v9 .t-writer,
   .list-board-v9 .t-date,
   .list-board-v9 .t-view {
@@ -561,6 +577,21 @@
     width: 1px;
     height: 12px;
     background: #bebebe;
+  }
+  .list-board-v9 .td.m-od1 {
+    order: 1;
+  }
+  .list-board-v9 .td.m-od2 {
+    order: 2;
+  }
+  .list-board-v9 .td.m-od3 {
+    order: 3;
+  }
+  .list-board-v9 .td.m-od4 {
+    order: 4;
+  }
+  .list-board-v9 .td.m-od5 {
+    order: 5;
   }
 }
 .board-top-area {
@@ -940,6 +971,12 @@
 }
 .deal_detail_cont_sec {
   margin-top: 40px;
+}
+.deal_detail_cont .sec_tit {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 .deal_amount {
   display: flex;
