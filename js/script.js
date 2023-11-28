@@ -77,7 +77,7 @@ $(function () {
 	// header mypage 버튼
 	$('.hd-btn-mypage').click(function (e) {
 		e.preventDefault();
-		$('.hd-menu-sub').toggleClass('open');
+		$(this).toggleClass('open');
 	});
 
 	/*햄버거 메뉴*/

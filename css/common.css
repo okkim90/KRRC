@@ -1501,8 +1501,8 @@ textarea.inp-frm {
 }
 .lnb li {
 	position: relative;
-	width: 160px;
-
+	width: 11%;
+	max-width: 160px;
 	box-sizing: border-box;
 	border-right: 1px solid #eaeaea;
 }
@@ -1528,11 +1528,12 @@ textarea.inp-frm {
 	justify-content: flex-end;
 	align-items: center;
 	position: relative;
+	z-index: 2;
 }
 .hd .hd-menu > li {
 	position: relative;
 	margin-right: 12px;
-	padding-right: 13px;
+	padding-right: 12px;
 }
 .hd .hd-menu > li:not(:last-child)::after {
 	content: '';
@@ -1556,10 +1557,25 @@ textarea.inp-frm {
 	color: #333;
 }
 .hd .hd-menu > li.hd-btn-mypage {
-	padding-right: 28px;
-	cursor: pointer;
-	background: url('../img/common/btn_arrow.svg') right 12px center no-repeat;
-	background-size: 16px auto;
+	margin-right: 12px;
+}
+.hd .hd-menu > li.hd-btn-mypage > a {
+	position: relative;
+	padding-right: 16px;
+}
+.hd .hd-menu > li.hd-btn-mypage > a::after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	background: url('../img/common/btn_arrow.svg') center center no-repeat;
+	background-size: 100% auto;
+}
+.hd .hd-menu > li.hd-btn-mypage.open > a::after {
+	transform: rotate(180deg);
 }
 .hd-menu-sub {
 	display: none;
@@ -1571,7 +1587,7 @@ textarea.inp-frm {
 	border: 1px solid #eaeaea;
 	background: #fff;
 }
-.hd-menu-sub.open {
+.hd .hd-menu > li.hd-btn-mypage.open .hd-menu-sub {
 	display: block;
 }
 .hd-menu-sub li {
@@ -2121,7 +2137,7 @@ textarea.inp-frm {
 }
 
 /*article style*/
-.article-group:not(:last-child) {
+.article-group:not(:last-of-type) {
 	margin-bottom: 60px;
 }
 .top-article {
@@ -3324,7 +3340,7 @@ textarea.inp-frm {
 	box-sizing: border-box;
 }
 .tbl th {
-	width: 25%;
+	width: 188px;
 	padding: 20px;
 	box-sizing: border-box;
 	background: #f9f9f9;
@@ -3342,7 +3358,7 @@ textarea.inp-frm {
 	color: #666;
 }
 .tbl td {
-	width: 75%;
+	width: calc(100% - 188px);
 	padding: 20px;
 	box-sizing: border-box;
 	font-size: 16px;
@@ -4671,7 +4687,12 @@ textarea.inp-frm {
 	.table-group .btn-group {
 		margin-top: 20px;
 	}
-
+	.tbl th {
+		width: 25%;
+	}
+	.tbl td {
+		width: 75%;
+	}
 	.tbl th,
 	.tbl td {
 		padding: 14px 12px;
