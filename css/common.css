@@ -169,28 +169,28 @@ textarea {
 /*placeholder style*/
 input::-ms-input-placeholder {
 	font-weight: 400;
-	color: #bababa;
+	color: #999;
 }
 input::-webkit-input-placeholder {
 	font-weight: 400;
-	color: #bababa;
+	color: #999;
 }
 input::-moz-placeholder {
 	font-weight: 400;
-	color: #bababa;
+	color: #999;
 }
 
 textarea::-ms-input-placeholder {
 	font-weight: 400;
-	color: #bababa;
+	color: #999;
 }
 textarea::-webkit-input-placeholder {
 	font-weight: 400;
-	color: #bababa;
+	color: #999;
 }
 textarea::-moz-placeholder {
 	font-weight: 400;
-	color: #bababa;
+	color: #999;
 }
 
 /*scrollbar style*/
@@ -856,7 +856,7 @@ a.btn-wrtie {
 	box-sizing: border-box;
 	font-size: 14px;
 	font-weight: 400;
-	color: #999;
+	color: #333;
 	transition: 0.2s all ease-out;
 }
 .inp-frm:hover {
@@ -978,6 +978,7 @@ textarea.inp-frm {
 	border: none;
 	background: none;
 	cursor: pointer;
+	font-size: 14px;
 }
 .inp-group-date2 .unit {
 	display: flex;
@@ -2756,6 +2757,27 @@ textarea.inp-frm {
 .list-board-v8 .t-loca {
 	width: 10%;
 }
+.list-board-v10 li {
+	flex-wrap: wrap;
+}
+.list-board-v10 .t1 {
+	width: 8%;
+}
+.list-board-v10 .t2 {
+	width: 60%;
+}
+.list-board-v10 .t3 {
+	width: 6%;
+}
+.list-board-v10 .t4 {
+	width: 14%;
+}
+.list-board-v10 .t5 {
+	width: 12%;
+}
+.list-board-v10 .td.t2 {
+	justify-content: flex-start;
+}
 
 .no-data {
 	margin: 40px 0;
@@ -4385,6 +4407,39 @@ textarea.inp-frm {
 		position: absolute;
 		top: 6px;
 		left: 0;
+		width: 1px;
+		height: 12px;
+		background: #bebebe;
+	}
+	.list-board-v10 li {
+		display: flex;
+	}
+	.list-board-v10 .t1 {
+		display: none;
+	}
+	.list-board-v10 .t2 {
+		flex-basis: 100%;
+	}
+	.list-board-v10 .td:not(.t2) {
+		font-size: 14px;
+		margin-right: 16px;
+	}
+	.list-board-v10 .td .m-tit {
+		position: relative;
+		padding-right: 12px;
+		margin-right: 12px;
+	}
+	.list-board-v10 .t3 span {
+		position: relative;
+		padding-right: 12px;
+	}
+	.list-board-v10 .t3 span::after,
+	.list-board-v10 .td .m-tit::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 4px;
+		right: 0;
 		width: 1px;
 		height: 12px;
 		background: #bebebe;
