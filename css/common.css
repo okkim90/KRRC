@@ -608,7 +608,7 @@ a.btn-wrtie {
 	margin-right: 8px;
 	background: url('../img/ico_check3_off.svg') center center no-repeat;
 	background-size: contain;
-	vertical-align: -5px;
+	vertical-align: -6px;
 }
 .ck-custom4 + label .label {
 	font-size: 16px;
@@ -3631,13 +3631,13 @@ textarea.inp-frm {
 	}
 
 	.list-ck2 li {
-		width: 100%;
+		/* width: 100%; */
 		margin-right: 0;
-		margin-bottom: 8px;
+		/* margin-bottom: 8px; */
 	}
-	.list-ck2 li:last-child {
+	/* .list-ck2 li:last-child {
 		margin-bottom: 0;
-	}
+	} */
 	.list-ck-wrap {
 		display: block;
 	}
