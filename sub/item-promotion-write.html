@@ -33,6 +33,9 @@
           <li class="hd-btn-mypage"><a href="#">마이페이지</a>
             <ul class="hd-menu-sub">
               <li>
+                <a href="#">회원정보</a>
+              </li>
+              <li>
                 <a href="#">1:1 문의 내역</a>
               </li>
               <li>
@@ -289,6 +292,7 @@
                   <div class="frm">
                     <div class="top-frm">
                       <div class="tit">기본 정보</div>
+                      <div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
                     </div>
                     <ol class="list-frm">
                       <li class="tr s1">
@@ -296,7 +300,12 @@
                           <div class="tit">제품구분<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <select class="select-custom2">
+                            <option>로봇</option>
+                            <option>부품</option>
+                            <option>S/W</option>
+                            <option>기타</option>
+                          </select>
                         </div>
                       </li>
                       <li class="tr s1">
@@ -304,7 +313,7 @@
                           <div class="tit">제품명<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm" placeholder="제품명을 입력하세요.">
                         </div>
                       </li>
                       <li class="tr s1">
@@ -312,7 +321,7 @@
                           <div class="tit">기업명<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm" placeholder="기업명을 입력하세요.">
                         </div>
                       </li>
                       <li class="tr s1">
@@ -322,12 +331,11 @@
                         <div class="td">
                           <div class="inp-group-address">
                             <div>
-                              <input type="text" class="inp-frm" readonly>
-                              <button type="button" class="btn-frm btn-frm-v1">우편번호</button>
+                              <input type="text" class="inp-frm" readonly placeholder="주소를 입력해주세요.">
+                              <button type="button" class="btn-frm">주소 찾기</button>
                             </div>
                             <div>
-                              <input type="text" class="inp-frm" readonly>
-                              <input type="text" class="inp-frm">
+                              <input type="text" class="inp-frm" placeholder="상세주소를 입력해주세요.">
                             </div>
                           </div>
                         </div>
@@ -337,7 +345,7 @@
                           <div class="tit">대표 연락처<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm" placeholder="대표 연락처를 입력해주세요. (ex. 000-0000-0000)">
                         </div>
                       </li>
                       <li class="tr s1">
@@ -345,16 +353,7 @@
                           <div class="tit">대표 이메일<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <div class="inp-group-mail">
-                            <div>
-                              <input type="text" class="inp-frm">
-                              <span class="unit"><img src="../img/ico_at1.svg" alt=" "></span>
-                              <input type="text" class="inp-frm">
-                            </div>
-                            <select class="select-custom2">
-                              <option>직접입력</option>
-                            </select>
-                          </div>
+                          <input type="text" class="inp-frm" placeholder="대표 이메일을 입력해주세요.">
                         </div>
                       </li>
                       <li class="tr s1">
@@ -362,7 +361,7 @@
                           <div class="tit">대표자명<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm" placeholder="대표자명을 입력해주세요.">
                         </div>
                       </li>
                       <li class="tr s1">
@@ -370,7 +369,7 @@
                           <div class="tit">사업자등록번호<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm" placeholder="사업자등록번호를 입력해주세요. (ex. 000-00-00000)">
                         </div>
                       </li>
                       <li class="tr s1">
@@ -378,7 +377,8 @@
                           <div class="tit">홈페이지 주소</div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm"
+                            placeholder="홈페이지 주소를 입력해주세요.(ex. https://www.companyname.co.kr)">
                         </div>
                       </li>
                       <li class="tr s1">
@@ -394,6 +394,7 @@
                               </div>
                               <div class="frm-info">이미지 파일만 등록 가능합니다.(파일당 최대 5Mb, 최대 5개) – 600X600px 사이즈 이하 등록</div>
                             </div>
+                            <div class="attach-txt">파일 목록</div>
                             <div class="attach-group2">
                               <ol class="list-attach">
                                 <li>
@@ -403,7 +404,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -413,7 +414,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -423,7 +424,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -433,7 +434,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -443,7 +444,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -453,7 +454,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -463,7 +464,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -473,7 +474,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -483,7 +484,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -493,7 +494,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -503,7 +504,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -513,7 +514,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -523,7 +524,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                                 <li>
@@ -533,7 +534,7 @@
                                         style="background-image: url('../img/tmp/img_picture1.png');">
                                       <button type="button" class="btn-delete js-delete2"></button>
                                     </div>
-                                    <div class="tit">장비명장비명장비명</div>
+                                    <div class="tit">파일명입니다.</div>
                                   </div>
                                 </li>
                               </ol>
@@ -543,10 +544,10 @@
                       </li>
                     </ol>
                   </div>
-
                   <div class="frm">
                     <div class="top-frm">
                       <div class="tit">세부 정보</div>
+                      <div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
                     </div>
                     <ol class="list-frm">
                       <li class="tr s1">
@@ -570,7 +571,7 @@
                           <div class="tit">요약정보<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <textarea class="inp-frm"></textarea>
                         </div>
                       </li>
                       <li class="tr s1">
@@ -586,28 +587,31 @@
                           <div class="tit">판매 금액<span class="required">*</span></div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <div class="inp-group-txt">
+                            <input type="text" class="inp-frm">
+                            <span class="unit">원</span>
+                          </div>
                         </div>
                       </li>
                       <li class="tr s1">
                         <div class="th">
-                          <div class="tit">무게<span class="required">*</span></div>
+                          <div class="tit">무게</div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm" placeholder="무게를 입력해주세요. (ex. 100Kg)">
                         </div>
                       </li>
                       <li class="tr s1">
                         <div class="th">
-                          <div class="tit">크기<span class="required">*</span></div>
+                          <div class="tit">크기</div>
                         </div>
                         <div class="td">
-                          <input type="text" class="inp-frm">
+                          <input type="text" class="inp-frm" placeholder="크기를 입력해주세요.(ex. 200x200x200 mm)">
                         </div>
                       </li>
                       <li class="tr s1">
                         <div class="th">
-                          <div class="tit">제품 설명<span class="required">*</span></div>
+                          <div class="tit">제품 설명</div>
                         </div>
                         <div class="td">
                           <textarea class="inp-frm"></textarea>
@@ -615,7 +619,7 @@
                       </li>
                       <li class="tr s1">
                         <div class="th">
-                          <div class="tit">제품 사양 및 성능<span class="required">*</span></div>
+                          <div class="tit">제품 사양 및 성능</div>
                         </div>
                         <div class="td">
                           <textarea class="inp-frm" placeholder="제품 사양 및 성능을 입력해주세요."></textarea>
@@ -623,7 +627,7 @@
                       </li>
                       <li class="tr s1">
                         <div class="th">
-                          <div class="tit">제품 자료<span class="required">*</span></div>
+                          <div class="tit">제품 자료</div>
                         </div>
                         <div class="td">
                           <div class="upload-group">
@@ -634,63 +638,19 @@
                               </div>
                               <div class="frm-info">※ 문서, 이미지 파일만 등록 가능합니다.(파일당 최대 10Mb, 최대 5개 등록가능)</div>
                             </div>
+                            <div class="attach-txt">파일 목록</div>
                             <ol class="attach-group">
-                              <li>
-                                <div class="tit">파일명.jpg (374.27KB)</div>
-                                <div class="process-group">
-                                  <div class="state">완료</div>
-                                  <div class="bar-group">
-                                    <div class="bar" style="width: 0%;"></div>
-                                    <div class="percent">0%</div>
-                                  </div>
-                                </div>
-                                <button type="button" class="btn-delete js-delete">삭제</button>
-                              </li>
-                              <li>
-                                <div class="tit">파일명.jpg (374.27KB)</div>
-                                <div class="process-group">
-                                  <div class="state">완료</div>
-                                  <div class="bar-group">
-                                    <div class="bar" style="width: 100%;"></div>
-                                    <div class="percent active">100%</div>
-                                  </div>
-                                </div>
-                                <button type="button" class="btn-delete js-delete">삭제</button>
-                              </li>
+                              <!-- 첨부 하기 전-->
+                              <span class="attach-group-nofile">
+                                마우스로 파일을 끌어오세요.
+                              </span>
+                              <!--// 첨부 하기 전-->
                             </ol>
                           </div>
                         </div>
                       </li>
                     </ol>
                   </div>
-                  <!-- <div class="frm">
-                    <div class="top-frm">
-                      <div class="tit">노출 여부</div>
-                    </div>
-                    <ol class="list-frm">
-                      <li class="tr s1">
-                        <div class="th">
-                          <div class="tit">노출 여부<span class="required">*</span></div>
-                        </div>
-                        <div class="td">
-                          <ol class="list-ck2">
-                            <li>
-                              <div class="ck-group">
-                                <input id="op_ck1" type="radio" name="op_ck" class="ck-custom3">
-                                <label for="op_ck1"><span class="custom"></span><span class="label">노출함</span></label>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="ck-group">
-                                <input id="op_ck2" type="radio" name="op_ck" class="ck-custom3">
-                                <label for="op_ck2"><span class="custom"></span><span class="label">노출안함</span></label>
-                              </div>
-                            </li>
-                          </ol>
-                        </div>
-                      </li>
-                    </ol>
-                  </div> -->
                 </div>
                 <div class="btn-group-bottom">
                   <a href="#" class="btn btn-custom btn-custom-v1">목록으로</a>

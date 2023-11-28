@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-  <g id="ic_arrow_close" transform="translate(0 12) rotate(-90)">
-    <rect id="사각형_862" data-name="사각형 862" width="12" height="12" fill="none" opacity="0.4"/>
-    <rect id="사각형_865" data-name="사각형 865" width="8" height="8" transform="translate(2 2)" fill="none" opacity="0.4"/>
-    <path id="합치기_7" data-name="합치기 7" d="M3,3,0,6,3,3,0,0,3,3,6,0,3,3,6,6Z" transform="translate(3 3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </g>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_2px-close">
+<rect x="0.5" y="0.5" width="15" height="15" fill="white"/>
+<rect x="0.5" y="0.5" width="15" height="15" stroke="#EAEAEA"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M7.99685 8.9397L12.7109 13.6538L13.6537 12.711L8.93965 7.99689L13.6536 3.283L12.7107 2.34019L7.99685 7.05409L3.28285 2.34009L2.34004 3.2829L7.05404 7.99689L2.33984 12.7111L3.28265 13.6539L7.99685 8.9397Z" fill="black"/>
+</g>
 </svg>
