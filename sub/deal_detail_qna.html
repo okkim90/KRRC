@@ -400,7 +400,7 @@
                                             <dt>입찰단위</dt>
                                             <dd><b>100,000</b>원</dd>
                                             <dt>입찰 수</dt>
-                                            <dd><button type="button" class="btn_popup_auction">99건 <i></i></button></dd>
+                                            <dd><button type="button" class="btn_popup_auction"  onclick="open_popup('popup_auction');">99건 <i></i></button></dd>
                                         </dl>
                                     </div>
                                     <!--// 경매 정보-->
@@ -496,7 +496,7 @@
 											<div class="th t-tit">첨부</div>
 											<div class="th t-writer">작성일</div>
 											<div class="th t-date">조회수</div>
-										</li>
+										</li> 
 										<li>
 											<div class="td t-type3 m-od3">구매</div>
 											<div class="td t-status m-od1">답변대기</div>
@@ -505,14 +505,23 @@
 											<div class="td t-date m-od5">2023.10.30</div>
 										</li>
 										<li>
-											<div class="td t-type3 m-od3">구매</div>
-											<div class="td t-status m-od1">답변대기</div>
+											<div class="td t-type3 m-od3">배송</div>
+											<div class="td t-status m-od1">답변완료</div>
 											<div class="td t-tit m-od2 w100"><a href="#">게시판 제목입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다.초과시 예시입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다.</a></div>
 											<div class="td t-writer m-od4">asdf****</div>
 											<div class="td t-date m-od5">2023.10.30</div>
 										</li>
+										<!--답변 영역-->
+										<li class="answer_box">
+											<div class="td t-type3 m-od3"></div>
+											<div class="td t-status m-od1">답변</div>
+											<div class="td t-tit m-od2 w100 mb0 ">
+												Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. Q&A 답변 내용입니다. 
+											</div>
+										</li>
+										<!--// 답변 영역-->
 										<li>
-											<div class="td t-type3 m-od3">구매</div>
+											<div class="td t-type3 m-od3">기타</div>
 											<div class="td t-status m-od1">답변대기</div>
 											<div class="td t-tit m-od2 w100"><a href="#">게시판 제목입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다.초과시 예시입니다. 2줄 초과시 예시입니다. 2줄 초과시 예시입니다.</a></div>
 											<div class="td t-writer m-od4">asdf****</div>
@@ -534,7 +543,7 @@
 											<a href="#" class="btn-paging btn-paging-next2"></a>
 										</div>
 										<div class="btn-group-r">
-											<a href="#" class="btn btn-wrtie">제품 문의</a>
+											<button type="button" class="btn btn-wrtie" onclick="open_popup('popup_qna');">제품 문의</button>
 										</div>
 									</div>
                                 </div>
@@ -609,6 +618,119 @@
 		</div>
 	</footer>
 
+	<div class="layerPopup" data-popup="popup_auction">
+		<div class="layerPopup_inner" onclick="close_popup(this)">
+			<div class="layerPopup_cont ty1" onclick="event.stopPropagation();">
+				<div class="layerPopup_tit">
+					<h4 class="tit">입찰내역</h4>
+					<button type="button" class="btn_close" onclick="close_popup(this)"></button>
+				</div>
+				<div class="f_tbl_wrap">
+					<table class="f_tbl_hz tl_fix taC wb_all">
+						<caption>입찰내역</caption>
+						<thead>
+							<th>입찰일시</th>
+							<th>입찰자</th>
+							<th>입찰금액</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2023.10.20 <br class="m_only"> 15:30:10 </td>
+								<td>*****</td>
+								<td>25,200,000</td>
+							</tr>
+							<tr>
+								<td>2023.10.20 <br class="m_only"> 15:30:10 </td>
+								<td>*****</td>
+								<td>25,200,000</td>
+							</tr>
+							<tr>
+								<td>2023.10.20 <br class="m_only"> 15:30:10 </td>
+								<td>*****</td>
+								<td>25,200,000</td>
+							</tr>
+							<tr>
+								<td>2023.10.20 <br class="m_only"> 15:30:10 </td>
+								<td>*****</td>
+								<td>25,200,000</td>
+							</tr>
+							<tr>
+								<td>2023.10.20 <br class="m_only"> 15:30:10 </td>
+								<td>*****</td>
+								<td>25,200,000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="paging-wrap mt_gap1">
+					<div class="paging">
+						<a href="#" class="btn-paging btn-paging-prev2"></a>
+						<a href="#" class="btn-paging btn-paging-prev"></a>
+						<div class="num">
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+						</div>
+						<a href="#" class="btn-paging btn-paging-next"></a>
+						<a href="#" class="btn-paging btn-paging-next2"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layerPopup" data-popup="popup_qna">
+		<div class="layerPopup_inner" onclick="close_popup(this)">
+			<div class="layerPopup_cont ty1" onclick="event.stopPropagation();">
+				<div class="layerPopup_tit">
+					<h4 class="tit">제품문의</h4>
+					<button type="button" class="btn_close" onclick="close_popup(this)"></button>
+				</div>
+				<form action="">
+					<ol class="list-frm-vc">
+						<li class="tr col1">
+							<div class="th ty2"><div class="tit">문의유형</div></div>
+							<div class="td">
+								<div class="f_chk_wrap">
+									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 상품</label>
+									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 구매</label>
+									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 배송</label>
+									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 반품</label>
+									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 기타</label>
+								</div>
+							</div>
+						</li>                              
+						<li class="tr col1">
+							<div class="th ty2"><div class="tit">문의내용</div></div>
+							<div class="td">
+								<textarea name="" id="" class="f_ta" placeholder="문의 내용을 입력해주세요."></textarea> 
+							</div>
+						</li>
+					</ol>
+					<label class="f_chk_btn mt_gap2">
+						<input type="checkbox" class="f_chk">비밀글 문의
+					</label>
+					<div class="layerPopup_btns">
+						<button type="button" class="f_btn f_mid c1">취소</button>
+						<button type="submit"  class="f_btn f_mid c2">등록</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		/* open popup */
+		function open_popup(popupName){
+			let target_popup = document.querySelector(`[data-popup='${popupName}']`);
+			target_popup.classList.add('on');
+		}
+		/* close popup */
+		function close_popup(target){
+			let target_popup = target.closest('.layerPopup');
+			target_popup.classList.remove('on');
+		}
+	</script>
 </body>
 
 </html>
