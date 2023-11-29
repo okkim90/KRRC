@@ -731,7 +731,7 @@ a.btn-wrtie {
 	position: relative;
 	margin-bottom: 60px;
 }
-.frm:last-child {
+.form-group div.frm:last-child {
 	margin-bottom: 0;
 }
 .frm .required-info {
@@ -1730,6 +1730,7 @@ textarea.inp-frm {
 	bottom: 0;
 	width: 100%;
 	padding: 24px 20px;
+	margin-top: 0;
 	box-sizing: border-box;
 }
 .m-gnb .btn-group-bottom a {
@@ -3013,13 +3014,16 @@ textarea.inp-frm {
 	font-weight: 400;
 	color: #666;
 }
-.board-content + .btn-group-bottom {
+.btn-group-bottom {
+	margin-top: 60px;
+}
+/* .board-content + .btn-group-bottom {
 	margin-top: 40px;
 }
 .file-group + .btn-group-bottom,
 .comment-group + .btn-group-bottom {
 	margin-top: 60px;
-}
+} */
 .video-group {
 	position: relative;
 	width: 720px;
@@ -4866,13 +4870,16 @@ textarea.inp-frm {
 	.board-content .txt {
 		font-size: 14px;
 	}
-	.board-content + .btn-group-bottom {
+	.btn-group-bottom {
+		margin-top: 40px;
+	}
+	/* .board-content + .btn-group-bottom {
 		margin-top: 20px;
 	}
 	.file-group + .btn-group-bottom,
 	.comment-group + .btn-group-bottom {
 		margin-top: 40px;
-	}
+	} */
 
 	.video-group {
 		width: 100%;
