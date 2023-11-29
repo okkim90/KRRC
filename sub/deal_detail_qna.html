@@ -548,6 +548,9 @@
 									</div>
                                 </div>
                             </div>
+							<div class="f_btn_wrap mt_gap3">
+								<a href="./deal_list.html" class="f_btn f_big c2">목록으로</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -692,12 +695,27 @@
 						<li class="tr col1">
 							<div class="th ty2"><div class="tit">문의유형</div></div>
 							<div class="td">
-								<div class="f_chk_wrap">
-									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 상품</label>
-									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 구매</label>
-									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 배송</label>
-									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 반품</label>
-									<label class="f_chk_btn"><input type="radio" class="f_chk" name="qnaType"> 기타</label>
+								<div class="ck-group-list">
+									<div class="ck-group ">
+										<input id="qnaType1" type="radio" name="qnaType" class="ck-custom3">
+										<label for="qnaType1"><span class="custom"></span><span class="label">상품</span></label>
+									</div>
+									<div class="ck-group ">
+										<input id="qnaType2" type="radio" name="qnaType" class="ck-custom3">
+										<label for="qnaType2"><span class="custom"></span><span class="label">구매</span></label>
+									</div>
+									<div class="ck-group ">
+										<input id="qnaType3" type="radio" name="qnaType" class="ck-custom3">
+										<label for="qnaType3"><span class="custom"></span><span class="label">배송</span></label>
+									</div>
+									<div class="ck-group ">
+										<input id="qnaType4" type="radio" name="qnaType" class="ck-custom3">
+										<label for="qnaType4"><span class="custom"></span><span class="label">반품</span></label>
+									</div>
+									<div class="ck-group ">
+										<input id="qnaType5" type="radio" name="qnaType" class="ck-custom3">
+										<label for="qnaType5"><span class="custom"></span><span class="label">기타</span></label>
+									</div>
 								</div>
 							</div>
 						</li>                              
@@ -708,9 +726,13 @@
 							</div>
 						</li>
 					</ol>
-					<label class="f_chk_btn mt_gap2">
-						<input type="checkbox" class="f_chk">비밀글 문의
-					</label>
+					<div class="ck-group-list mt_gap2">
+						<div class="ck-group ">
+							<input id="chkLock" type="checkbox" name="" class="ck-custom4">
+							<label for="chkLock"><span class="custom"></span><span class="label">비밀글 문의</span></label>
+						</div>
+					</div>
+					
 					<div class="layerPopup_btns">
 						<button type="button" class="f_btn f_mid c1">취소</button>
 						<button type="submit"  class="f_btn f_mid c2">등록</button>

@@ -3244,20 +3244,46 @@
   box-sizing: border-box;
 }
 
-.f_tbl_wrap {
-  overflow: hidden;
-  border-top: 1px solid #000;
-}
-.f_tbl_wrap.ty_xscroll {
+.xScrollArea_inner {
   overflow-x: auto;
 }
-.f_tbl_wrap.ty_xscroll::-webkit-scrollbar, .f_tbl_wrap.ty_xscroll::-webkit-scrollbar-thumb {
+.xScrollArea_inner::-webkit-scrollbar, .xScrollArea_inner::-webkit-scrollbar-thumb {
   height: 10px;
 }
-@media only screen and (max-width: 1280px) {
-  .f_tbl_wrap.ty_xscroll .f_tbl_hz {
+@media only screen and (max-width: 767px) {
+  .xScrollArea .f_tbl {
     white-space: nowrap;
   }
+}
+.xScrollArea.scroll_start {
+  position: relative;
+}
+.xScrollArea.scroll_start:active::after {
+  opacity: 0;
+}
+.xScrollArea.scroll_start.scrolling::after {
+  opacity: 0;
+}
+.xScrollArea.scroll_start::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/ico_touch_swipe.svg);
+  background-size: cover;
+  background-position: center center;
+  right: 16px;
+  top: 16px;
+}
+@media only screen and (max-width: 1280px) {
+  .xScrollArea.scroll_start::after {
+    right: 8px;
+    top: 8px;
+  }
+}
+
+.f_tbl_wrap {
+  border-top: 1px solid #000;
 }
 .f_tbl_hz {
   line-height: 1.4;
@@ -3397,4 +3423,15 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.ck-group-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  line-height: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }

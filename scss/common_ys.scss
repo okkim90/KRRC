@@ -1504,21 +1504,59 @@ $gap_m: (
     box-sizing: border-box;
 }
 
-.f_tbl {
-    &_wrap {
-        overflow: hidden;
-        border-top: 1px solid #000;
-        &.ty_xscroll {
-            overflow-x: auto;
-            &::-webkit-scrollbar, &::-webkit-scrollbar-thumb {
-                height: 10px;
-            }
-            .f_tbl_hz {
-                @include tablet {
-                    white-space: nowrap;
-                }
+
+.xScrollArea {
+    
+    &_inner {
+        overflow-x: auto; 
+        &::-webkit-scrollbar, &::-webkit-scrollbar-thumb {
+            height: 10px;
+        }
+    }
+        
+    .f_tbl {
+        @include mobile {
+            white-space: nowrap;
+        }
+    }
+       
+    
+    
+    &.scroll_start {
+        position: relative;
+        &:active {
+            &::after {
+                opacity: 0;
             }
         }
+        &.scrolling {
+            &::after {
+                opacity: 0;
+            }
+        }
+        &::after {
+            content:'';
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background-image: url(../img/ico_touch_swipe.svg);
+            background-size: cover;
+            background-position: center center;
+            right: 16px;
+            top: 16px;
+            @include tablet {
+                // width: 24px;
+                // height: 24px;
+                right: 8px;
+                top: 8px;
+            }
+        }
+    }
+}
+
+.f_tbl {
+    &_wrap {
+        border-top: 1px solid #000;   
     }
     &_hz {
         line-height: 1.4;
@@ -1667,4 +1705,13 @@ $gap_m: (
             object-fit: cover;
         }
     }
+}
+
+.ck-group-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 24px;
+    line-height: 1;
+    user-select: none;
 }
