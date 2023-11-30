@@ -613,7 +613,7 @@ a.btn-wrtie {
 .ck-custom4 + label .label {
 	font-size: 16px;
 	font-weight: 400;
-	color: #666;
+	color: #000;
 }
 .ck-custom4 + label .label a {
 	color: #1a95ce;
@@ -2417,21 +2417,20 @@ textarea.inp-frm {
 	align-items: center;
 	width: 50%;
 	height: 56px;
-	border-bottom: 1px solid #e8e8e8;
+	border-bottom: 1px solid #eaeaea;
 	box-sizing: border-box;
-	background: #f9f9f9;
-	font-size: 18px;
+	background: #f5f5f5;
+	font-size: 16px;
 	font-weight: 400;
-	color: #999;
+	color: #000;
 	text-align: center;
 }
 .tab-menu2 .tab.active {
-	border: 1px solid #e8e8e8;
+	border: 1px solid #eaeaea;
 	border-bottom: none;
 	box-sizing: border-box;
 	background: none;
 	font-weight: 700;
-	color: #333;
 }
 
 /*board style*/
@@ -3539,16 +3538,16 @@ textarea.inp-frm {
 }
 /*로그인*/
 .login {
-	background: #fcfcfc;
+	background: #f9f9f9;
 }
 .login .wrap {
-	padding: 80px 0 20px;
+	padding: 80px 0 0;
 	box-sizing: border-box;
 }
 .login .wrap > .box {
 	max-width: 720px;
 	margin: 0 auto;
-	padding: 60px 48px;
+	padding: 60px 48px 80px;
 	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
 	box-sizing: border-box;
 	background: #fff;
@@ -3557,7 +3556,8 @@ textarea.inp-frm {
 	margin-bottom: 40px;
 }
 .login .top-page .tit {
-	font-weight: 500;
+	font-size: 32px;
+	line-height: 44px;
 	text-align: center;
 }
 
@@ -3565,8 +3565,8 @@ textarea.inp-frm {
 	margin-bottom: 40px;
 }
 .frm-group-login .inp-frm {
-	height: 56px;
-	margin-bottom: 16px;
+	height: 48px;
+	margin-bottom: 12px;
 }
 .frm-group-login .ck-group {
 	margin-bottom: 40px;
@@ -3574,6 +3574,7 @@ textarea.inp-frm {
 .frm-group-login .btn-custom {
 	width: 100%;
 	height: 56px;
+	font-weight: 700;
 }
 
 .login-util {
@@ -3584,20 +3585,20 @@ textarea.inp-frm {
 }
 .login-util a {
 	position: relative;
-	margin: 0 10px;
+	margin: 0 12px;
 	font-size: 16px;
 	font-weight: 400;
-	color: #999;
+	color: #666;
 }
 .login-util a:before {
 	content: '';
 	display: block;
 	position: absolute;
 	top: calc(50% - 6px);
-	right: -11px;
+	right: -12px;
 	width: 1px;
 	height: 12px;
-	background: #ccc;
+	background: #666;
 }
 .login-util a:last-child:before {
 	display: none;
@@ -3605,7 +3606,7 @@ textarea.inp-frm {
 
 /*아이디 및 비밀번호 찾기*/
 .find {
-	background: #fcfcfc;
+	background: #f9f9f9;
 }
 .find .wrap {
 	padding: 80px 0 20px;
@@ -3614,8 +3615,7 @@ textarea.inp-frm {
 .find .wrap > .box {
 	max-width: 720px;
 	margin: 0 auto;
-	padding: 60px 48px;
-	border-top: 8px solid #1a95ce;
+	padding: 60px 48px 80px;
 	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
 	box-sizing: border-box;
 	background: #fff;
@@ -3624,57 +3624,68 @@ textarea.inp-frm {
 	margin-bottom: 40px;
 }
 .find .top-page .tit {
-	font-weight: 500;
+	font-size: 32px;
+	line-height: 44px;
 	text-align: center;
 }
 
 .frm-group-find .inp-frm {
-	height: 56px;
-	margin-bottom: 16px;
+	height: 48px;
+	margin-bottom: 12px;
 }
 .frm-group-find .btn-custom {
 	width: 100%;
 	height: 56px;
+	font-weight: 700;
 	margin-top: 40px;
 }
 .frm-group-find .frm-message {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 72px;
+	height: 52px;
 	margin-top: 40px;
-	border: 1px solid #ff6363;
+	border: 1px solid #f01b1b;
 	box-sizing: border-box;
 	background: #ffeeee;
 }
 .frm-group-find .frm-message .txt {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
-	color: #ff6363;
+	color: #f01b1b;
 	text-align: center;
 }
 .frm-group-find .frm-message .txt img {
 	margin-right: 4px;
-	vertical-align: 0px;
+	margin-top: -2px;
 }
 .frm-group-find .find-result {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 128px;
-	border: 1px solid #e8e8e8;
+	height: 108px;
+	border: 1px solid #eaeaea;
 	box-sizing: border-box;
 	background: #f9f9f9;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
-	color: #333;
+	color: #000;
 	text-align: center;
 }
-.frm-group-find .find-result strong {
+.find .frm .btn-custom {
+	width: 100%;
+	height: 56px;
+	font-weight: 700;
+	margin-top: 40px;
+}
+/* .frm-group-find .list-frm .inp-frm {
+	margin-bottom: 0;
+} */
+/* .frm-group-find .find-result strong {
 	margin: 0 4px;
 	font-weight: 700;
 	color: #1a95ce;
-}
+} */
 
 /*회원가입*/
 .sign {
