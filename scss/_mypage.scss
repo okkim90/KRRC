@@ -29,14 +29,14 @@
     gap: 20px;
     flex-wrap: wrap;
     @include tablet {
-        gap: 10px;
+        gap: 12px;
     }
     &_item {
         flex: 1;
         line-height: 1.5;
         @include tablet {
             flex: auto;
-            width: calc(100%/2 - 5px);
+            width: calc(100%/2 - 6px);
         }
     }
     &_link {
@@ -51,6 +51,12 @@
         border: 1px solid color(line);
         border-radius: 8px;
         transition: all .1s ease-in-out;
+
+        @include tablet {
+            padding: 24px;
+            height: 120px;
+        }
+
         .desc, .count_box, .count_box .count {
             transition: color .1s ease-in-out;
         }
@@ -68,6 +74,9 @@
         .tit {
             font-size: 18px;
             font-weight: bold;
+            @include tablet {
+                font-size: 14px;
+            }
         }
         .desc {
             display: block;
@@ -81,7 +90,9 @@
             font-size: 14px;
             color: color(grey2);
             line-height: 1.2;
+            
             .count {
+                display: inline-block;
                 color: color(key3);
                 font-size: 40px;
                 font-weight: bold;
@@ -89,8 +100,79 @@
                 @at-root .mp_card.ty_order & {
                     color: color(orange);
                 }
+                @include tablet {
+                    font-size: 28px;
+                    line-height: 1;
+                }
             }
         }
         
+    }
+}
+
+.mp_pw {
+    padding: 80px 15.5%;
+    background-color: color(bg2);
+    @include tablet {
+        padding: 40px 20px;
+        margin: 0 -20px;
+    }
+    &_top {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        font-weight: bold;
+        text-align: center;
+        @include tablet {
+            font-size: 16px;
+            margin-bottom: 28px;
+        }
+    }
+    &_form {
+        max-width: 320px;
+        margin: 0 auto;
+        .inp-frm {
+            height: 48px;
+        }
+        .f_btn {
+            width: 100%;
+            margin-top: 12px;
+        }
+        @include tablet {
+            max-width: none;
+            .inp-frm {
+               height: 40px;
+            }
+            .f_btn {
+                height: 40px;
+                font-size: 14px;
+                margin-top: 8px;
+            }
+        }
+    }
+    &_desc {
+        margin-top: 48px;
+        padding-top: 28px;
+        border-top: 1px solid color(line);
+        @include tablet {
+            margin-top: 24px;
+            padding-top: 24px;
+        }
+        li {
+            position: relative;
+            font-size: 14px;
+            line-height: 1.4;
+            padding-left: 0.8em;
+            & + li {
+                margin-top: 8px;
+            }
+            &::before {
+                content:'•';
+                color: #bebebe;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
     }
 }

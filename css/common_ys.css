@@ -2063,6 +2063,10 @@
   }
 }
 
+.tdU, a.tdU {
+  text-decoration: underline;
+}
+
 ._lh {
   line-height: 1.5;
 }
@@ -2120,7 +2124,7 @@
 }
 @media only screen and (max-width: 1280px) {
   .mp_card {
-    gap: 10px;
+    gap: 12px;
   }
 }
 .mp_card_item {
@@ -2130,7 +2134,7 @@
 @media only screen and (max-width: 1280px) {
   .mp_card_item {
     flex: auto;
-    width: calc(50% - 5px);
+    width: calc(50% - 6px);
   }
 }
 .mp_card_link {
@@ -2144,6 +2148,12 @@
   border: 1px solid var(--line);
   border-radius: 8px;
   transition: all 0.1s ease-in-out;
+}
+@media only screen and (max-width: 1280px) {
+  .mp_card_link {
+    padding: 24px;
+    height: 120px;
+  }
 }
 .mp_card_link .desc, .mp_card_link .count_box, .mp_card_link .count_box .count {
   transition: color 0.1s ease-in-out;
@@ -2163,6 +2173,11 @@
   font-size: 18px;
   font-weight: bold;
 }
+@media only screen and (max-width: 1280px) {
+  .mp_card_link .tit {
+    font-size: 14px;
+  }
+}
 .mp_card_link .desc {
   display: block;
   font-size: 12px;
@@ -2175,6 +2190,7 @@
   line-height: 1.2;
 }
 .mp_card_link .count_box .count {
+  display: inline-block;
   color: var(--key3);
   font-size: 40px;
   font-weight: bold;
@@ -2182,6 +2198,88 @@
 }
 .mp_card.ty_order .mp_card_link .count_box .count {
   color: var(--orange);
+}
+
+@media only screen and (max-width: 1280px) {
+  .mp_card_link .count_box .count {
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+.mp_pw {
+  padding: 80px 15.5%;
+  background-color: var(--bg2);
+}
+@media only screen and (max-width: 1280px) {
+  .mp_pw {
+    padding: 40px 20px;
+    margin: 0 -20px;
+  }
+}
+.mp_pw_top {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+@media only screen and (max-width: 1280px) {
+  .mp_pw_top {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+}
+.mp_pw_form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.mp_pw_form .inp-frm {
+  height: 48px;
+}
+.mp_pw_form .f_btn {
+  width: 100%;
+  margin-top: 12px;
+}
+@media only screen and (max-width: 1280px) {
+  .mp_pw_form {
+    max-width: none;
+  }
+  .mp_pw_form .inp-frm {
+    height: 40px;
+  }
+  .mp_pw_form .f_btn {
+    height: 40px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+.mp_pw_desc {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+@media only screen and (max-width: 1280px) {
+  .mp_pw_desc {
+    margin-top: 24px;
+    padding-top: 24px;
+  }
+}
+.mp_pw_desc li {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 0.8em;
+}
+.mp_pw_desc li + li {
+  margin-top: 8px;
+}
+.mp_pw_desc li::before {
+  content: "•";
+  color: #bebebe;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .file_list li + li {
