@@ -1,0 +1,96 @@
+.mp_sec {
+    & + & {
+        margin-top: 40px;
+    }
+    &_tit {
+        display: flex;
+        align-items: flex-end;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        .tit {
+            font-size: 20px;
+            small {
+                font-size: inherit;
+                font-weight: normal;
+            }
+        }
+        .btn_more {
+            margin-left: auto;
+            font-size: 14px;
+            color: color(grey1);
+            .ico_more_s {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+.mp_card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    @include tablet {
+        gap: 10px;
+    }
+    &_item {
+        flex: 1;
+        line-height: 1.5;
+        @include tablet {
+            flex: auto;
+            width: calc(100%/2 - 5px);
+        }
+    }
+    &_link {
+        display: flex;
+        height: 160px;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+        
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid color(line);
+        border-radius: 8px;
+        transition: all .1s ease-in-out;
+        .desc, .count_box, .count_box .count {
+            transition: color .1s ease-in-out;
+        }
+        &:hover {
+            background-color: color(key3);
+            @at-root .mp_card.ty_order & {
+                background-color: color(orange);
+            }
+            color: #fff;
+            .desc, .count_box, .count_box .count {
+                color: #fff !important;
+            }
+        }
+
+        .tit {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .desc {
+            display: block;
+            font-size: 12px;
+            color: color(grey2);
+        }
+        
+        .count_box {
+           
+            gap: 3px;
+            font-size: 14px;
+            color: color(grey2);
+            line-height: 1.2;
+            .count {
+                color: color(key3);
+                font-size: 40px;
+                font-weight: bold;
+                margin-right: 3px;
+                @at-root .mp_card.ty_order & {
+                    color: color(orange);
+                }
+            }
+        }
+        
+    }
+}

@@ -1,309 +1,10 @@
 
-
-$breakpoint-m: 767px;
-$breakpoint-t: 1280px;
-
-
-$colors: (
-    'key': #035C77,
-    'key2': #0F80A1,
-    'key3': #1CB0D4,
-    'key4': #F4FDFF,
-    'red': #F01B1B,
-    'line': #eaeaea,
-    'line2': #dfdfdf,
-    'line_btn': #dfdfdf,
-    'bg': #f6f6f6,
-    'bg2': #f9f9f9,
-    'fc_grey' : #666,
-    'fc_grey2' : #999,
-    'black': #000
-);
-
-
-$btn_color: (
-    'c1': #fff,
-    'c2': #1CB0D4,
-    'c3': #0F80A1,
-);
+@import "./vars";
+@import "./mypage";
 
 
 
-$f_size: (
-    'f_super': 56px,
-    'f_big': 48px,
-    'f_mid': 40px,
-    'f_samll': 32px,
-);
 
-
-
-:root{
-    @each $key, $value in $colors {
-        --#{$key} : #{$value};
-    }
-}
-
-@function color($name){
-    @if not map-get($colors, $name+''){
-        @error "Color `#{$name}` not found in map $colors";
-    }
-    @return var(--#{unquote($name)});
-}
-
-
-@each $key, $color in $colors {
-    .fc_#{$key} {
-        color: $color !important;
-    }
-    .bg_#{$key} {
-        background-color: $color;
-    }
-    .bd_#{$key} {
-        border: 1px solid $color;
-    }
-    .bdT_#{$key} {
-        border-top: 1px solid $color;
-    }
-    .bdB_#{$key} {
-        border-bottom: 1px solid $color;
-    }
-    .bdL_#{$key} {
-        border-left: 1px solid $color;
-    }
-    .bdR_#{$key} {
-        border-right: 1px solid $color;
-    }
-    
-}
-
-@each $key, $size in $f_size {
-
-    .f_btn  {
-        &.#{$key} {
-            height: $size;
-            @if($key == 'f_super' or $key == 'f_big'){
-                font-size: 16px;
-            }
-            @if($key == 'f_mid' ){
-                font-size: 14px;
-            }
-            @if($key == 'f_small' ){
-                font-size: 12px;
-            }
-        }
-    }
-}
-
-
-@mixin btn($c, $bd, $bg, $hv_bg){
-    transition: all .1s ease-in-out;
-    width: 120px;
-    padding: 0 20px;
-    background-color: $bg;
-    border:1px solid $bd;
-    color: $c;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    &:hover {
-        background-color: $hv_bg;
-        border-color: $hv_bg;
-        color: #fff;
-    }
-}
-@each $key, $color in $btn_color {
-    .f_btn  {
-        &.#{$key} {
-            @if($key == 'c1'){
-                @include btn(#000, color(line_btn), $color, color(key3))
-            }
-            @if($key == 'c2'){
-                @include btn(#fff, $color, $color, color(key2))
-            }
-            @if($key == 'c3'){
-                @include btn(#fff, $color, $color, color(key))
-            }
-        }
-    }
-}
-
-
-@mixin flex_gap ($col ,$gapX:0, $gapY:0){
-    display: flex;
-    flex-wrap: wrap;
-    gap: $gapY $gapX;
-    .col_item {
-        width: calc((100% / $col) - ((($col - 1)/$col)*$gapX));
-    }
-}
-
-@mixin text-hidden($line: 1, $lineHeight: 19, $auto: null) {
-    width: 100%;
-    display: -webkit-box !important;
-    -webkit-line-clamp: $line;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: calc(($lineHeight * $line) / $line);
-    
-
-    @if $auto ==auto {
-        //영역 자동
-        max-height: $lineHeight * $line;
-    }
-
-    @else {
-        //처음부터 영역잡히게
-        height: $lineHeight * $line;
-    }
-}
-
-
-
-@mixin tablet {
-    @media only screen and (max-width: #{$breakpoint-t}) {
-        @content;
-    }
-};
-@mixin mobile {
-    @media only screen and (max-width: #{$breakpoint-m}) {
-        @content;
-    }
-}
-
-$gap: (
-    'gap1':40px,
-    'gap2':24px,
-    'gap3':60px,
-);
-$gap_m: (
-    'gap1':24px,
-    'gap2':16px,
-    'gap3':40px,
-);
-
-@each $key, $gap in $gap {
-    .mt_#{$key} {
-        margin-top: $gap;
-    }
-    .mb_#{$key} {
-        margin-bottom: $gap;
-    }
-    .ml_#{$key} {
-        margin-left: $gap;
-    }
-    .mr_#{$key} {
-        margin-right: $gap;
-    }
-    .pt_#{$key} {
-        padding-top: $gap;
-    }
-    .pb_#{$key} {
-        padding-bottom: $gap;
-    }
-    .pl_#{$key} {
-        padding-left: $gap;
-    }
-    .pr_#{$key} {
-        padding-right: $gap;
-    }
-}
-
-@include tablet {
-    @each $key, $gap in $gap_m {
-        .mt_#{$key} {
-            margin-top: $gap;
-        }
-        .mb_#{$key} {
-            margin-bottom: $gap;
-        }
-        .ml_#{$key} {
-            margin-left: $gap;
-        }
-        .mr_#{$key} {
-            margin-right: $gap;
-        }
-        .pt_#{$key} {
-            padding-top: $gap;
-        }
-        .pb_#{$key} {
-            padding-bottom: $gap;
-        }
-        .pl_#{$key} {
-            padding-left: $gap;
-        }
-        .pr_#{$key} {
-            padding-right: $gap;
-        }
-    }
-}
-@for $i from 1 through 20 {
-    $w : 10*$i;
-    $z : 5*$i;
-    .w_#{$w} {
-        width: #{$w}px
-    }
-    .mt_#{$i} {
-        margin-top: #{$i}px;
-    }
-    .ml_#{$i} {
-        margin-left: #{$i}px
-    }
-    .mr_#{$i} {
-        margin-right: #{$i}px
-    }
-    .mb_#{$i} {
-        margin-bottom: #{$i}px
-    }
-    .pt_#{$i} {
-        padding-top: #{$i}px;
-    }
-    .pl_#{$i} {
-        padding-left: #{$i}px
-    }
-    .pr_#{$i} {
-        padding-right: #{$i}px
-    }
-    .pb_#{$i} {
-        padding-bottom: #{$i}px
-    }
-    .mt#{$z} {
-        margin-top: #{$z}px;
-    }
-    .ml#{$z} {
-        margin-left: #{$z}px
-    }
-    .mr#{$z} {
-        margin-right: #{$z}px
-    }
-    .mb#{$z} {
-        margin-bottom: #{$z}px
-    }
-    .pt#{$z} {
-        padding-top: #{$z}px;
-    }
-    .pl#{$z} {
-        padding-left: #{$z}px
-    }
-    .pr#{$z} {
-        padding-right: #{$z}px
-    }
-    .pb#{$z} {
-        padding-bottom: #{$z}px
-    }
-}
-
-
-
-.fz_nm {
-    font-size: 16px;
-    line-height: 1.5;
-    @include tablet {
-        font-size: 14px;
-    }
-}
 
 .file_list {
     li {
@@ -318,25 +19,6 @@ $gap_m: (
     line-height: 1.4;
     text-decoration: underline;
     word-break: break-all;
-}
-
-
-
-
-._lh {
-    line-height: 1.5;
-}
-.taL {
-    text-align: left;
-}
-.taC {
-    text-align: center;
-}
-.taR {
-    text-align: right;
-}
-.m_only {
-    display: none;
 }
 
 .f_btn_wrap {
@@ -540,6 +222,89 @@ $gap_m: (
 }
 
 
+.list-board-tbl {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    line-height: 1.4;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid #000;
+    @include tablet {
+        display: block;
+    }
+    ._row {
+        display: table-row;
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid color(line);
+            padding: 24px 0;
+            gap: 10px 16px;
+        }
+        &_body:hover {
+            background-color: #f4fdff;
+        }
+        &_head {
+            background-color: color(bg);
+            font-weight: bold;
+            @include tablet {
+                display: none;
+            }
+        }
+        
+    }
+    ._cell {
+        display: table-cell;
+        height: 64px;
+        padding: 12px;
+        box-sizing: border-box;
+        vertical-align: middle;
+        width: auto;
+        word-break: break-all;
+        border-bottom: 1px solid color(line);
+        
+        @for $i from 1 to 20 {
+            &_w_#{$i} {
+                width: #{$i}+'%'
+            }
+        }
+        a:hover {
+            color: color(key3);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        @include tablet {
+            display: inline-flex;
+            border-bottom: none;
+            height: auto;
+            padding: 0;
+            &._m_w100 {
+                width: 100%;
+                
+            }
+            &._m_small {
+                font-size: 14px;
+            }
+            @for $i from 1 through 5 {
+                &.m_od#{$i}{
+                    order: $i;
+                }
+            }
+        }
+        
+    }
+    .td {
+        color: color(grey2);
+        &.t-tit {
+            text-align: left;
+            color: #000;
+        }
+    }
+}
+
+
 /* view */ 
 .btn-group-bottom {
     &.top_gap {
@@ -643,7 +408,7 @@ $gap_m: (
             width: 128px;
             flex-shrink: 0;
             text-align: center;
-            color: color(fc_grey);
+            color: color(grey1);
             @include tablet { 
                 width: auto;
                 text-align: left;
@@ -719,9 +484,7 @@ $gap_m: (
 
 
 @include tablet {
-    .m_only {
-        display: block;
-    }
+    
     .ly-group .ly-r.ly-r-deal-detail {
         padding-top: 0;
     }
@@ -878,7 +641,14 @@ $gap_m: (
         .deal {
             &_thumb {
                 position: relative;
-                padding-top: 150%;
+                padding-top: 100%;
+                &.ratio_1_1 {
+                    padding-top: 100%;
+                }
+                &.ratio_6_4 {
+                    padding-top: 150%;
+                }
+                
                 background-color: color(bg);
                 background-image: url(../img/logo_foot.svg);
                 background-repeat: no-repeat;
@@ -925,7 +695,7 @@ $gap_m: (
             &_status {
                 display: flex;
                 align-items: center;
-                color: color(fc_grey2);
+                color: color(grey2);
                 font-size: 14px;
                 i {
                     width: 12px;
@@ -1097,7 +867,7 @@ $gap_m: (
             dt {
                 width: 152px;
                 flex-shrink: 0;
-                color: color(fc_grey2);
+                color: color(grey2);
                 @include tablet { 
                     width: 104px;
                 }
@@ -1292,7 +1062,7 @@ $gap_m: (
         align-items: center;
         justify-content: center;
         flex: 1;
-        color: color(fc_grey);
+        color: color(grey1);
         border-top: 1px solid color(line2);
         @include tablet {
             min-height: 48px;
@@ -1349,7 +1119,7 @@ $gap_m: (
             }
         }
         .td {
-            color: color(fc_grey);
+            color: color(grey1);
             flex: 1;
         }
     }
@@ -1581,6 +1351,8 @@ $gap_m: (
         }
         a {
             &:hover {
+                color: color(key3);
+                font-weight: bold;
                 text-decoration: underline;
             }
         }
@@ -1598,7 +1370,7 @@ $gap_m: (
             td {
                 height: 64px;
                 font-size: 16px;  
-                color: color(fc_grey);
+                color: color(grey1);
                 @include tablet {
                     font-size: 14px;
                     height: 48px;
@@ -1631,7 +1403,7 @@ $gap_m: (
         td {
             height: 60px;
             font-size: 14px;  
-            color: color(fc_grey);
+            color: color(grey1);
             @include tablet {
                 //font-size: 13px;
                 height: 48px;
