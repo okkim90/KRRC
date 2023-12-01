@@ -1,20 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="사각형_1736" data-name="사각형 1736" width="80" height="80" transform="translate(1055 324)" fill="#fff" stroke="#707070" stroke-width="1"/>
-    </clipPath>
-  </defs>
-  <g id="Img" transform="translate(-1055 -324)" clip-path="url(#clip-path)">
-    <g id="그룹_10620" data-name="그룹 10620" transform="translate(1060 329)">
-      <path id="패스_7118" data-name="패스 7118" d="M.65,28.15V69.012H69.26V28.15L34.955,1.584Z" fill="#eaeaea"/>
-      <path id="패스_7119" data-name="패스 7119" d="M1.3,28.468,34.955,2.406,68.61,28.468V68.362H1.3ZM0,27.831v41.83H69.91V27.831L34.955.762Z" fill="#eaeaea"/>
-      <rect id="사각형_1733" data-name="사각형 1733" width="60" height="48.405" transform="translate(5 0.649)" fill="#fff"/>
-      <path id="패스_7120" data-name="패스 7120" d="M5.605,1.3h58.7V48.4H5.605ZM4.3,49.7h61.3V0H4.3Z" fill="#eaeaea"/>
-      <path id="패스_7121" data-name="패스 7121" d="M34.955,49.054.65,29.075V69.033H69.259V29.075Z" fill="#fff"/>
-      <path id="패스_7122" data-name="패스 7122" d="M68.61,30.207V68.384H1.3V30.207l33.655,19.6ZM34.955,48.3,0,27.945V69.683H69.91V27.945Z" fill="#eaeaea"/>
-      <rect id="사각형_1734" data-name="사각형 1734" width="58.696" height="3" transform="translate(5.607 1.302)" fill="#1a95ce"/>
-      <rect id="사각형_1735" data-name="사각형 1735" width="1.3" height="79.616" transform="matrix(0.502, -0.865, 0.865, 0.502, 0.324, 29.638)" fill="#eaeaea"/>
-      <path id="합치기_8" data-name="합치기 8" d="M14529.959-17410.4l-6.226,6.889-2.241-2.025,6.431-7.115-6.431-7.115,2.241-2.025,6.226,6.889,6.226-6.889,2.241,2.025-6.431,7.115,6.431,7.115-2.241,2.025Z" transform="translate(-14495.493 17437.506)" fill="#1a95ce"/>
-    </g>
-  </g>
+<svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Layer_1">
+<g id="Group 9600">
+<path id="Vector" d="M119.83 62.4L78.5 33L37.18 62.4H37V116.65H120.01V62.4H119.83Z" fill="#035C77"/>
+<path id="Vector_2" d="M108.62 43.8789H48.4004V116.659H108.62V43.8789Z" fill="#F4FDFF"/>
+<path id="Vector_3" opacity="0.1" d="M72.4002 54.9688H58.2002V58.9688H72.4002V54.9688Z" fill="#1CB0D4"/>
+<path id="Vector_4" opacity="0.1" d="M99.6802 64.9688H58.2002V68.9688H99.6802V64.9688Z" fill="#1CB0D4"/>
+<path id="Vector_5" opacity="0.1" d="M86.2102 74.9688H71.6602V78.9688H86.2102V74.9688Z" fill="#1CB0D4"/>
+<path id="Vector_6" d="M37 62.3984L120.01 116.648H37" fill="url(#paint0_linear_529_38045)"/>
+<path id="Vector_7" d="M37 116.648H120.01V62.3984L37 116.648Z" fill="#2093EE"/>
+<g id="Vector_8" filter="url(#filter0_d_529_38045)">
+<path d="M119.58 121.16C128.737 121.16 136.16 113.737 136.16 104.58C136.16 95.4231 128.737 88 119.58 88C110.423 88 103 95.4231 103 104.58C103 113.737 110.423 121.16 119.58 121.16Z" fill="#FB761C"/>
+</g>
+<path id="Vector_9" d="M122.409 104.575L125.499 101.485C126.279 100.705 126.279 99.4353 125.499 98.6553C124.719 97.8753 123.449 97.8753 122.669 98.6553L119.579 101.745L116.489 98.6653C115.709 97.8753 114.449 97.8753 113.669 98.6653C112.889 99.4553 112.879 100.705 113.669 101.485L116.759 104.575L113.669 107.665C112.889 108.445 112.889 109.715 113.669 110.495C114.059 110.885 114.569 111.085 115.079 111.085C115.589 111.085 116.099 110.885 116.489 110.495L119.579 107.405L122.669 110.495C123.059 110.885 123.569 111.085 124.079 111.085C124.589 111.085 125.099 110.885 125.489 110.495C126.269 109.715 126.269 108.445 125.489 107.665L122.399 104.575H122.409Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_529_38045" x="95" y="86" width="41.1602" height="41.1602" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-4" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_529_38045"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_529_38045" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_529_38045" x1="78.505" y1="62.3984" x2="78.505" y2="106.5" gradientUnits="userSpaceOnUse">
+<stop offset="0.50937" stop-color="#EAF3F4"/>
+<stop offset="1" stop-color="#DCE9EB"/>
+</linearGradient>
+</defs>
 </svg>

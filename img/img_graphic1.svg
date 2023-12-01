@@ -1,20 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="사각형_1736" data-name="사각형 1736" width="80" height="80" transform="translate(1055 324)" fill="#fff" stroke="#707070" stroke-width="1"/>
-    </clipPath>
-  </defs>
-  <g id="Img" transform="translate(-1055 -324)" clip-path="url(#clip-path)">
-    <g id="그룹_10620" data-name="그룹 10620" transform="translate(1060 329)">
-      <path id="패스_7118" data-name="패스 7118" d="M.65,28.15V69.012H69.26V28.15L34.955,1.584Z" fill="#eaeaea"/>
-      <path id="패스_7119" data-name="패스 7119" d="M1.3,28.468,34.955,2.406,68.61,28.468V68.362H1.3ZM0,27.831v41.83H69.91V27.831L34.955.762Z" fill="#eaeaea"/>
-      <rect id="사각형_1733" data-name="사각형 1733" width="60" height="48.405" transform="translate(4.954 0.649)" fill="#fff"/>
-      <path id="패스_7120" data-name="패스 7120" d="M5.605,1.3h58.7V48.4H5.605ZM4.3,49.7h61.3V0H4.3Z" fill="#eaeaea"/>
-      <path id="패스_7121" data-name="패스 7121" d="M34.955,49.054.65,29.075V69.033H69.259V29.075Z" fill="#fff"/>
-      <path id="패스_7122" data-name="패스 7122" d="M68.61,30.207V68.384H1.3V30.207l33.655,19.6ZM34.955,48.3,0,27.945V69.683H69.91V27.945Z" fill="#eaeaea"/>
-      <rect id="사각형_1734" data-name="사각형 1734" width="58.696" height="3" transform="translate(5.607 1.302)" fill="#1a95ce"/>
-      <rect id="사각형_1735" data-name="사각형 1735" width="1.3" height="79.616" transform="matrix(0.502, -0.865, 0.865, 0.502, 0.324, 29.638)" fill="#eaeaea"/>
-      <path id="패스_7123" data-name="패스 7123" d="M29.639,31.2l-6.506-8.9,2.479-1.813,3.965,5.42,9.04-12.994,2.522,1.754Z" transform="translate(2.718 2.76)" fill="#1a95ce"/>
-    </g>
-  </g>
+<svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Layer_1">
+<g id="Group 9600">
+<path id="Vector" d="M119.83 62.4L78.5 33L37.18 62.4H37V116.65H120.01V62.4H119.83Z" fill="#035C77"/>
+<path id="Vector_2" d="M108.62 43.8789H48.4004V116.659H108.62V43.8789Z" fill="#F4FDFF"/>
+<path id="Vector_3" opacity="0.1" d="M72.4002 54.9688H58.2002V58.9688H72.4002V54.9688Z" fill="#1CB0D4"/>
+<path id="Vector_4" opacity="0.1" d="M99.6802 64.9688H58.2002V68.9688H99.6802V64.9688Z" fill="#1CB0D4"/>
+<path id="Vector_5" opacity="0.1" d="M86.2102 74.9688H71.6602V78.9688H86.2102V74.9688Z" fill="#1CB0D4"/>
+<path id="Vector_6" d="M37 62.3984L120.01 116.648H37" fill="url(#paint0_linear_529_38024)"/>
+<path id="Vector_7" d="M37 116.648H120.01V62.3984L37 116.648Z" fill="#2093EE"/>
+<g id="Vector_8" filter="url(#filter0_d_529_38024)">
+<path d="M120.01 121.32C129.167 121.32 136.59 113.897 136.59 104.74C136.59 95.5833 129.167 88.1602 120.01 88.1602C110.853 88.1602 103.43 95.5833 103.43 104.74C103.43 113.897 110.853 121.32 120.01 121.32Z" fill="#035C77"/>
+</g>
+<path id="Vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M128.174 98.8241C128.955 99.6051 128.955 100.871 128.174 101.652L119.174 110.652C118.393 111.434 117.127 111.434 116.346 110.652L111.846 106.152C111.065 105.371 111.065 104.105 111.846 103.324C112.627 102.543 113.893 102.543 114.674 103.324L117.76 106.41L125.346 98.8241C126.127 98.043 127.393 98.043 128.174 98.8241Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_529_38024" x="95.4297" y="86.1602" width="41.1602" height="41.1602" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-4" dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_529_38024"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_529_38024" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_529_38024" x1="78.505" y1="62.3984" x2="78.505" y2="106.5" gradientUnits="userSpaceOnUse">
+<stop offset="0.50937" stop-color="#EAF3F4"/>
+<stop offset="1" stop-color="#DCE9EB"/>
+</linearGradient>
+</defs>
 </svg>

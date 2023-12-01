@@ -224,24 +224,24 @@
 			<div class="wrap">
 				<div class="box">
 					<div class="step-group">
-						<div class="tit-group tit-group-v1 active">
-							<div class="tit"><img src="../img/ico_check1.svg" alt=" ">회원가입 <br>약관동의</div>
+						<div class="tit-group step1 checked">
+							<div class="tit"><span>01.</span>약관 동의</div>
 						</div>
-						<div class="tit-group active">
-							<div class="tit"><span>02</span>회원정보 <br>입력</div>
+						<div class="tit-group step2 active">
+							<div class="tit"><span>02.</span>정보 입력</div>
 						</div>
-						<div class="tit-group">
-							<div class="tit"><span>03</span>회원가입 <br>완료</div>
+						<div class="tit-group step3">
+							<div class="tit"><span>03.</span>가입 완료</div>
 						</div>
 					</div>
 					<div class="inner">
 						<div class="top-page">
-							<div class="tit">정보 입력</div>
+							<div class="tit">회원정보 입력</div>
 						</div>
 						<div class="form-group">
 							<div class="frm">
 								<div class="top-frm">
-									<div class="tit">회원정보 입력</div>
+									<div class="tit">기본 정보</div>
 									<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
 								</div>
 								<ol class="list-frm">
@@ -251,7 +251,7 @@
 										</div>
 										<div class="td">
 											<input type="text" placeholder="아이디를 입력하세요." class="inp-frm">
-											<div class="frm-info">* 6-20자리로 영문, 숫자 포함하여 입력</div>
+											<div class="frm-info">&middot; 6-20자리로 영문, 숫자 포함하여 입력</div>
 										</div>
 									</li>
 									<li class="tr s1">
@@ -260,7 +260,7 @@
 										</div>
 										<div class="td">
 											<input type="password" placeholder="비밀번호를 입력하세요." class="inp-frm">
-											<div class="frm-info">* 8-20자리로 영문, 숫자, 특수문자 포함하여 입력</div>
+											<div class="frm-info">&middot; 8-20자리로 영문, 숫자, 특수문자 포함하여 입력</div>
 										</div>
 									</li>
 									<li class="tr s1">
@@ -285,7 +285,7 @@
 										</div>
 										<div class="td">
 											<input type="text" placeholder="휴대전화번호를 입력하세요." class="inp-frm">
-											<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											<div class="frm-info">&middot; -없이 숫자로만 입력해주세요.</div>
 										</div>
 									</li>
 									<li class="tr s1">
@@ -304,13 +304,13 @@
 													<option>직접입력</option>
 												</select>
 											</div>
-											<div class="frm-info">* 인증 메일이 발송되므로 정확한 이메일 주소를 입력해주세요.</div>
+											<div class="frm-info">&middot; 인증 메일이 발송되므로 정확한 이메일 주소를 입력해주세요.</div>
 										</div>
 									</li>
 									<!-- 기업회원 -->
 									<li class="tr s1">
 										<div class="th">
-											<div class="tit">회사명(기관/학교명 등)<span class="required">*</span></div>
+											<div class="tit">회사명<span class="required">*</span><span class="txt-s">(기관/학교명 등)</span></div>
 										</div>
 										<div class="td">
 											<input type="text" class="inp-frm">
@@ -354,7 +354,7 @@
 										</div>
 										<div class="td">
 											<input type="text" class="inp-frm">
-											<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											<div class="frm-info">&middot; -없이 숫자로만 입력해주세요.</div>
 										</div>
 									</li>
 									<li class="tr s1">
@@ -363,7 +363,7 @@
 										</div>
 										<div class="td">
 											<input type="text" class="inp-frm">
-											<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											<div class="frm-info">&middot; -없이 숫자로만 입력해주세요.</div>
 										</div>
 									</li>
 									<!--// 기업회원 -->
@@ -393,7 +393,8 @@
 							</div>
 						</div>
 						<div class="btn-group-bottom">
-							<button type="button" class="btn-custom" onclick="location.href='sign-complete.html'">가입하기</button>
+							<button type="button" class="btn-custom btn-custom-v2"
+								onclick="location.href='sign-complete.html'">가입하기</button>
 						</div>
 					</div>
 				</div>
