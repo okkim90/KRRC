@@ -240,7 +240,7 @@
             flex-wrap: wrap;
             border-bottom: 1px solid color(line);
             padding: 24px 0;
-            gap: 10px 16px;
+            gap: 8px 16px;
         }
         &_body:hover {
             background-color: #f4fdff;
@@ -280,12 +280,16 @@
             border-bottom: none;
             height: auto;
             padding: 0;
+            &.only_pc {
+                display: none;
+            }
             &._m_w100 {
                 width: 100%;
                 
             }
             &._m_small {
                 font-size: 14px;
+                margin-top: 4px;
             }
             @for $i from 1 through 5 {
                 &.m_od#{$i}{

@@ -2510,7 +2510,7 @@
     flex-wrap: wrap;
     border-bottom: 1px solid var(--line);
     padding: 24px 0;
-    gap: 10px 16px;
+    gap: 8px 16px;
   }
 }
 .list-board-tbl ._row_body:hover {
@@ -2604,11 +2604,15 @@
     height: auto;
     padding: 0;
   }
+  .list-board-tbl ._cell.only_pc {
+    display: none;
+  }
   .list-board-tbl ._cell._m_w100 {
     width: 100%;
   }
   .list-board-tbl ._cell._m_small {
     font-size: 14px;
+    margin-top: 4px;
   }
   .list-board-tbl ._cell.m_od1 {
     order: 1;
