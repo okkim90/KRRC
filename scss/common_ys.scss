@@ -1413,6 +1413,7 @@
 }
 
 .list_dot {
+    font-size: 16px;
     li {
         position: relative;
         padding-left: 0.7em;
@@ -1428,6 +1429,22 @@
             left: 0;
             top: 0;
         }
+    }
+    &.ty2 {
+        color: #333;
+        font-size: 14px;
+        li::before {
+            color: #bebebe;
+        }
+    }
+}
+.f_tit {
+    display: block;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    @include tablet {
+        font-size: 14px;
     }
 }
 

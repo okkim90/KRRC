@@ -14,6 +14,7 @@
 	<script src="../js/jquery.easing.1.3.js"></script>
 	<script src="../js/script.js"></script>
 </head>
+
 <body>
 	<header class="header">
 		<div class="hd">
@@ -226,7 +227,7 @@
 					<div class="breadcrumb">
 						<a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
 						<a href="#">마이페이지</a>
-					</div> 
+					</div>
 				</div>
 			</div>
 
@@ -244,30 +245,30 @@
 								<div class="box">
 									<a href="" class="menu ">구매 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">판매 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">리퍼브 신청 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">1:1 문의 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">상품 Q&A(구매자)</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">상품 Q&A(판매자)</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">배송지 관리</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">판매 기본 설정</a>
 								</div>
 							</div>
 							<div class="m-snb">
-                                <div class="dropdown">
+								<div class="dropdown">
 									<div class="tit">
 										<div class="menu">마이페이지</div>
 									</div>
@@ -297,6 +298,7 @@
 								<div class="tit">회원정보</div>
 							</div>
 							<div class="form-group">
+								<!-- 회원정보 -->
 								<div class="frm">
 									<div class="top-frm">
 										<div class="tit">회원정보 수정</div>
@@ -443,8 +445,341 @@
 										<button type="submit" class="f_btn f_big c2">회원정보 수정</button>
 									</div>
 								</div>
+
+								<!-- 회사정보 -->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">회사 정보</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">회사명<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">사업자 번호<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">대표자 명</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">업태<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">업종<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">주 생산품<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">매출액<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="inp-group-txt">
+													<input type="text" class="inp-frm">
+													<span class="unit">원</span>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">종업원수<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="inp-group-txt">
+													<input type="text" class="inp-frm">
+													<span class="unit">명</span>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">대표전화<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">회사 주소<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="inp-group-address">
+													<div>
+														<input type="text" class="inp-frm" readonly
+															placeholder="주소를 입력해주세요.">
+														<button type="button" class="btn-frm">주소 찾기</button>
+													</div>
+													<div>
+														<input type="text" class="inp-frm" placeholder="상세주소를 입력해주세요.">
+													</div>
+													<div class="frm-info">* 사업자등록증에 등록된 주소를 입력하세요.</div>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+
+								<!-- 담당자정보 -->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">담당자 정보</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">담당자 명<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">담당자 직위<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">담당자 이메일<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="inp-group-mail">
+													<div>
+														<input type="text" class="inp-frm">
+														<span class="unit"><img src="../img/ico_at1.svg" alt=" "></span>
+														<input type="text" class="inp-frm">
+													</div>
+													<select class="select-custom2">
+														<option>직접입력</option>
+													</select>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">담당자 전화번호<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+
+								<!-- 정산정보 -->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">정산 정보</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">정산 담당자 명</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">정산 담당자 이메일</div>
+											</div>
+											<div class="td">
+												<div class="inp-group-mail">
+													<div>
+														<input type="text" class="inp-frm">
+														<span class="unit"><img src="../img/ico_at1.svg" alt=" "></span>
+														<input type="text" class="inp-frm">
+													</div>
+													<select class="select-custom2">
+														<option>직접입력</option>
+													</select>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">정산 담당자 전화번호</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">입금계좌 은행명</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">입금계좌 번호</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">입금계좌 예금주</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+									</ol>
+								</div>
+
+								<!-- 배송/반품정보 -->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">배송/반품 정보</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">기본 택배사</div>
+											</div>
+											<div class="td">
+												<select class="select-custom2">
+													<option>기본 택배사 선택</option>
+												</select>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">배송정책</div>
+											</div>
+											<div class="td">
+												<select class="select-custom2">
+													<option>배송정책 선택</option>
+													<option>유료</option>
+													<option>무료</option>
+													<option>조건부 무료</option>
+												</select>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">반품 담당자 명</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">반품 담당자 전화번호</div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm">
+												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">반품 주소<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="inp-group-address">
+													<div>
+														<input type="text" class="inp-frm" readonly
+															placeholder="주소를 입력해주세요.">
+														<button type="button" class="btn-frm">주소 찾기</button>
+													</div>
+													<div>
+														<input type="text" class="inp-frm" placeholder="상세주소를 입력해주세요.">
+													</div>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+
+								<!-- 제출 서류 -->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">제출 서류</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">사업자등록증 및 기업소개자료<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="upload-group">
+													<div class="top">
+														<div class="btn-upload">
+															<input type="file" id="upload">
+															<label for="upload">파일첨부</label>
+														</div>
+														<div class="frm-info">※ 문서, 이미지 파일만 등록 가능합니다.(파일당 최대 10Mb, 최대 5개
+															등록가능)</div>
+													</div>
+													<div class="attach-txt">파일 목록</div>
+													<ol class="attach-group">
+														<!-- 첨부 하기 전-->
+														<span class="attach-group-nofile">
+															마우스로 파일을 끌어오세요.
+														</span>
+														<!--// 첨부 하기 전-->
+													</ol>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+								<div class="f_btn_wrap mt_gap3">
+									<button type="submit" class="f_btn f_big c2">판매자 정보 수정</button>
+								</div>
 							</div>
-                           
+
 						</div>
 					</div>
 				</div>
@@ -510,11 +845,12 @@
 						</div>
 					</div>
 				</div>
-				<button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+				<button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로
+						이동</span></button>
 			</div>
 		</div>
 	</footer>
-    <div class="layerPopup" data-popup="popup_pw">
+	<div class="layerPopup" data-popup="popup_pw">
 		<div class="layerPopup_inner" onclick="close_popup(this)">
 			<div class="layerPopup_cont ty1" onclick="event.stopPropagation();">
 				<div class="layerPopup_tit">
@@ -556,11 +892,11 @@
 							<li>아이디, 개인식별번호(주민번호, 전화번호 등)와 동일 반복되는 숫자, 등의 비밀번호는 타인이 쉽게 알아낼 수 있어 비밀번호 유출 위험이 많습니다.</li>
 						</ul>
 					</div>
-					
-					
+
+
 					<div class="layerPopup_btns">
 						<button type="button" class="f_btn f_mid c1">취소</button>
-						<button type="submit"  class="f_btn f_mid c2">확인</button>
+						<button type="submit" class="f_btn f_mid c2">확인</button>
 					</div>
 				</form>
 			</div>
@@ -568,15 +904,16 @@
 	</div>
 	<script>
 		/* open popup */
-		function open_popup(popupName){
+		function open_popup(popupName) {
 			let target_popup = document.querySelector(`[data-popup='${popupName}']`);
 			target_popup.classList.add('on');
 		}
 		/* close popup */
-		function close_popup(target){
+		function close_popup(target) {
 			let target_popup = target.closest('.layerPopup');
 			target_popup.classList.remove('on');
 		}
 	</script>
 </body>
+
 </html>

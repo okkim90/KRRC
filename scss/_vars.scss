@@ -32,7 +32,7 @@ $f_size: (
     'f_super': 56px,
     'f_big': 48px,
     'f_mid': 40px,
-    'f_samll': 32px,
+    'f_small': 32px,
 );
 
 
@@ -97,7 +97,7 @@ $f_size: (
 
 @mixin btn($c, $bd, $bg, $hv_bg){
     transition: all .1s ease-in-out;
-    width: 120px;
+    min-width: 120px;
     padding: 0 20px;
     background-color: $bg;
     border:1px solid $bd;
