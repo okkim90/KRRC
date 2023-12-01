@@ -274,6 +274,22 @@
             font-weight: bold;
             text-decoration: underline;
         }
+        .m-tit {
+            display: none;
+            align-items: center;
+            
+            &::after {
+                content: '';
+                width: 1px;
+                height: 12px;
+                margin: 0 8px;
+                background: #bebebe;
+            }
+        }
+        .d_flex {
+            display: flex;
+            width: 100%;
+        }
 
         @include tablet {
             display: inline-flex;
@@ -291,6 +307,36 @@
                 font-size: 14px;
                 margin-top: 4px;
             }
+            .m-tit {
+
+                display: flex;
+            }
+            &.m_right {
+                margin-left: auto;
+            }
+            .f_btn {
+                height: auto;
+                background-color: transparent;
+                border: none;
+                color: color(grey1);
+                font-size: 14px;
+                padding: 0;
+                align-self: flex-start;
+                &::after {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../img/ico_more_s.svg);
+                    background-repeat: no-repeat;
+                    //background-size: cover;
+                    background-position: center center;
+                }
+                
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+            
             @for $i from 1 through 5 {
                 &.m_od#{$i}{
                     order: $i;
@@ -1384,8 +1430,8 @@
         
         th, td {
             padding: 14px 12px;
-            border: 1px solid color(line);
-            border-top: none;
+            border-bottom: 1px solid color(line);
+            //border-top: none;
             border-right: none;
             box-sizing: border-box;
             &:first-child {

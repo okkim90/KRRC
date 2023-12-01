@@ -24,6 +24,7 @@ $btn_color: (
     'c1': #fff,
     'c2': #1CB0D4,
     'c3': #0F80A1,
+    'c4': #999,
 );
 
 
@@ -76,23 +77,7 @@ $f_size: (
     
 }
 
-@each $key, $size in $f_size {
 
-    .f_btn  {
-        &.#{$key} {
-            height: $size;
-            @if($key == 'f_super' or $key == 'f_big'){
-                font-size: 16px;
-            }
-            @if($key == 'f_mid' ){
-                font-size: 14px;
-            }
-            @if($key == 'f_small' ){
-                font-size: 12px;
-            }
-        }
-    }
-}
 
 
 @mixin btn($c, $bd, $bg, $hv_bg){
@@ -118,11 +103,34 @@ $f_size: (
             @if($key == 'c1'){
                 @include btn(#000, color(line_btn), $color, color(key3))
             }
-            @if($key == 'c2'){
+            @else if($key == 'c2'){
                 @include btn(#fff, $color, $color, color(key2))
             }
-            @if($key == 'c3'){
+            @else if($key == 'c3'){
                 @include btn(#fff, $color, $color, color(key))
+            }
+            @else {
+                @include btn(#fff, $color, $color, darken($color,8%))
+            }
+        }
+    }
+}
+
+@each $key, $size in $f_size {
+
+    .f_btn  {
+        &.#{$key} {
+            height: $size;
+            @if($key == 'f_super' or $key == 'f_big'){
+                font-size: 16px;
+            }
+            @if($key == 'f_mid' ){
+                font-size: 14px;
+            }
+            @if($key == 'f_small' ){
+                font-size: 12px;
+                padding: 0 16px;
+                min-width: 0;
             }
         }
     }
@@ -370,4 +378,18 @@ $gap_m: (
     @include tablet {
         display: block;
     }
+}
+
+.ico_new {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: color(orange);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
