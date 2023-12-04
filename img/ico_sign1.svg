@@ -1,0 +1,15 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 9960">
+<g id="Group 9575">
+<circle id="Ellipse 78" cx="20.0001" cy="8" r="8" fill="#035C77"/>
+<path id="Rectangle 5469" d="M4 26C4 23.7909 5.79086 22 8 22H32C34.2091 22 36 23.7909 36 26V40H4V26Z" fill="url(#paint0_linear_529_37546)"/>
+<path id="Polygon 10" d="M20 36L16.5359 27L23.4641 27L20 36Z" fill="white"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_529_37546" x1="20" y1="30" x2="20" y2="44" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1CB0D4"/>
+<stop offset="1" stop-color="#0F80A1"/>
+</linearGradient>
+</defs>
+</svg>

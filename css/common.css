@@ -302,6 +302,7 @@ a.btn-custom {
 	font-size: 16px;
 	font-weight: 400;
 	color: #fff;
+	box-sizing: border-box;
 	transition: 0.2s all ease-out;
 }
 
@@ -765,7 +766,7 @@ a.btn-wrtie {
 .top-frm .tit {
 	font-size: 20px;
 	font-weight: 700;
-	color: #333;
+	color: #000;
 }
 .top-frm .txt {
 	font-size: 16px;
@@ -3898,6 +3899,120 @@ textarea.inp-frm {
 	display: none;
 }
 
+/* 회원가입 인트로 */
+.sign-group {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-bottom: 60px;
+}
+ul.sign-group:last-of-type {
+	margin-bottom: 0;
+}
+.sign-group li {
+	display: flex;
+	flex-direction: column;
+	padding: 48px 24px 24px 24px;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	flex: 1 0 0;
+	align-self: stretch;
+	box-sizing: border-box;
+	border: 1px solid #eaeaea;
+}
+.sign-group-tit {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	color: #000;
+	margin-bottom: 16px;
+}
+.sign-group-txt {
+	margin-bottom: 40px;
+}
+.sign-group-txt i {
+	display: block;
+	margin: 0 auto 40px;
+	width: 104px;
+	height: 104px;
+	border-radius: 50%;
+}
+.sign-group-txt i.ico_sign1 {
+	background: url('../img/ico_sign1.svg') center center no-repeat #f6f6f8;
+	background-size: 40px auto;
+}
+.sign-group-txt i.ico_sign2 {
+	background: url('../img/ico_sign2.svg') center center no-repeat #f6f6f8;
+	background-size: 36px auto;
+}
+.sign-group-txt i.ico_sign3 {
+	background: url('../img/ico_sign3.svg') center center no-repeat #f6f6f8;
+	background-size: 40px auto;
+}
+.sign-group-txt strong {
+	font-size: 20px;
+	line-height: 28px;
+	color: #000;
+	margin-bottom: 8px;
+}
+.sign-group-txt p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #666;
+}
+
+.sign-group li .btn-custom {
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	background: #1cb0d4;
+	border-bottom: #1cb0d4;
+}
+.sign-group li:hover,
+.sign-group li:active {
+	border-color: #0f80a1;
+}
+.sign-group li:hover .btn-custom,
+.sign-group li:active .btn-custom {
+	background: #0f80a1;
+	border-bottom: #0f80a1;
+}
+.sign-group.v2 {
+	gap: 0;
+}
+.sign-group.v2 li {
+	padding: 32px 24px;
+}
+.sign-group.v2 li:hover {
+	border-color: #eaeaea;
+}
+.sign-group.v2 li:not(:last-child) {
+	border-right: 0;
+}
+.sign-group.v2 .sign-group-txt strong {
+	font-size: 16px;
+}
+.sign-group.v2 .sign-group-txt i {
+	border-radius: 0;
+	margin-bottom: 16px;
+}
+.sign-group-txt i.ico_service1 {
+	background: url('../img/ico_service1.svg') center center no-repeat;
+	background-size: 104px auto;
+}
+.sign-group-txt i.ico_service2 {
+	background: url('../img/ico_service2.svg') center center no-repeat;
+	background-size: 96px auto;
+}
+.sign-group-txt i.ico_service3 {
+	background: url('../img/ico_service3.svg') center center no-repeat;
+	background-size: 96px auto;
+}
+
 .policy-group {
 	padding-top: 24px;
 	border-top: 1px solid #000;
@@ -5376,7 +5491,8 @@ textarea.inp-frm {
 		margin-bottom: 20px;
 	}
 	.sign .top-page .tit {
-		font-size: 24px;
+		font-size: 28px;
+		line-height: 40px;
 	}
 	.step-group {
 		height: 56px;
@@ -5408,10 +5524,6 @@ textarea.inp-frm {
 	.step-group .tit-group .tit br {
 		display: block;
 	}
-
-	.sign .list-ck2 li {
-		/* width: 100%; */
-	}
 	.sign .inp-group-mail > div {
 		width: 100%;
 	}
@@ -5438,6 +5550,58 @@ textarea.inp-frm {
 	.sign .txt-group .txt br {
 		display: block;
 	}
+
+	/* 회원가입 인트로 */
+	.sign-group {
+		display: block;
+		gap: 0;
+		width: 100%;
+	}
+	.sign-group li {
+		padding: 24px 20px 16px 20px;
+		margin-bottom: 16px;
+	}
+	.sign-group-tit {
+		margin-bottom: 12px;
+	}
+	.sign-group-txt {
+		margin-bottom: 24px;
+	}
+	.sign-group-txt i {
+		margin-bottom: 24px;
+		width: 88px;
+		height: 88px;
+	}
+	.sign-group-txt i.ico_sign1 {
+		background-size: 40px auto;
+	}
+	.sign-group-txt i.ico_sign2 {
+		background-size: 36px auto;
+	}
+	.sign-group-txt i.ico_sign3 {
+		background-size: 40px auto;
+	}
+	.sign-group-txt strong {
+		font-size: 18px;
+	}
+	.sign-group.v2 li {
+		padding: 24px 20px;
+		margin-bottom: 0;
+	}
+	.sign-group.v2 li:not(:last-child) {
+		border-right: 1px solid #eaeaea;
+		border-bottom: none;
+	}
+	.sign-group.v2 .sign-group-txt i {
+		width: 80px;
+		height: 80px;
+	}
+	.sign-group-txt i.ico_service1,
+	.sign-group-txt i.ico_service2,
+	.sign-group-txt i.ico_service3 {
+		background-size: 100% auto;
+	}
+
 	.policy-group .tit {
 		margin-bottom: 12px;
 		font-size: 14px;

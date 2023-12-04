@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+  <title>로봇 리퍼브 플랫폼</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="hd">
+      <div class="inner">
+        <h1 class="hd-logo">
+          <a href="index.html"><img src="../img/logo.svg" alt="로봇리퍼브플랫폼"></a>
+        </h1>
+        <ol class="gnb js-gnb">
+          <li><a href="#">서비스 소개</a></li>
+          <li><a href="#">장비 거래</a></li>
+          <li><a href="#">지원 서비스</a></li>
+          <li><a href="#">커뮤니티</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ol>
+        <ol class="hd-menu">
+          <!--[D] 로그인 상태 -->
+          <li class="hd-btn-mypage"><a href="#">마이페이지</a>
+            <ul class="hd-menu-sub">
+              <li>
+                <a href="#">회원정보</a>
+              </li>
+              <li>
+                <a href="#">1:1 문의 내역</a>
+              </li>
+              <li>
+                <a href="#">리버프 로봇/부품 관리</a>
+              </li>
+              <li>
+                <a href="#">상품 등록 관리</a>
+              </li>
+              <li>
+                <a href="#">판매 기본 설정</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">로그아웃</a></li>
+          <!-- [D] 로그아웃상태일때 -->
+          <!-- <li><a href="#">회원가입</a></li>
+					<li><a href="#">로그인</a></li> -->
+        </ol>
+        <button type="button" class="hd-hamburger js-hamburger"></button>
+      </div>
+    </div>
+    <div class="depth">
+      <ol class="lnb js-lnb">
+        <li>
+          <a href="#">센터 소개</a>
+          <a href="#">서비스 안내</a>
+          <a href="#">리버프 사례</a>
+          <a href="#">리버프 공정 소개</a>
+          <a href="#">리버프 기술 소개</a>
+        </li>
+        <li>
+          <a href="#">리버프 로봇</a>
+          <a href="#">리버프 부품</a>
+          <a href="#">신품 로봇</a>
+          <a href="#">신품 부품</a>
+          <a href="#">기타</a>
+        </li>
+        <li>
+          <a href="#">ROI분석 서비스</a>
+          <a href="#">시험성적서 진위여부</a>
+        </li>
+        <li>
+          <a href="#">리버프 동향 정보</a>
+          <a href="#">세미나/교육안내</a>
+          <a href="#">정보공유</a>
+          <a href="#">자유게시판</a>
+          <a href="#">기업 홍보</a>
+          <a href="#">제품 홍보</a>
+        </li>
+        <li>
+          <a href="#">공지사항</a>
+          <a href="#">자료실</a>
+          <a href="#">FAQ</a>
+        </li>
+      </ol>
+    </div>
+  </header>
+  <!--모바일 메뉴-->
+  <div class="m-gnb">
+    <div class="top">
+      <a href="index.html" class="m-logo"><img src="../img/logo.svg" alt="로봇리퍼브플랫폼"></a>
+      <input type="button" value=" " class="m-gnb-close js-hamburger-close">
+    </div>
+    <ol class="list-m-gnb">
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">서비스 소개</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">센터 소개</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">서비스 안내</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 사례</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 공정 소개</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 기술 소개</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">장비 거래</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 로봇</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 부품</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">신품 로봇</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">신품 부품</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">기타</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">지원 서비스</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">ROI분석 서비스</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">시험성적서 진위여부</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">커뮤니티</div>
+
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 동향 정보</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">세미나/교육안내</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">정보공유</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">자유게시판</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">기업 홍보</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">제품 홍보</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">고객센터</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">공지사항</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">자료실</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">FAQ</a>
+          </div>
+        </div>
+      </li>
+      <!-- [D] 로그인 상태 - 마이페이지  -->
+      <li class="list-m-gnb-item" style="display: block;">
+        <div class="menu js-fold">마이페이지</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">1:1 문의 내역</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 로봇/부품 관리</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">상품 등록 관리</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">판매 기본 설정</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class="btn-group-bottom">
+      <!--[D] 로그아웃 상태 -->
+      <a href="#" class="btn"><i class="ico ico-join"></i>회원가입</a>
+      <a href="#" class="btn"><i class="ico ico-login"></i>로그인</a>
+      <!-- [D] 로그인 상태 -->
+      <!-- <a href="#" class="btn"><i class="ico ico-logout"></i>로그아웃</a> -->
+    </div>
+  </div>
+  <div class="m-gnb-bg js-hamburger-close"></div>
+  <!--//모바일 메뉴-->
+
+  <section class="sign">
+    <div class="container">
+      <div class="wrap">
+        <div class="box">
+          <div class="inner">
+            <div class="top-page">
+              <div class="tit">원하는 유형의 회원 분류를 선택해주세요.</div>
+            </div>
+            <ul class="sign-group">
+              <li>
+                <div class="sign-group-txt">
+                  <i class="ico_sign1"></i>
+                  <strong>일반회원</strong>
+                  <p>만 14세 이상 대한민국 국민</p>
+                </div>
+                <a href="#" class="btn-custom">일반회원으로 가입</a>
+              </li>
+              <li>
+                <div class="sign-group-txt">
+                  <i class="ico_sign2"></i>
+                  <strong>기업회원</strong>
+                  <p>기업회원으로 가입하시면 <br />다양한 리퍼브 관련 기술지원과 <br />리퍼브 사업 신청을 하실 수 있습니다.</p>
+                </div>
+                <a href="#" class="btn-custom">기업회원으로 가입</a>
+              </li>
+              <li>
+                <div class="sign-group-txt">
+                  <i class="ico_sign3"></i>
+                  <strong>판매회원</strong>
+                  <p>판매회원으로 가입하시면 <br />리퍼브 로봇을 비롯하여 다양한 상품을 <br />판매할 수 있으며 기업회원과 동일한 <br />지원서비스를 받을 수 있습니다.</p>
+                </div>
+                <a href="#" class="btn-custom">판매회원으로 가입</a>
+              </li>
+            </ul>
+            <div class="sign-group-tit">회원가입 후 이용 가능한 서비스</div>
+            <ul class="sign-group v2">
+              <li>
+                <div class="sign-group-txt">
+                  <i class="ico_service1"></i>
+                  <strong>리퍼브 로봇 관련 상품 구매</strong>
+                  <p>리퍼브 로봇, 리퍼브 부품 및 <br />신품 로봇/부품을 <br />쉽고 빠르게 구매할 수 있습니다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="sign-group-txt">
+                  <i class="ico_service2"></i>
+                  <strong>기술지원 서비스</strong>
+                  <p>로봇 도입에 따른 경제성 분석 및 <br />보유 로봇의 업그레이드 지원 서비스를 <br />제공합니다.</p>
+                </div>
+              </li>
+              <li>
+                <div class="sign-group-txt">
+                  <i class="ico_service3"></i>
+                  <strong>로봇 관련 제품의 판매</strong>
+                  <p>판매회원은 로봇 관련 다양한 제품의 <br />경매 및 판매가 가능합니다.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="ft">
+      <div class="inner">
+        <div class="ft-top">
+          <a href="#" class="ft-logo">KRRC</a>
+          <div class="ft-site">
+            <div class="js-fold ft-site-btn">관련사이트</div>
+            <div class="ft-site-links js-unfold">
+              <a href="#">한국로봇사용자협회</a>
+              <a href="#">erobot</a>
+              <a href="#">한국로봇산업진흥원</a>
+            </div>
+          </div>
+        </div>
+        <div class="ft-info">
+          <div class="company-info">
+            <div class="txt-group">
+              <div class="tit">대표</div>
+              <div class="txt">김덕중</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">주소</div>
+              <div class="txt">용인시 기흥구 흥덕중앙로 120, 흥덕유타워 1층 제112호</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">대표전화</div>
+              <div class="txt">055-1234-5678</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">이메일</div>
+              <div class="txt">korua@korua.or.kr</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">사업자등록번호</div>
+              <div class="txt">111-11-11111</div>
+              <a href="#">사업자정보확인 ></a>
+            </div>
+            <div class="txt-group">
+              <div class="tit">통신판매업신고</div>
+              <div class="txt">2023-경남진해-1234</div>
+            </div>
+          </div>
+          <div class="ft-cs">
+            <strong class="tit">고객센터</strong>
+            <p class="tel">1688-1234</p>
+            <p class="desc">평일 : 09:00 ~ 17:00</p>
+          </div>
+        </div>
+        <div class="ft-bottom">
+          <div class="copyright">Copyright ⓒ 2019 (사)한국로봇사용자협회. All Rights Reserved</div>
+          <div class="fnb">
+            <div class="ft-menu">
+              <a href="#"><b>개인정보취급방침</b></a>
+              <a href="#">이용약관</a>
+              <a href="#">이메일무단수집거부</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
