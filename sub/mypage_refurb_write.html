@@ -14,6 +14,7 @@
 	<script src="../js/jquery.easing.1.3.js"></script>
 	<script src="../js/script.js"></script>
 </head>
+
 <body>
 	<header class="header">
 		<div class="hd">
@@ -226,7 +227,8 @@
 					<div class="breadcrumb">
 						<a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
 						<a href="#">마이페이지</a>
-					</div> 
+						<a href="#">리퍼브 로봇/부품 관리</a>
+					</div>
 				</div>
 			</div>
 
@@ -236,10 +238,10 @@
 						<div class="ly-l">
 							<div class="snb">
 								<div class="box">
-									<a href="" class="menu active">회원정보</a>
+									<a href="" class="menu ">회원정보</a>
 								</div>
 								<div class="box">
-									<a href="" class="menu ">리퍼브 로봇/부품 관리</a>
+									<a href="" class="menu active">리퍼브 로봇/부품 관리</a>
 								</div>
 								<div class="box">
 									<a href="" class="menu">상품 등록 관리</a>
@@ -247,40 +249,40 @@
 								<div class="box">
 									<a href="" class="menu ">구매 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">판매 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">리퍼브 신청 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">1:1 문의 내역</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">상품 Q&A(구매자)</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">상품 Q&A(판매자)</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">배송지 관리</a>
 								</div>
-                                <div class="box">
+								<div class="box">
 									<a href="" class="menu ">판매 기본 설정</a>
 								</div>
 							</div>
 							<div class="m-snb">
-                                <div class="dropdown">
+								<div class="dropdown">
 									<div class="tit">
 										<div class="menu">마이페이지</div>
 									</div>
 								</div>
 								<div class="dropdown">
 									<div class="tit fold js-fold">
-										<div class="menu">회원정보</div>
+										<div class="menu">리퍼브 로봇/부품 관리</div>
 									</div>
 									<div class="list js-unfold">
-										<a href="#">리퍼브 로봇/부품 관리</a>
+										<a href="#">회원정보</a>
 										<a href="#">상품 등록 관리</a>
 										<a href="#">구매 내역</a>
 										<a href="#">판매 내역</a>
@@ -297,157 +299,306 @@
 
 						<div class="ly-r">
 							<div class="top-page">
-								<div class="tit">회원정보</div>
+								<div class="tit">리퍼브 로봇/부품 관리</div>
+							</div>
+							<div class="deal_detail_tab tab-menu-v3 fix_col">
+								<!--[D] 활성화 : 'active' class-->
+								<a href="#" class="tab active">제품 정보</a>
+								<a href="#" class="tab">리퍼브 이력</a>
 							</div>
 							<div class="form-group">
 								<div class="frm">
 									<div class="top-frm">
-										<div class="tit">회원정보 수정</div>
+										<div class="tit">제품정보 등록/수정</div>
 										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
 									</div>
 									<ol class="list-frm">
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">아이디<span class="required">*</span></div>
+												<div class="tit">구분<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												krrc1234
+												<select class="select-custom2 maxW_200" required>
+													<option disabled>구분</option>
+													<option>리퍼브 로봇</option>
+													<option selected>리퍼브 부품</option>
+												</select>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">비밀번호<span class="required">*</span></div>
+												<div class="tit">제품명<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<button class="f_btn f_mid c3" onclick="open_popup('popup_pw')">비밀번호 변경</button>
+												<input type="text" placeholder="제품명을 입력해주세요." value="YASKAWA 6축 다관절 로봇"
+													class="inp-frm" required>
 											</div>
 										</li>
-										
+
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">이름<span class="required">*</span></div>
+												<div class="tit">모델명<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												홍길동
-											</div>
-										</li>
-										<li class="tr s1">
-											<div class="th">
-												<div class="tit">휴대전화번호<span class="required">*</span></div>
-											</div>
-											<div class="td">
-												<input type="text" placeholder="휴대전화번호를 입력하세요." value="01023451234" class="inp-frm">
-												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+												<input type="text" placeholder="모델명을 입력해주세요." value="AR1440"
+													class="inp-frm" required>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">이메일<span class="required">*</span></div>
+												<div class="tit">시리얼넘버</div>
 											</div>
 											<div class="td">
-												<div class="inp-group-mail">
-													<div>
-														<input type="text" value="asdf1234" class="inp-frm">
-														<span class="unit"><img src="../img/ico_at1.svg" alt=" "></span>
-														<input type="text" value="asdfg.co.kr" class="inp-frm">
-													</div>
-	
-													<select class="select-custom2">
-														<option>직접입력</option>
-													</select>
-												</div>
-												<div class="frm-info">* 인증 메일이 발송되므로 정확한 이메일 주소를 입력해주세요.</div>
-											</div>
-										</li>
-										<!-- 기업회원 -->
-										<li class="tr s1">
-											<div class="th">
-												<div class="tit">회사명(기관/학교명 등)<span class="required">*</span></div>
-											</div>
-											<div class="td">
-												<input type="text" value="KRRC" class="inp-frm">
+												<input type="text" placeholder="모델명을 입력해주세요." value="SN12345"
+													class="inp-frm">
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">부서<span class="required">*</span></div>
+												<div class="tit">제조사/제조국<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<input type="text" placeholder="소속 부서명을 입력하세요." value="판매부" class="inp-frm">
+												<input type="text" placeholder="모델명을 입력해주세요." value="YASKAWA/일본"
+													class="inp-frm" required>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">직위<span class="required">*</span></div>
+												<div class="tit">제조년도<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<input type="text" placeholder="직책을 입력하세요." value="과장" class="inp-frm">
+												<select class="select-custom2 maxW_200" required>
+													<option disabled>제조년도 선택</option>
+													<option>2018년</option>
+													<option>2019년</option>
+													<option selected>2020년</option>
+													<option>2021년</option>
+													<option>2022년</option>
+													<option>2023년</option>
+												</select>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">회사 주소<span class="required">*</span></div>
+												<div class="tit">제품상태<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<div class="inp-group-address">
-													<div>
-														<input type="text" class="inp-frm" readonly="" value="서울시 강남구 역삼로 123" placeholder="주소를 입력해주세요.">
-														<button type="button" class="btn-frm">주소 찾기</button>
-													</div>
-													<div>
-														<input type="text" class="inp-frm" value="좋은빌딩 104" placeholder="상세주소를 입력해주세요.">
-													</div>
-												</div>
+												<select class="select-custom2 maxW_200" required>
+													<option disabled>제품상태</option>
+													<option>신품</option>
+													<option selected>중고</option>
+												</select>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">사업자 번호<span class="required">*</span></div>
+												<div class="tit">가동시간<span class="required">*</span></div>
 											</div>
-											<div class="td">
-												<input type="text" value="12123412345" class="inp-frm">
-												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											<div class="td ty_flex">
+												<input type="text" placeholder="가동시간을 입력해주세요." value="100"
+													class="inp-frm maxW_200" required> 시간
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">대표 전화번호</div>
+												<div class="tit">구매금액</div>
 											</div>
-											<div class="td">
-												<input type="text" class="inp-frm">
-												<div class="frm-info">* -없이 숫자로만 입력해주세요.</div>
+											<div class="td ty_flex">
+												<input type="text" placeholder="구매금액을 입력해주세요." value="12,000,000"
+													class="inp-frm maxW_200"> 원
 											</div>
 										</li>
-										<!--// 기업회원 -->
-	
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">정보 수신 동의</div>
+												<div class="tit">본체 중량</div>
 											</div>
 											<div class="td">
-												<ol class="list-ck2">
-													<li>
-														<div class="ck-group">
-															<input id="op_ck2_1" type="checkbox" name="op_ck2" class="ck-custom4" checked>
-															<label for="op_ck2_1"><span class="custom"></span><span class="label">이메일</span></label>
+												<input type="text" placeholder="본체 중량을 입력해주세요." value="200kg"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">정격전압/소비전력</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="정격전압/소비전력을 입력해주세요." value="220v/400w"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">구동 방식</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="구동 방식을 입력해주세요." value=""
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">작업 반경</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="작업 반경을 입력해주세요." value=""
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">크기</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="크기를 입력해주세요." value="600 x 600 x 300mm"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">색상</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="색상 입력해주세요." value="white"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">제품 설명<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												에디터 영역
+												<div class="upload-group mt15">
+													<div class="top">
+														<div class="btn-upload">
+															<input type="file" id="upload2">
+															<label for="upload2">이미지 첨부</label>
 														</div>
-													</li>
-													<li>
-														<div class="ck-group">
-															<input id="op_ck2_2" type="checkbox" name="op_ck2" class="ck-custom4">
-															<label for="op_ck2_2"><span class="custom"></span><span class="label">문자</span></label>
+														<div class="frm-info">편집기에 끌어서 등록하거나 이미지 첨부 버튼을 눌러서 등록하세요. (1200 X 1000 사이즈 이하, 5Mbyte 이하)</div>
+													</div>
+													<div class="attach-txt">파일 목록</div>
+													<!-- 파일 있을경우 -->
+													<div class="attach-group2">														
+														<ol class="list-attach">
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+														</ol>
+													</div>
+													<!--// 파일 있을경우 -->
+													<!-- 파일 없경우 -->
+													<div class="attach-group2">
+														<span class="attach-group-nofile">마우스로 파일을 끌어오세요.</span>
+													</div>
+													<!-- 파일 없을 경우 -->
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">대표 이미지</div>
+											</div>
+											<div class="td">
+												<div class="upload-group">
+													<div class="top">
+														<div class="btn-upload">
+															<input type="file" id="upload2">
+															<label for="upload2">파일첨부</label>
 														</div>
-													</li>
-												</ol>
+														<div class="frm-info">이미지 파일만 등록 가능합니다.(파일당 최대 5Mb, 최대 5개) –
+															600X600px 사이즈 이하 등록</div>
+													</div>
+													<div class="attach-txt">파일 목록</div>
+													<!--파일 있을경우 -->
+													<div class="attach-group2">
+														<ol class="list-attach">
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+														</ol>
+													</div>
+													<!--// 파일 있을경우 -->
+													<!-- 파일 없경우 -->
+													<div class="attach-group2">
+														<span class="attach-group-nofile">마우스로 파일을 끌어오세요.</span>
+													</div>
+													<!-- 파일 없을 경우 -->
+												</div>
 											</div>
 										</li>
 									</ol>
 									<div class="f_btn_wrap mt_gap3">
-										<button type="submit" class="f_btn f_big c2">회원정보 수정</button>
+										<button type="submit" class="f_btn f_big c2">저장</button>
 									</div>
 								</div>
 							</div>
-                           
+
 						</div>
 					</div>
 				</div>
@@ -513,73 +664,11 @@
 						</div>
 					</div>
 				</div>
-				<button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+				<button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로
+						이동</span></button>
 			</div>
 		</div>
 	</footer>
-    <div class="layerPopup" data-popup="popup_pw">
-		<div class="layerPopup_inner" onclick="close_popup(this)">
-			<div class="layerPopup_cont ty1" onclick="event.stopPropagation();">
-				<div class="layerPopup_tit">
-					<h4 class="tit">비밀번호 변경</h4>
-					<button type="button" class="btn_close" onclick="close_popup(this)"></button>
-				</div>
-				<form action="">
-					<ol class="list-frm">
-						<li class="tr s1">
-							<div class="th">
-								<div class="tit">현재 비밀번호 </div>
-							</div>
-							<div class="td">
-								<input type="password" class="inp-frm">
-							</div>
-						</li>
-						<li class="tr s1">
-							<div class="th">
-								<div class="tit">새 비밀번호 </div>
-							</div>
-							<div class="td">
-								<input type="password" class="inp-frm">
-							</div>
-						</li>
-						<li class="tr s1">
-							<div class="th">
-								<div class="tit">새 비밀번호 확인</div>
-							</div>
-							<div class="td">
-								<input type="password" class="inp-frm">
-							</div>
-						</li>
-					</ol>
-
-					<div class="mt_gap2">
-						<strong class="f_tit">비밀번호 생성 안내</strong>
-						<ul class="list_dot ty2">
-							<li>영문(대/소), 숫자, 특수문자 등을 혼용하여 8자 ~ 20자의 비밀번호로 생성 하여야 합니다.</li>
-							<li>아이디, 개인식별번호(주민번호, 전화번호 등)와 동일 반복되는 숫자, 등의 비밀번호는 타인이 쉽게 알아낼 수 있어 비밀번호 유출 위험이 많습니다.</li>
-						</ul>
-					</div>
-					
-					
-					<div class="layerPopup_btns">
-						<button type="button" class="f_btn f_mid c1">취소</button>
-						<button type="submit"  class="f_btn f_mid c2">확인</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<script>
-		/* open popup */
-		function open_popup(popupName){
-			let target_popup = document.querySelector(`[data-popup='${popupName}']`);
-			target_popup.classList.add('on');
-		}
-		/* close popup */
-		function close_popup(target){
-			let target_popup = target.closest('.layerPopup');
-			target_popup.classList.remove('on');
-		}
-	</script>
 </body>
+
 </html>

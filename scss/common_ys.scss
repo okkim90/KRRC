@@ -3,7 +3,11 @@
 @import "./mypage";
 
 
-
+.img_box {
+    img {
+        max-width: 100%;
+    }
+}
 
 
 .file_list {
@@ -26,11 +30,21 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    position: relative;
+    flex-wrap: wrap;
     .f_btn {
         @include tablet {
-            flex: 1;
+            flex: auto;
+            width: 100%;
         }
-        
+        &.ty_r {
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include tablet {
+                position: static;
+            }
+        }
     }
 }
 
@@ -353,6 +367,13 @@
         }
     }
 }
+
+
+.tbl-h2v {
+    
+}
+
+
 
 
 /* view */ 
@@ -1075,10 +1096,11 @@
     font-size: 16px;
     line-height: 1.4;
     border-top: 1px solid #000;
-    border-bottom: 1px solid color(line2);
+    
     @include tablet {
         font-size: 14px;
-        
+        display: table;
+        width: 100%;
     }
     .tr {
         flex: 1;
@@ -1087,6 +1109,9 @@
         border-left: 1px solid color(line2);
         &:first-child {
             border-left: none;
+        }
+        @include tablet {
+            display: table-row;
         }
     }
     .th {
@@ -1098,9 +1123,16 @@
         font-weight: 500;
         background-color: color(bg2);
         flex-shrink: 0;
+        padding: 14px 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid color(line2);
         @include tablet {
+            display: table-cell;
+            vertical-align: middle;
             height: 48px;
-            padding: 0 4px;
+            padding: 12px;
+            width: 90px;
+            text-align: left;
         }
     }
     .td {
@@ -1113,10 +1145,15 @@
         justify-content: center;
         flex: 1;
         color: color(grey1);
-        border-top: 1px solid color(line2);
+        border-bottom: 1px solid color(line2);
+        font-size: 14px;
         @include tablet {
+            display: table-cell;
+            vertical-align: middle;
             min-height: 48px;
-            padding: 12px 6px;
+            padding: 12px;
+            text-align: left;
+            border-top: none;
         }
     }
 }
@@ -1553,4 +1590,14 @@
     gap: 12px 24px;
     line-height: 1;
     user-select: none;
+}
+
+.list-frm {
+    .td {
+        &.ty_flex {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
 }

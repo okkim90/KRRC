@@ -91,11 +91,17 @@ $f_size: (
     align-items: center;
     justify-content: center;
     text-align: center;
-    &:hover {
-        background-color: $hv_bg;
-        border-color: $hv_bg;
-        color: #fff;
+    box-sizing: border-box;
+    
+    @media (hover: hover) {
+        &:hover {
+            background-color: $hv_bg;
+            border-color: $hv_bg;
+            color: #fff;
+            text-decoration: none;
+        }
     }
+    
 }
 @each $key, $color in $btn_color {
     .f_btn  {
@@ -248,10 +254,17 @@ $gap_m: (
 }
 @for $i from 1 through 20 {
     $w : 10*$i;
+    $maxw : 100*$i;
     $z : 5*$i;
     .w_#{$w} {
         width: #{$w}px
     }
+    @if $maxw <= 1000 {
+        .maxW_#{$maxw} {
+            max-width: #{$maxw}px
+        }
+    }
+   
     .mt_#{$i} {
         margin-top: #{$i}px;
     }
