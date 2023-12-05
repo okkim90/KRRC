@@ -1743,3 +1743,15 @@
 .attach-group-nofile {
     width: 100%;
 }
+
+.dFlex {
+    display: flex;
+    &._wrap {
+        flex-wrap: wrap;
+    }
+    @for $i from 4 through 20 {
+        &._gap#{$i} {
+            gap: #{$i}px;
+        }
+    }
+}

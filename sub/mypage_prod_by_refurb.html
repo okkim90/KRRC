@@ -509,29 +509,6 @@
 			</div>
 		</div>
 	</footer>
-    <script>
-        const xScrollArea = document.querySelectorAll('.xScrollArea');
-        function tbl_xscroll(){
-            xScrollArea.forEach((e)=>{
-                let f_tbl = e.querySelector('.f_tbl');
-                //console.log(f_tbl.offsetWidth, e.offsetWidth);
-                if(f_tbl.offsetWidth > e.offsetWidth){
-                    e.classList.add('scroll_start');
-                }else{
-                    e.classList.remove('scroll_start');
-                }
-            })
-        }
-        ['DOMContentLoaded','resize'].forEach(event => window.addEventListener(event, tbl_xscroll));
-        xScrollArea.forEach((e)=>{
-            e.addEventListener('touchstart',()=>{
-                e.classList.add('scrolling');
-            },false);
-            e.addEventListener('touchend',()=>{
-                e.classList.remove('scrolling');
-            },false);
-        });
-    </script>
 </body>
 
 </html>
