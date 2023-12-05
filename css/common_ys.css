@@ -496,6 +496,28 @@
   }
 }
 
+.f_btn.c_red {
+  transition: all 0.1s ease-in-out;
+  min-width: 120px;
+  padding: 0 20px;
+  background-color: #F01B1B;
+  border: 1px solid #F01B1B;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+@media (hover: hover) {
+  .f_btn.c_red:hover {
+    background-color: #d40e0e;
+    border-color: #d40e0e;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 .f_btn.f_super {
   height: 56px;
   font-size: 16px;
@@ -2397,6 +2419,9 @@
   position: relative;
   flex-wrap: wrap;
 }
+.f_btn_wrap.jc_sb {
+  justify-content: space-between;
+}
 @media only screen and (max-width: 1280px) {
   .f_btn_wrap .f_btn {
     flex: auto;
@@ -4054,4 +4079,23 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.inp-frm.inp-date {
+  max-width: 200px;
+  cursor: pointer;
+  padding-right: 40px;
+  background-image: url(../img/ico_calendar1.svg);
+  background-repeat: no-repeat;
+  background-position: 100% center;
+}
+.inp-frm.inp-date:-moz-read-only {
+  background-color: #fff;
+}
+.inp-frm.inp-date:read-only {
+  background-color: #fff;
+}
+
+.attach-group-nofile {
+  width: 100%;
 }

@@ -32,6 +32,9 @@
     gap: 8px;
     position: relative;
     flex-wrap: wrap;
+    &.jc_sb {
+        justify-content: space-between;
+    }
     .f_btn {
         @include tablet {
             flex: auto;
@@ -1600,4 +1603,22 @@
             gap: 8px;
         }
     }
+}
+
+
+.inp-frm {
+    &.inp-date {
+        max-width: 200px;
+        cursor: pointer;
+        &:read-only {
+            background-color: #fff;
+        }
+        padding-right: 40px;
+        background-image: url(../img/ico_calendar1.svg);
+        background-repeat: no-repeat;
+        background-position: 100% center;
+    }
+}
+.attach-group-nofile {
+    width: 100%;
 }
