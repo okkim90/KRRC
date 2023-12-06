@@ -307,7 +307,7 @@
 								<div class="tit">상품 상세 등록/수정</div>
 							</div>
 							<div class="form-group">
-								
+								<!--승인상태 정보-->
 								<div class="frm">
 									<div class="top-frm">
 										<div class="tit">승인상태 정보</div>
@@ -335,6 +335,8 @@
 										</li>
 									</ol>
 								</div>
+								<!--//승인상태 정보-->
+								<!--판매 정보-->
 								<div class="frm">
 									<div class="top-frm">
 										<div class="tit">판매 정보</div>
@@ -343,32 +345,376 @@
 									<ol class="list-frm">
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">리퍼브 일자<span class="required">*</span></div>
+												<div class="tit">판매상태<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<input type="text" class="inp-frm inp-date" value="2023-12-05" readonly>
+												<div class="ck-group-list">
+													<div class="ck-group ">
+														<input id="sale1" type="radio" name="sale" class="ck-custom3">
+														<label for="sale1"><span class="custom"></span><span class="label">판매함</span></label>
+													</div>
+													<div class="ck-group ">
+														<input id="sale2" type="radio" name="sale" class="ck-custom3">
+														<label for="sale2"><span class="custom"></span><span class="label">판매안함</span></label>
+													</div>
+												</div>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">보유기업<span class="required">*</span></div>
+												<div class="tit">상품분류<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<input type="text" placeholder="보유기업을 입력해주세요." value="YASKAWA"
-													class="inp-frm" readonly required>
+												<select class="select-custom2 maxW_200">
+													<option selected disabled>분류 전체</option>
+													<option>리퍼브 로봇</option>
+													<option>리퍼브 부품</option>
+													<option>신품 로봇</option>
+													<option>신품 부품</option>
+													<option>기타</option>
+												</select>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">리퍼브 내용<span class="required">*</span></div>
+												<div class="tit">거래구분<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<textarea name="" id="" class="inp-frm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fuga cupiditate quisquam commodi explicabo harum neque facilis magni, ratione delectus! Incidunt veniam dicta officia corporis? Magni commodi reprehenderit aperiam natus.</textarea>
+												<select class="select-custom2 maxW_200">
+													<option  disabled>구분 전체</option>
+													<option selected>바로구매</option>
+													<option>경매</option>
+												</select>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">사진</div>
+												<div class="tit">제품코드</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="제품코드를 입력해주세요." value="" class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">상품명<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="상품명을 입력해주세요." value="" class="inp-frm">
+											</div>
+										</li>
+
+										<!-- 거래구분:바로구매 일 경우 -->
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">판매가<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="판매가를 입력해주세요." value="" class="inp-frm maxW_200">
+													<span class="mr_20">원</span> 
+													<div class="ck-group shrink0">
+														<input id="price" type="checkbox" name="price" class="ck-custom4">
+														<label for="price"><span class="custom"></span><span class="label">별도 문의</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<!--// 거래구분:바로구매 일 경우 -->
+
+										<!-- 거래구분:경매 일 경우 -->
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">시작가<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="시작가를 입력해주세요." value="" class="inp-frm maxW_200">
+													<span class="mr_20">원</span> 
+													<div class="ck-group shrink0">
+														<input id="price_start" type="checkbox" name="price_start" class="ck-custom4">
+														<label for="price_start"><span class="custom"></span><span class="label">즉시구매 가능</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">즉시 구매가<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="즉시구매가를 입력해주세요." value="" class="inp-frm maxW_200">
+													<span class="mr_20">원</span> 
+													<p class="txt_reference fc_red">경매 시작가의 30% 이상 등록 가능</p>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">입찰단위<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<select class="select-custom2 maxW_200">
+													<option selected disabled>입찰단위 선택</option>
+													<option>1,000 원</option>
+													<option>10,000 원</option>
+													<option>20,000 원</option>
+													<option>50,000 원</option>
+													<option>100,000 원</option>
+													<option>500,000 원</option>
+													<option>1,000,000 원</option>
+												</select>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">경매기간<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<div class="dFlex _gap8">
+														<input type="text" class="inp-frm inp-date w200" value="2023-12-05" readonly>
+														<select class="select-custom2 maxW_100">
+															<option selected disabled>시간</option>
+															<option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+															<option>6</option>
+														</select>
+													</div>
+													~
+													<div class="dFlex _gap8">
+														<input type="text" class="inp-frm inp-date w200" value="2023-12-05" readonly>
+														<select class="select-custom2 maxW_100">
+															<option selected disabled>시간</option>
+															<option>0</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+															<option>6</option>
+														</select>
+													</div>
+												</div>
+												
+											</div>
+										</li>
+										<!--// 거래구분:경매 일 경우 -->
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">배송비<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex ai_c _gap8">
+													<input type="text" placeholder="배송비를 입력해주세요." value="" class="inp-frm maxW_200"> 원
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">검색 키워드</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="검색 키워드를 입력해주세요." value="" class="inp-frm">
+												<p class="txt_reference mt_8">키워드를 등록해 두시면 검색에 도움이 됩니다. 쉼표(,)로 구분해서 최대 5개까지 입력 가능합니다.</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+								<!--//판매 정보-->
+								<!--상품 기본 정보-->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">상품 기본 정보</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">모델명<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="모델명을 입력해주세요." value="AR1440"
+													class="inp-frm" required>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">시리얼넘버</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="모델명을 입력해주세요." value="SN12345"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">제조사/제조국<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="모델명을 입력해주세요." value="YASKAWA/일본"
+													class="inp-frm" required>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">제조년도<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<select class="select-custom2 maxW_200" required>
+													<option disabled>제조년도 선택</option>
+													<option>2018년</option>
+													<option>2019년</option>
+													<option selected>2020년</option>
+													<option>2021년</option>
+													<option>2022년</option>
+													<option>2023년</option>
+												</select>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">제품상태<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<select class="select-custom2 maxW_200" required>
+													<option disabled>제품상태</option>
+													<option>신품</option>
+													<option selected>중고</option>
+												</select>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">가동시간<span class="required">*</span></div>
+											</div>
+											<div class="td ty_flex">
+												<input type="text" placeholder="가동시간을 입력해주세요." value="100"
+													class="inp-frm maxW_200" required> 시간
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">구매금액</div>
+											</div>
+											<div class="td ty_flex">
+												<input type="text" placeholder="구매금액을 입력해주세요." value="12,000,000"
+													class="inp-frm maxW_200"> 원
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">본체 중량</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="본체 중량을 입력해주세요." value="200kg"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">정격전압/소비전력</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="정격전압/소비전력을 입력해주세요." value="220v/400w"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">구동 방식</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="구동 방식을 입력해주세요." value=""
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">작업 반경</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="작업 반경을 입력해주세요." value=""
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">크기</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="크기를 입력해주세요." value="600 x 600 x 300mm"
+													class="inp-frm">
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">색상</div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="색상 입력해주세요." value="white"
+													class="inp-frm">
+											</div>
+										</li>
+									</ol>
+								</div>
+								<!--//상품 기본 정보-->
+								<!--상품 상세 정보-->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">상품 상세 정보</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">제품 설명<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												에디터 영역
+												<div class="upload-group mt15">
+													<div class="top">
+														<div class="btn-upload">
+															<input type="file" id="upload2">
+															<label for="upload2">이미지 첨부</label>
+														</div>
+														<div class="frm-info">편집기에 끌어서 등록하거나 이미지 첨부 버튼을 눌러서 등록하세요. (1200 X 1000 사이즈 이하, 5Mbyte 이하)</div>
+													</div>
+													<div class="attach-txt">파일 목록</div>
+													<!-- 파일 있을경우 -->
+													<div class="attach-group2">														
+														<ol class="list-attach">
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+														</ol>
+													</div>
+													<!--// 파일 있을경우 -->
+													<!-- 파일 없경우 -->
+													<div class="attach-group2">
+														<span class="attach-group-nofile">마우스로 파일을 끌어오세요.</span>
+													</div>
+													<!-- 파일 없을 경우 -->
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">대표 이미지</div>
 											</div>
 											<div class="td">
 												<div class="upload-group">
@@ -447,72 +793,131 @@
 														</ol>
 													</div>
 													<!--// 파일 있을경우 -->
-													<!-- 파일 없을 경우 -->
+													<!-- 파일 없경우 -->
 													<div class="attach-group2">
 														<span class="attach-group-nofile">마우스로 파일을 끌어오세요.</span>
 													</div>
 													<!-- 파일 없을 경우 -->
 												</div>
+												<p class="txt_reference mt_8">맨 앞쪽에 등록된 이미지가 상품목록에 노출되는 대표 이미지 입니다. 이미지를 마우스로 클릭하여 이동하면 순서 변경이 가능합니다.</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+								<!--//상품 상세 정보-->
+								<!--배송/반품/환불 안내-->
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">배송/반품/환불 안내</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">판매자명<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="판매자명을 입력해주세요." value="" class="inp-frm flex1 mW100" required>
+													<div class="ck-group shrink0">
+														<input id="etc1" type="checkbox" name="etc1" class="ck-custom4">
+														<label for="etc1"><span class="custom"></span><span class="label">상품상세설명 참조</span></label>
+													</div>
+												</div>
 											</div>
 										</li>
 										<li class="tr s1">
 											<div class="th">
-												<div class="tit">첨부파일</div>
+												<div class="tit">고객문의 대표번호<span class="required">*</span></div>
 											</div>
 											<div class="td">
-												<div class="upload-group">
-													<div class="top">
-														<div class="btn-upload">
-															<input type="file" id="upload">
-															<label for="upload">파일첨부</label>
-														</div>
-														<div class="frm-info">이미지, 문서 파일만 등록 가능합니다.(파일당 최대 100Mb, 파일 최대
-															10개 등록 가능)</div>
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="고객문의 대표번호를 입력해주세요." value="" class="inp-frm flex1 mW100" required>
+													<div class="ck-group shrink0">
+														<input id="etc2" type="checkbox" name="etc2" class="ck-custom4">
+														<label for="etc2"><span class="custom"></span><span class="label">상품상세설명 참조</span></label>
 													</div>
-													<div class="attach-txt">파일 목록</div>
-													
-													<ul class="attach-group">
-														<!-- 첨부 했을 때-->
-														<li>
-															<div class="tit">파일명.jpg (374.27KB)</div>
-															<div class="process-group">
-																<div class="state">업로드 중</div>
-																<div class="bar-group">
-																	<div class="bar" style="width: 0%;"></div>
-																	<div class="percent">0%</div>
-																</div>
-															</div>
-															<button type="button"
-																class="btn-delete js-delete">삭제</button>
-														</li>
-														<li>
-															<div class="tit">파일명.jpg (374.27KB)</div>
-															<div class="process-group">
-																<div class="state complete">업로드 완료</div>
-																<div class="bar-group">
-																	<div class="bar" style="width: 100%;"></div>
-																	<div class="percent active">100%</div>
-																</div>
-															</div>
-															<button type="button"
-																class="btn-delete js-delete">삭제</button>
-														</li>
-														<!--// 첨부 했을 때-->
-														<!-- 파일 없경우 -->
-														<span class="attach-group-nofile">마우스로 파일을 끌어오세요.</span>
-														<!-- 파일 없을 경우 -->
-													</ul>
-													
-													
 												</div>
-												
-												
 											</div>
 										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">고객응대 가능시간 <span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="고객응대 가능시간을 입력해주세요." value="" class="inp-frm flex1 mW100" required>
+													<div class="ck-group shrink0">
+														<input id="etc3" type="checkbox" name="etc3" class="ck-custom4">
+														<label for="etc3"><span class="custom"></span><span class="label">상품상세설명 참조</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">반품/교환 배송비<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="반품/교환 배송비을 입력해주세요." value="" class="inp-frm flex1 mW100" required>
+													<div class="ck-group shrink0">
+														<input id="etc4" type="checkbox" name="etc4" class="ck-custom4">
+														<label for="etc4"><span class="custom"></span><span class="label">상품상세설명 참조</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">반품/교환지 주소<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="반품/교환지 주소 입력해주세요." value="" class="inp-frm flex1 mW100" required>
+													<div class="ck-group shrink0">
+														<input id="etc5" type="checkbox" name="etc5" class="ck-custom4">
+														<label for="etc5"><span class="custom"></span><span class="label">상품상세설명 참조</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">반품/교환 안내<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="반품/교환안내를 입력해주세요." value="" class="inp-frm flex1 mW100" required>
+													<div class="ck-group shrink0">
+														<input id="etc6" type="checkbox" name="etc6" class="ck-custom4">
+														<label for="etc6"><span class="custom"></span><span class="label">상품상세설명 참조</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">반품/교환 기준<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<div class="dFlex _wrap ai_c _gap8">
+													<input type="text" placeholder="반품/교환 기준을 입력해주세요." value="" class="inp-frm flex1 mW100" required>
+													<div class="ck-group shrink0">
+														<input id="etc6" type="checkbox" name="etc6" class="ck-custom4">
+														<label for="etc6"><span class="custom"></span><span class="label">상품상세설명 참조</span></label>
+													</div>
+												</div>
+											</div>
+										</li>
+										
 									</ol>
-									<div class="f_btn_wrap mt_gap3">
-										<button type="submit" class="f_btn f_big c2">저장</button>
-									</div>
+								</div>
+								<!--//배송/반품/환불 안내-->
+								<div class="f_btn_wrap mt_gap3">
+									<button type="button" class="f_btn f_big c4">취소</button>
+									<button type="submit" class="f_btn f_big c2">저장</button>
+									<a href="" class="f_btn f_big c1">미리보기</a>
 								</div>
 							</div>
 						</div>

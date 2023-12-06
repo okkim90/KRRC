@@ -191,11 +191,13 @@ $gap: (
     'gap1':40px,
     'gap2':24px,
     'gap3':60px,
+    'gap4':16px,
 );
 $gap_m: (
     'gap1':24px,
     'gap2':16px,
     'gap3':40px,
+    'gap4':10px,
 );
 
 @each $key, $gap in $gap {

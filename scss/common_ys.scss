@@ -1749,9 +1749,61 @@
     &._wrap {
         flex-wrap: wrap;
     }
+    &.ai_c {
+        align-items: center;
+    }
     @for $i from 4 through 20 {
         &._gap#{$i} {
             gap: #{$i}px;
         }
+    }
+    .shrink0 {
+        flex-shrink: 0;
+    }
+    .flex1 {
+        flex: 1;
+        width: auto;
+        &.mW100 {
+            @include tablet {
+                width: 100%;
+                flex: auto;
+            }
+        }
+    }
+}
+
+.list_reference {
+    .list_item {
+        padding-left: 0.7em;
+        position: relative;
+        line-height: 1.4;
+        font-size: 14px;
+        @include tablet {
+            font-size: 12px;
+        }
+        & + .list_item {
+            margin-top: 4px;
+        }
+        &::before {
+            content:'•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #d9d9d9;
+        }
+    }
+}
+
+.txt_reference {
+    padding-left: 1em;
+    font-size: 12px;
+    line-height: 1.4;
+    position: relative;
+    
+    &::before {
+        content:'※';
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
