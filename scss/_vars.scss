@@ -266,6 +266,9 @@ $gap_m: (
         .maxW_#{$maxw} {
             max-width: #{$maxw}px
         }
+        .minW_#{$maxw} {
+            min-width: #{$maxw}px
+        }
     }
    
     .mt_#{$i} {

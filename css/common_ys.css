@@ -774,6 +774,10 @@
   max-width: 100px;
 }
 
+.minW_100 {
+  min-width: 100px;
+}
+
 .mt_1 {
   margin-top: 1px;
 }
@@ -844,6 +848,10 @@
 
 .maxW_200 {
   max-width: 200px;
+}
+
+.minW_200 {
+  min-width: 200px;
 }
 
 .mt_2 {
@@ -918,6 +926,10 @@
   max-width: 300px;
 }
 
+.minW_300 {
+  min-width: 300px;
+}
+
 .mt_3 {
   margin-top: 3px;
 }
@@ -988,6 +1000,10 @@
 
 .maxW_400 {
   max-width: 400px;
+}
+
+.minW_400 {
+  min-width: 400px;
 }
 
 .mt_4 {
@@ -1062,6 +1078,10 @@
   max-width: 500px;
 }
 
+.minW_500 {
+  min-width: 500px;
+}
+
 .mt_5 {
   margin-top: 5px;
 }
@@ -1132,6 +1152,10 @@
 
 .maxW_600 {
   max-width: 600px;
+}
+
+.minW_600 {
+  min-width: 600px;
 }
 
 .mt_6 {
@@ -1206,6 +1230,10 @@
   max-width: 700px;
 }
 
+.minW_700 {
+  min-width: 700px;
+}
+
 .mt_7 {
   margin-top: 7px;
 }
@@ -1276,6 +1304,10 @@
 
 .maxW_800 {
   max-width: 800px;
+}
+
+.minW_800 {
+  min-width: 800px;
 }
 
 .mt_8 {
@@ -1350,6 +1382,10 @@
   max-width: 900px;
 }
 
+.minW_900 {
+  min-width: 900px;
+}
+
 .mt_9 {
   margin-top: 9px;
 }
@@ -1420,6 +1456,10 @@
 
 .maxW_1000 {
   max-width: 1000px;
+}
+
+.minW_1000 {
+  min-width: 1000px;
 }
 
 .mt_10 {
@@ -4370,6 +4410,9 @@
   width: auto;
 }
 @media only screen and (max-width: 1280px) {
+  .dFlex .flex1 {
+    min-width: auto;
+  }
   .dFlex .flex1.mW100 {
     width: 100%;
     flex: auto;

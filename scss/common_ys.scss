@@ -1763,9 +1763,12 @@
     .flex1 {
         flex: 1;
         width: auto;
-        &.mW100 {
-            @include tablet {
+        @include tablet {
+            min-width: auto;
+            &.mW100 {
+           
                 width: 100%;
+
                 flex: auto;
             }
         }
