@@ -3606,12 +3606,9 @@ textarea.inp-frm {
 .tbl.tbl-oth th,
 .tbl.tbl-oth td {
 	height: 64px;
-	text-align: left;
-	padding: 12px 12px;
-	white-space: nowrap;
-}
-.tbl.tbl-oth th {
 	text-align: center;
+	padding: 10px 12px;
+	white-space: nowrap;
 }
 .tbl.tbl-oth th:not(:first-child) {
 	border-left: 1px solid #eaeaea;
@@ -3620,9 +3617,6 @@ textarea.inp-frm {
 	font-size: 14px;
 	text-align: right;
 	border-left: 1px solid #eaeaea;
-}
-.tbl.tbl-oth td:first-child {
-	text-align: center;
 }
 .tbl.tbl-oth td.t-center {
 	text-align: center;
@@ -3643,30 +3637,14 @@ textarea.inp-frm {
 .tbl-oth td.txt-blue {
 	color: #0f80a1;
 }
-.tbl-oth.v2 th {
-	height: 88px;
-}
-.tbl-oth.v3 th,
-.tbl-oth.v3 td {
+.tbl.pd-s th,
+.tbl.pd-s td {
+	height: 64px;
 	padding: 10px 20px;
 }
-.tbl-oth.v3 th {
+.tbl.pd-s th {
 	width: 188px;
-}
-.tbl.tbl-oth.v3 th:not(:first-child) {
-	border-left: 0;
-}
-.tbl.tbl-oth.v3 td:not(:first-child) {
-	text-align: left;
-	border-left: 0;
-	font-size: 16px;
-}
-.tbl.tbl-oth.v3 td .inp-frm {
-	text-align: left;
-	min-width: 96px;
-}
-.tbl-oth.v3 td a {
-	color: #1cb0d4;
+	white-space: nowrap;
 }
 
 .top-article .btn {
@@ -5599,37 +5577,23 @@ ul.sign-group:last-of-type {
 	.tbl.tbl-oth td .inp-frm {
 		height: 32px;
 	}
-	.tbl-oth.v2 th {
-		height: 68px;
+
+	.tbl.pd-s th .tit {
+		min-width: 90px;
 	}
-	.tbl.tbl-oth.v3 th {
-		width: 114px;
+	.tbl.pd-s th,
+	.tbl.pd-s td {
+		height: 48px;
+		padding: 8px 12px;
 	}
-	.tbl.tbl-oth.v3 td:not(:first-child) {
-		font-size: 14px;
-	}
-	.tbl-oth.v3 .inp-frmm,
-	.tbl-oth.v3 .inp-group-btn .btn,
-	.tbl-oth.v3 .select-custom2 {
+	.tbl.pd-s .inp-frm,
+	.tbl.pd-s .inp-group-btn .btn,
+	.tbl.pd-s .select-custom2 {
 		height: 32px;
 	}
-	.tbl-oth.v3 .inp-group-btn .btn {
+	.tbl.pd-s .inp-group-btn .btn {
 		font-size: 12px;
 	}
-
-	/* .tbl-v2 .txt-group div {
-		width: 50%;
-		padding-left: 16px;
-		box-sizing: border-box;
-		font-size: 13px;
-	}
-	.tbl-v2 .txt-group div:before {
-		left: 5px;
-	}
-
-	.tbl-v4 {
-		min-width: 750px;
-	} */
 
 	/*로그인*/
 	.login .wrap {
