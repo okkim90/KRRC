@@ -391,6 +391,9 @@ a.btn-custom-v2:disabled {
 .btn-group-bottom .m-btn {
 	display: none;
 }
+.btn-group-bottom .w-btn {
+	display: flex;
+}
 .btn-group-bottom .btn:only-child {
 	min-width: 160px;
 }
@@ -3607,7 +3610,7 @@ textarea.inp-frm {
 	padding: 12px 12px;
 	white-space: nowrap;
 }
-.tbl-oth th {
+.tbl.tbl-oth th {
 	text-align: center;
 }
 .tbl.tbl-oth th:not(:first-child) {
@@ -5407,22 +5410,9 @@ ul.sign-group:last-of-type {
 	.btn-group-bottom .m-btn {
 		display: flex;
 	}
-	/* .board-content + .btn-group-bottom {
-		margin-top: 20px;
+	.btn-group-bottom .w-btn {
+		display: none;
 	}
-	.file-group + .btn-group-bottom,
-	.comment-group + .btn-group-bottom {
-		margin-top: 40px;
-	} */
-
-	/* .video-group {
-		width: 100%;
-		height: auto;
-		margin-bottom: 30px;
-	}
-	.video-group .btn-play {
-		zoom: 0.5;
-	} */
 	.board-navigation {
 		margin-top: 40px;
 	}
