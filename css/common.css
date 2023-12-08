@@ -3507,10 +3507,6 @@ textarea.inp-frm {
 }
 
 /*table style*/
-/* .box-table {
-	overflow-x: auto;
-} */
-
 .tbl {
 	width: 100%;
 	border-collapse: collapse;
@@ -3598,6 +3594,9 @@ textarea.inp-frm {
 }
 .tbl td a {
 	text-decoration: underline;
+}
+.tbl td a.txt-blue {
+	color: #1cb0d4;
 }
 .tb_scroll {
 	overflow-x: auto;
@@ -4277,6 +4276,9 @@ ul.sign-group:last-of-type {
 /*component style*/
 .w200 {
 	width: 200px;
+}
+.txt-blue {
+	color: #1cb0d4;
 }
 @media only screen and (max-width: 1324px) {
 	.wrap {
