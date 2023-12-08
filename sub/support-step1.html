@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+  <title>로봇 리퍼브 플랫폼</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="hd">
+      <div class="inner">
+        <h1 class="hd-logo">
+          <a href="index.html"><img src="../img/logo.svg" alt="로봇리퍼브플랫폼"></a>
+        </h1>
+        <ol class="gnb js-gnb">
+          <li><a href="#">서비스 소개</a></li>
+          <li><a href="#">장비 거래</a></li>
+          <li><a href="#">지원 서비스</a></li>
+          <li><a href="#">커뮤니티</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ol>
+        <ol class="hd-menu">
+          <!--[D] 로그인 상태 -->
+          <li class="hd-btn-mypage"><a href="#">마이페이지</a>
+            <ul class="hd-menu-sub">
+              <li>
+                <a href="#">회원정보</a>
+              </li>
+              <li>
+                <a href="#">1:1 문의 내역</a>
+              </li>
+              <li>
+                <a href="#">리버프 로봇/부품 관리</a>
+              </li>
+              <li>
+                <a href="#">상품 등록 관리</a>
+              </li>
+              <li>
+                <a href="#">판매 기본 설정</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">로그아웃</a></li>
+          <!-- [D] 로그아웃상태일때 -->
+          <!-- <li><a href="#">회원가입</a></li>
+					<li><a href="#">로그인</a></li> -->
+        </ol>
+        <button type="button" class="hd-hamburger js-hamburger"></button>
+      </div>
+    </div>
+    <div class="depth">
+      <ol class="lnb js-lnb">
+        <li>
+          <a href="#">센터 소개</a>
+          <a href="#">서비스 안내</a>
+          <a href="#">리버프 사례</a>
+          <a href="#">리버프 공정 소개</a>
+          <a href="#">리버프 기술 소개</a>
+        </li>
+        <li>
+          <a href="#">리버프 로봇</a>
+          <a href="#">리버프 부품</a>
+          <a href="#">신품 로봇</a>
+          <a href="#">신품 부품</a>
+          <a href="#">기타</a>
+        </li>
+        <li>
+          <a href="#">ROI분석 서비스</a>
+          <a href="#">시험성적서 진위여부</a>
+        </li>
+        <li>
+          <a href="#">리버프 동향 정보</a>
+          <a href="#">세미나/교육안내</a>
+          <a href="#">정보공유</a>
+          <a href="#">자유게시판</a>
+          <a href="#">기업 홍보</a>
+          <a href="#">제품 홍보</a>
+        </li>
+        <li>
+          <a href="#">공지사항</a>
+          <a href="#">자료실</a>
+          <a href="#">FAQ</a>
+        </li>
+      </ol>
+    </div>
+  </header>
+  <!--모바일 메뉴-->
+  <div class="m-gnb">
+    <div class="top">
+      <a href="index.html" class="m-logo"><img src="../img/logo.svg" alt="로봇리퍼브플랫폼"></a>
+      <input type="button" value=" " class="m-gnb-close js-hamburger-close">
+    </div>
+    <ol class="list-m-gnb">
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">서비스 소개</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">센터 소개</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">서비스 안내</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 사례</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 공정 소개</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 기술 소개</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">장비 거래</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 로봇</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 부품</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">신품 로봇</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">신품 부품</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">기타</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">지원 서비스</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">ROI분석 서비스</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">시험성적서 진위여부</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">커뮤니티</div>
+
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 동향 정보</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">세미나/교육안내</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">정보공유</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">자유게시판</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">기업 홍보</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">제품 홍보</a>
+          </div>
+        </div>
+      </li>
+      <li class="list-m-gnb-item">
+        <div class="menu js-fold">고객센터</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">공지사항</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">자료실</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">FAQ</a>
+          </div>
+        </div>
+      </li>
+      <!-- [D] 로그인 상태 - 마이페이지  -->
+      <li class="list-m-gnb-item" style="display: block;">
+        <div class="menu js-fold">마이페이지</div>
+        <div class="depth js-unfold">
+          <div class="menu-group">
+            <a href="#" class="menu2">1:1 문의 내역</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">리버프 로봇/부품 관리</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">상품 등록 관리</a>
+          </div>
+          <div class="menu-group">
+            <a href="#" class="menu2">판매 기본 설정</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class="btn-group-bottom">
+      <!--[D] 로그아웃 상태 -->
+      <a href="#" class="btn"><i class="ico ico-join"></i>회원가입</a>
+      <a href="#" class="btn"><i class="ico ico-login"></i>로그인</a>
+      <!-- [D] 로그인 상태 -->
+      <!-- <a href="#" class="btn"><i class="ico ico-logout"></i>로그아웃</a> -->
+    </div>
+  </div>
+  <div class="m-gnb-bg js-hamburger-close"></div>
+  <!--//모바일 메뉴-->
+
+  <section>
+    <div class="container">
+      <div class="sub-visual">
+        <div class="bg"></div>
+        <div class="tit-group">
+          <div class="tit">지원서비스</div>
+          <div class="breadcrumb">
+            <a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
+            <a href="#">지원서비스</a>
+            <a href="share.html">ROI 분석 서비스</a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="wrap">
+          <div class="ly-group">
+            <div class="ly-l">
+              <div class="snb">
+                <div class="box">
+                  <a href="#" class="menu active">ROI 분석 서비스</a>
+                </div>
+                <div class="box">
+                  <a href="#" class="menu">시험성적서 진위여부</a>
+                </div>
+              </div>
+
+              <div class="m-snb">
+                <div class="dropdown">
+                  <div class="tit fold js-fold">
+                    <div class="menu">지원 서비스</div>
+                  </div>
+                  <div class="list js-unfold">
+                    <a href="#">커뮤니티</a>
+                    <a href="#">서비스 소개</a>
+                    <a href="#">장비 거래</a>
+                    <a href="#">고객센터</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <div class="tit fold js-fold">
+                    <div class="menu">ROI 분석 서비스</div>
+                  </div>
+                  <div class="list js-unfold">
+                    <a href="#">시험성적서 진위여부</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ly-r">
+              <div class="top-page">
+                <div class="tit">ROI 분석 서비스</div>
+              </div>
+              <div class="step-group">
+                <div class="tit-group step1 active">
+                  <div class="tit"><span>01.</span>사업비 산정</div>
+                </div>
+                <div class="tit-group step2">
+                  <div class="tit"><span>02.</span>지표입력</div>
+                </div>
+                <div class="tit-group step3">
+                  <div class="tit"><span>03.</span>경제성 분석 결과</div>
+                </div>
+              </div>
+              <div class="article-container">
+                <div class="article-group">
+                  <ol class="list-frm">
+                    <li class="tr s1">
+                      <div class="th">
+                        <div class="tit">공정 선택<span class="required">*</span></div>
+                      </div>
+                      <div class="td">
+                        <select class="select-custom2">
+                          <option>공정을 선택하세요.</option>
+                          <option>가공표면처리</option>
+                          <option>공작물탈착</option>
+                          <option>용접</option>
+                          <option>이적재</option>
+                          <option>조립</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li class="tr s1">
+                      <div class="th">
+                        <div class="tit">로봇 모델 선택<span class="required">*</span></div>
+                      </div>
+                      <div class="td pd0">
+                        <ol class="list-frm v2">
+                          <li class="tr s3">
+                            <div class="th">
+                              <div class="tit">모델선택</div>
+                            </div>
+                            <div class="td">
+                              <select class="select-custom2">
+                                <option>모델1</option>
+                                <option>모델2</option>
+                                <option>모델3</option>
+                              </select>
+                            </div>
+                          </li>
+                          <li class="tr s3">
+                            <div class="th">
+                              <div class="tit">도입대수</div>
+                            </div>
+                            <div class="td">
+                              <input type="text" class="inp-frm">
+                            </div>
+                          </li>
+                          <li class="tr s3">
+                            <div class="td">
+                              <button type="button" class="btn btn-custom btn-add">추가</button>
+                            </div>
+                          </li>
+                        </ol>
+                        <ol class="list-frm v2">
+                          <li class="tr s3">
+                            <div class="th">
+                              <div class="tit">모델명</div>
+                            </div>
+                            <div class="td">현대로보틱스(YP015-28)</div>
+                          </li>
+                          <li class="tr s3">
+                            <div class="th">
+                              <div class="tit">도입대수</div>
+                            </div>
+                            <div class="td">2대</div>
+                          </li>
+                          <li class="tr s3">
+                            <div class="td">
+                              <button type="button" class="btn btn-custom btn-del">삭제</button>
+                            </div>
+                          </li>
+                        </ol>
+                        <ol class="list-frm v2">
+                          <li class="tr s3">
+                            <div class="th">
+                              <div class="tit">모델명</div>
+                            </div>
+                            <div class="td">현대로보틱스(YP015-28)</div>
+                          </li>
+                          <li class="tr s3">
+                            <div class="th">
+                              <div class="tit">도입대수</div>
+                            </div>
+                            <div class="td">2대</div>
+                          </li>
+                          <li class="tr s3">
+                            <div class="td">
+                              <button type="button" class="btn btn-custom btn-del">삭제</button>
+                            </div>
+                          </li>
+                        </ol>
+                      </div>
+                    </li>
+                  </ol>
+                  <div class="btn-group center">
+                    <button type="button" class="btn btn-custom">사업비 계산</button>
+                  </div>
+                </div>
+                <div class="article-group">
+                  <div class="top-article">
+                    <div class="tit">예상 사업비</div>
+                    <span class="txt">단위 : 원</span>
+                  </div>
+                  <div class="tb_scroll">
+                    <table class="tbl tbl-oth">
+                      <colgroup>
+                        <col width="12.5%" />
+                        <col width="12.5%" />
+                        <col width="12.5%" />
+                        <col width="12.5%" />
+                        <col width="12.5%" />
+                        <col width="12.5%" />
+                        <col width="12.5%" />
+                        <col width="12.5%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>사업비</th>
+                          <th>로봇</th>
+                          <th>주변설비</th>
+                          <th>전기장비</th>
+                          <th>인건비</th>
+                          <th>설치비</th>
+                          <th>감리비</th>
+                          <th>총사업비</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>최소 금액</td>
+                          <td>223,000,000</td>
+                          <td>371,741,000</td>
+                          <td>69,130,000</td>
+                          <td>59,541,000</td>
+                          <td>17,171,000</td>
+                          <td>2,899,000</td>
+                          <td>743,482,000</td>
+                        </tr>
+                        <tr>
+                          <td>평균 금액</td>
+                          <td>223,000,000</td>
+                          <td>371,741,000</td>
+                          <td>69,130,000</td>
+                          <td>59,541,000</td>
+                          <td>17,171,000</td>
+                          <td>2,899,000</td>
+                          <td>743,482,000</td>
+                        </tr>
+                        <tr>
+                          <td>최대 금액</td>
+                          <td>223,000,000</td>
+                          <td>371,741,000</td>
+                          <td>69,130,000</td>
+                          <td>59,541,000</td>
+                          <td>17,171,000</td>
+                          <td>2,899,000</td>
+                          <td>743,482,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="article-group">
+                  <div class="top-article">
+                    <div class="tit">사업비 직접 입력
+                      <button class="btn btn-add-cost"><i class="btn-add-r"></i></button>
+                    </div>
+                    <span class="txt">단위 : 원</span>
+                  </div>
+                  <div class="tb_scroll tb-cost-in" style="display: none;">
+                    <table class="tbl tbl-oth">
+                      <colgroup>
+                        <col width="16%" />
+                        <col width="28%" />
+                        <col width="28%" />
+                        <col width="28%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>사업비</th>
+                          <th>최소 금액</th>
+                          <th>평균 금액</th>
+                          <th>최대 금액</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>금액 입력</td>
+                          <td>
+                            <input type="text" class="inp-frm" readonly>
+                          </td>
+                          <td>
+                            <input type="text" class="inp-frm" placeholder="입력">
+                          </td>
+                          <td>
+                            <input type="text" class="inp-frm" readonly>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="btn-group-bottom">
+                  <button type="button" class="btn btn-custom">지표 입력하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="ft">
+      <div class="inner">
+        <div class="ft-top">
+          <a href="#" class="ft-logo">KRRC</a>
+          <div class="ft-site">
+            <div class="js-fold ft-site-btn">관련사이트</div>
+            <div class="ft-site-links js-unfold">
+              <a href="#">한국로봇사용자협회</a>
+              <a href="#">erobot</a>
+              <a href="#">한국로봇산업진흥원</a>
+            </div>
+          </div>
+        </div>
+        <div class="ft-info">
+          <div class="company-info">
+            <div class="txt-group">
+              <div class="tit">대표</div>
+              <div class="txt">김덕중</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">주소</div>
+              <div class="txt">용인시 기흥구 흥덕중앙로 120, 흥덕유타워 1층 제112호</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">대표전화</div>
+              <div class="txt">055-1234-5678</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">이메일</div>
+              <div class="txt">korua@korua.or.kr</div>
+            </div>
+            <div class="txt-group">
+              <div class="tit">사업자등록번호</div>
+              <div class="txt">111-11-11111</div>
+              <a href="#">사업자정보확인 ></a>
+            </div>
+            <div class="txt-group">
+              <div class="tit">통신판매업신고</div>
+              <div class="txt">2023-경남진해-1234</div>
+            </div>
+          </div>
+          <div class="ft-cs">
+            <strong class="tit">고객센터</strong>
+            <p class="tel">1688-1234</p>
+            <p class="desc">평일 : 09:00 ~ 17:00</p>
+          </div>
+        </div>
+        <div class="ft-bottom">
+          <div class="copyright">Copyright ⓒ 2019 (사)한국로봇사용자협회. All Rights Reserved</div>
+          <div class="fnb">
+            <div class="ft-menu">
+              <a href="#"><b>개인정보취급방침</b></a>
+              <a href="#">이용약관</a>
+              <a href="#">이메일무단수집거부</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="ft-btn-top" onclick="scrollToTop();"><span class="blind">상단으로 이동</span></button>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+    $('.btn-add-cost').on('click', function () {
+      $('.tb-cost-in').show();
+      $(this).hide();
+    })
+
+
+  </script>
+</body>
+
+</html>
