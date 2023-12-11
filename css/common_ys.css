@@ -2223,7 +2223,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.4;
-  height: 2.8;
+  white-space: normal;
+  height: 2.8em;
 }
 
 .ellipsis_3 {
@@ -2234,7 +2235,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.4;
-  height: 4.2;
+  white-space: normal;
+  height: 4.2em;
 }
 
 .ellipsis_4 {
@@ -2245,7 +2247,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.4;
-  height: 5.6;
+  white-space: normal;
+  height: 5.6em;
 }
 
 .fz_nm {
@@ -3479,7 +3482,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 24px;
-  height: 48px;
+  white-space: normal;
+  height: 48pxem;
 }
 .deal_list .deal_price {
   display: block;
@@ -4661,7 +4665,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.5;
-    height: 3;
+    white-space: normal;
+    max-height: 3em;
   }
 }
 .list_ref_link .txt_box .desc {
@@ -4675,7 +4680,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5;
-  height: 4.5;
+  white-space: normal;
+  max-height: 4.5em;
 }
 @media only screen and (max-width: 767px) {
   .list_ref_link .txt_box .desc {

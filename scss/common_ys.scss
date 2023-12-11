@@ -1982,14 +1982,14 @@
                 @include text-hidden-single;
                 @include mobile {
                     font-size: 20px;
-                    @include text-hidden(2, 1.5);
+                    @include text-hidden(2, 1.5, auto);
                 }
             }
             .desc {
                 margin-top: 8px;
                 font-size: 16px;
                 color: #666;
-                @include text-hidden(3, 1.5);
+                @include text-hidden(3, 1.5, auto);
                 @include mobile {
                     font-size: 14px;
                 }
