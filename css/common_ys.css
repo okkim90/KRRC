@@ -2266,6 +2266,10 @@
   line-height: 1.4;
 }
 
+._lh2 {
+  line-height: 1.5;
+}
+
 .taL {
   text-align: left;
 }
@@ -4572,4 +4576,113 @@
   .qr_top .prod_tit_area .f_btn {
     width: 100%;
   }
+}
+
+.list_ref {
+  border-top: 1px solid #000;
+}
+.list_ref_item {
+  border-bottom: 1px solid var(--line);
+}
+.list_ref_link {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+@media only screen and (max-width: 767px) {
+  .list_ref_link {
+    padding: 24px 0;
+    display: block;
+  }
+}
+.list_ref_link:hover .tit {
+  color: var(--key3);
+}
+.list_ref_link:hover .desc {
+  text-decoration: underline;
+}
+.list_ref_link .img_box {
+  width: 148px;
+  height: 148px;
+  position: relative;
+  background-color: var(--bg);
+  flex-shrink: 0;
+  background-image: url(../img/logo_foot.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+  overflow: hidden;
+}
+.list_ref_link .img_box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  .list_ref_link .img_box {
+    width: 100%;
+    padding-top: 100%;
+    height: 0;
+  }
+}
+.list_ref_link .txt_box {
+  flex: 1;
+  padding-left: 24px;
+  min-width: 0;
+}
+@media only screen and (max-width: 767px) {
+  .list_ref_link .txt_box {
+    padding-left: 0;
+    margin-top: 24px;
+  }
+}
+.list_ref_link .txt_box .tit {
+  display: block;
+  font-size: 24px;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 767px) {
+  .list_ref_link .txt_box .tit {
+    font-size: 20px;
+    width: 100%;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    height: 3;
+  }
+}
+.list_ref_link .txt_box .desc {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #666;
+  width: 100%;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  height: 4.5;
+}
+@media only screen and (max-width: 767px) {
+  .list_ref_link .txt_box .desc {
+    font-size: 14px;
+  }
+}
+
+.top-board .tit-group.mb0 {
+  margin-bottom: 0;
 }
