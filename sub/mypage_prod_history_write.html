@@ -13,6 +13,12 @@
 	<script src="../js/jquery-1.11.1.min.js"></script>
 	<script src="../js/jquery.easing.1.3.js"></script>
 	<script src="../js/script.js"></script>
+
+	<!-- datepicker 사용시 필요 -->
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/datepicker.css">
+	<script src="../js/jquery-ui.js"></script>
+	<!--// datepicker -->
 </head>
 <body>
 	<header class="header">
@@ -226,7 +232,7 @@
 					<div class="breadcrumb">
 						<a href="../index.html"><img src="../img/ico_home1.svg" alt=" "></a>
 						<a href="#">마이페이지</a>
-						<a href="#">리퍼브 로봇/부품 관리</a>
+						<a href="#">상품 등록 관리</a>
 					</div>
 				</div>
 			</div>
@@ -240,10 +246,10 @@
 									<a href="" class="menu ">회원정보</a>
 								</div>
 								<div class="box">
-									<a href="" class="menu active">리퍼브 로봇/부품 관리</a>
+									<a href="" class="menu ">리퍼브 로봇/부품 관리</a>
 								</div>
 								<div class="box">
-									<a href="" class="menu">상품 등록 관리</a>
+									<a href="" class="menu active">상품 등록 관리</a>
 								</div>
 								<div class="box">
 									<a href="" class="menu ">구매 내역</a>
@@ -278,11 +284,11 @@
 								</div>
 								<div class="dropdown">
 									<div class="tit fold js-fold">
-										<div class="menu">리퍼브 로봇/부품 관리</div>
+										<div class="menu">상품 등록 관리</div>
 									</div>
 									<div class="list js-unfold">
 										<a href="#">회원정보</a>
-										<a href="#">상품 등록 관리</a>
+										<a href="#">리퍼브 로봇/부품 관리</a>
 										<a href="#">구매 내역</a>
 										<a href="#">판매 내역</a>
 										<a href="#">리퍼브 신청 내역</a>	
@@ -298,113 +304,190 @@
 
 						<div class="ly-r">
 							<div class="top-page">
-								<div class="tit">리퍼브 로봇/부품 관리</div>
+								<div class="tit">이력관리</div>
 							</div>
-							<div class=" tab-menu-v3 fix_col">
-                                <!--[D] 활성화 : 'active' class-->
-								<a href="#" class="tab">제품 정보</a>
-								<a href="#" class="tab active">리퍼브 이력</a>
-							</div>
-							<div class="xScrollArea">
-								<div class="f_tbl_wrap xScrollArea_inner">
-									<table class="f_tbl f_tbl_hz ty2 taC">
-										<caption>리퍼브 이력</caption>
-										<colgroup>
-											<col style="width: 12%;">
-											<col style="width: 16%">
-											<col>
-											<col style="width: 64px;">
-											<col style="width: 64px;">
-											<col style="width: 90px;">
-										</colgroup>
-										<thead>
-											<th>리퍼브 일자</th>
-											<th>보유기업</th>
-											<th>이력정보</th>
-											<th>사진</th>
-											<th>성적서</th>
-											<th>기능</th>
-										</thead>
-										<tbody>
-											<tr>
-												<!--[D] tr 내부 a 태그 클릭시 리퍼브이력 상세 노출-->
-												<td><a href="">2023.10.30</a></td>
-												<td>리퍼브테크</td>
-												<td class="taL fc_black">
-													<ul class="list_dot">
-														<li>부품교체 : 등속조인트 베어링 교체 (오일 누수로 인한 베어링 마모)</li>
+							<div class="form-group">
+								<div class="frm">
+									<div class="top-frm">
+										<div class="tit">YASKAWA 6축 다관절 로봇</div>
+										<div class="required-info">별표(*) 표시 항목은 필수 입력 항목입니다.</div>
+									</div>
+									<ol class="list-frm">
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">리퍼브 일자<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" class="inp-frm inp-date" value="2023-12-05" readonly>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">보유기업<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<input type="text" placeholder="보유기업을 입력해주세요." value="YASKAWA"
+													class="inp-frm" readonly required>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">리퍼브 내용<span class="required">*</span></div>
+											</div>
+											<div class="td">
+												<textarea name="" id="" class="inp-frm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fuga cupiditate quisquam commodi explicabo harum neque facilis magni, ratione delectus! Incidunt veniam dicta officia corporis? Magni commodi reprehenderit aperiam natus.</textarea>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">사진</div>
+											</div>
+											<div class="td">
+												<div class="upload-group">
+													<div class="top">
+														<div class="btn-upload">
+															<input type="file" id="upload2">
+															<label for="upload2">파일첨부</label>
+														</div>
+														<div class="frm-info">이미지 파일만 등록 가능합니다.(파일당 최대 5Mb, 최대 5개) –
+															600X600px 사이즈 이하 등록</div>
+													</div>
+													<div class="attach-txt">파일 목록</div>
+													<!--파일 있을경우 -->
+													<div class="attach-group2">
+														<ol class="list-attach">
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+															<li>
+																<div class="file-group2">
+																	<div class="img-group">
+																		<img src="../img/img_transparent1.png" alt="썸네일"
+																			class="thumb"
+																			style="background-image: url('../img/tmp/img_picture1.png');">
+																		<button type="button"
+																			class="btn-delete js-delete2"></button>
+																	</div>
+																	<div class="tit">파일명입니다.</div>
+																</div>
+															</li>
+														</ol>
+													</div>
+													<!--// 파일 있을경우 -->
+													<!-- 파일 없을 경우 -->
+													<div class="attach-group2">
+														<span class="attach-group-nofile">마우스로 파일을 끌어오세요.</span>
+													</div>
+													<!-- 파일 없을 경우 -->
+												</div>
+											</div>
+										</li>
+										<li class="tr s1">
+											<div class="th">
+												<div class="tit">첨부파일</div>
+											</div>
+											<div class="td">
+												<div class="upload-group">
+													<div class="top">
+														<div class="btn-upload">
+															<input type="file" id="upload">
+															<label for="upload">파일첨부</label>
+														</div>
+														<div class="frm-info">이미지, 문서 파일만 등록 가능합니다.(파일당 최대 100Mb, 파일 최대
+															10개 등록 가능)</div>
+													</div>
+													<div class="attach-txt">파일 목록</div>
+													
+													<ul class="attach-group">
+														<!-- 첨부 했을 때-->
+														<li>
+															<div class="tit">파일명.jpg (374.27KB)</div>
+															<div class="process-group">
+																<div class="state">업로드 중</div>
+																<div class="bar-group">
+																	<div class="bar" style="width: 0%;"></div>
+																	<div class="percent">0%</div>
+																</div>
+															</div>
+															<button type="button"
+																class="btn-delete js-delete">삭제</button>
+														</li>
+														<li>
+															<div class="tit">파일명.jpg (374.27KB)</div>
+															<div class="process-group">
+																<div class="state complete">업로드 완료</div>
+																<div class="bar-group">
+																	<div class="bar" style="width: 100%;"></div>
+																	<div class="percent active">100%</div>
+																</div>
+															</div>
+															<button type="button"
+																class="btn-delete js-delete">삭제</button>
+														</li>
+														<!--// 첨부 했을 때-->
+														<!-- 파일 없경우 -->
+														<span class="attach-group-nofile">마우스로 파일을 끌어오세요.</span>
+														<!-- 파일 없을 경우 -->
 													</ul>
-												</td>
-												<td><a href=""><img src="../img/ico_img.svg" alt=""></a> </td>
-												<td><a href=""><img src="../img/ico_doc.svg" alt=""></a></td>
-												<td><a href="" class="f_btn f_small c4">수정</a></td>
-											</tr>
-											<tr>
-												<td><a href="">2023.10.30</a></td>
-												<td>리퍼브테크</td>
-												<td class="taL fc_black">
-													<ul class="list_dot">
-														<li>부품교체 : 등속조인트 베어링 교체 (오일 누수로 인한 베어링 마모)</li>
-														<li>제품 업그레이드 : 로봇 Arm 교체(다양한 제품 이송을 위해 로봇 Arm 부품 업그레이드)</li>
-														<li>성능시험평가 진행</li>
-													</ul>
-												</td>
-												<td><a href=""><img src="../img/ico_img.svg" alt=""></a></td>
-												<td><a href=""><img src="../img/ico_doc.svg" alt=""></a></td>
-												<td><a href="" class="f_btn f_small c4">수정</a></td>
-											</tr>
-											<tr>
-												<td><a href="">2023.10.30</a></td>
-												<td>기업이름기업이름</td>
-												<td class="taL fc_black">
-													<ul class="list_dot">
-														<li>부품교체 : 등속조인트 베어링 교체 (오일 누수로 인한 베어링 마모)</li>
-														<li>제품 업그레이드 : 로봇 Arm 교체(다양한 제품 이송을 위해 로봇 Arm 부품 업그레이드)</li>
-														<li>성능시험평가 진행</li>
-													</ul>
-												</td>
-												<td></td>
-												<td><a href=""><img src="../img/ico_doc.svg" alt=""></a></td>
-												<td><a href="" class="f_btn f_small c4">수정</a></td>
-											</tr>
-											<tr>
-												<td><a href="">2023.10.30</a></td>
-												<td>리퍼브테크</td>
-												<td class="taL fc_black">
-													<ul class="list_dot">
-														<li>부품교체 : 등속조인트 베어링 교체 (오일 누수로 인한 베어링 마모)</li>
-														<li>제품 업그레이드 : 로봇 Arm 교체(다양한 제품 이송을 위해 로봇 Arm 부품 업그레이드)</li>
-														<li>성능시험평가 진행</li>
-													</ul>
-												</td>
-												<td><a href=""><img src="../img/ico_img.svg" alt=""></a></td>
-												<td><a href=""><img src="../img/ico_doc.svg" alt=""></a></td>
-												<td><a href="" class="f_btn f_small c4">수정</a></td>
-											</tr>
-											<tr>
-												<td><a href="">2023.10.30</a></td>
-												<td>리퍼브테크</td>
-												<td class="taL fc_black">
-													<ul class="list_dot">
-														<li>제품 구입 및 설치 <br>
-															소재지 : 서울시 성동구 좋은숲길 123</li>
-													</ul>
-												</td>
-												<td></td>
-												<td></td>
-												<td><a href="" class="f_btn f_small c4">수정</a></td>
-											</tr>
-										</tbody>
-									</table>
+													
+													
+												</div>
+												
+												
+											</div>
+										</li>
+									</ol>
+									<div class="f_btn_wrap mt_gap3">
+										<button type="submit" class="f_btn f_big c2">저장</button>
+									</div>
 								</div>
 							</div>
-							<div class="no-data">
-								<img src="../img/ico_nodata.svg" alt=" ">
-								<div class="txt">리퍼브 이력이 없습니다.</div>
-							</div>
-							<div class="f_btn_wrap mt_gap3">
-								<a href="" class="f_btn f_big c2">이력 추가</a>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -474,29 +557,44 @@
 			</div>
 		</div>
 	</footer>
-    <script>
-        const xScrollArea = document.querySelectorAll('.xScrollArea');
-        function tbl_xscroll(){
-            xScrollArea.forEach((e)=>{
-                let f_tbl = e.querySelector('.f_tbl');
-                //console.log(f_tbl.offsetWidth, e.offsetWidth);
-                if(f_tbl.offsetWidth > e.offsetWidth){
-                    e.classList.add('scroll_start');
-                }else{
-                    e.classList.remove('scroll_start');
-                }
-            })
-        }
-        ['DOMContentLoaded','resize'].forEach(event => window.addEventListener(event, tbl_xscroll));
-        xScrollArea.forEach((e)=>{
-            e.addEventListener('touchstart',()=>{
-                e.classList.add('scrolling');
-            },false);
-            e.addEventListener('touchend',()=>{
-                e.classList.remove('scrolling');
-            },false);
-        });
-    </script>
+	<div class="layerPopup" data-popup="popup_img">
+		<div class="layerPopup_inner" onclick="close_popup(this)">
+			<div class="layerPopup_cont ty_img" onclick="event.stopPropagation();">
+				<div class="layerPopup_tit">
+					<h4 class="tit">이미지 상세</h4>
+					<button type="button" class="btn_close" onclick="close_popup(this)"></button>
+				</div>
+				<div class="img_box">
+					<img src="" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function () {
+			$.datepicker.regional['ko'] = {
+				closeText: '닫기',
+				prevText: '이전달',
+				nextText: '다음달',
+				currentText: '오늘',
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+				dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+				weekHeader: 'Wk',
+				dateFormat: 'yy-mm-dd',
+				firstDay: 0,
+				isRTL: false,
+				showMonthAfterYear: true,
+				changeMonth: true,
+				changeYear: true
+			};
+			$.datepicker.setDefaults($.datepicker.regional['ko']);
+
+			$(".inp-date").datepicker();
+		});
+	</script>
 </body>
 
 </html>

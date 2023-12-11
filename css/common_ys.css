@@ -536,8 +536,8 @@
 .f_btn.f_small {
   height: 32px;
   font-size: 12px;
-  padding: 0 16px;
-  min-width: 0;
+  padding: 0 12px;
+  min-width: 54px;
 }
 
 .mt_gap1 {
@@ -2309,6 +2309,9 @@
   align-items: flex-end;
   line-height: 1.4;
   margin-bottom: 12px;
+}
+.mp_sec_tit.ty2 {
+  margin-bottom: 18px;
 }
 .mp_sec_tit .tit {
   font-size: 20px;

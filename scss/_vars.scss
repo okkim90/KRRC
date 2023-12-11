@@ -136,8 +136,8 @@ $f_size: (
             }
             @if($key == 'f_small' ){
                 font-size: 12px;
-                padding: 0 16px;
-                min-width: 0;
+                padding: 0 12px;
+                min-width: 54px;
             }
         }
     }

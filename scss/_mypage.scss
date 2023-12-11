@@ -7,8 +7,18 @@
         align-items: flex-end;
         line-height: 1.4;
         margin-bottom: 12px;
+        &.ty2 {
+            margin-bottom: 18px;
+            // .tit {
+            //     font-size: 24px;
+            //     @include tablet {
+            //         font-size: 20px;
+            //     }
+            // }
+        }
         .tit {
             font-size: 20px;
+            
             small {
                 font-size: inherit;
                 font-weight: normal;
@@ -23,6 +33,7 @@
             }
         }
     }
+    
 }
 .mp_card {
     display: flex;
