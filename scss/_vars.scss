@@ -396,13 +396,28 @@ $gap_m: (
 .taR {
     text-align: right;
 }
+.pc_only {
+    @include tablet {
+        display: none;
+    }
+}
+.pc_only2 {
+    @include mobile {
+        display: none;
+    }
+}
 .m_only {
     display: none;
     @include tablet {
         display: block;
     }
 }
-
+.m_only2 {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
 .ico_new {
     width: 20px;
     height: 20px;

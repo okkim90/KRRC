@@ -1,0 +1,336 @@
+.list_ref {
+    border-top: 1px solid #000;
+    &_item {
+        border-bottom: 1px solid color(line);
+    }
+    &_link {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        @include mobile {
+            padding: 24px 0;
+            display: block;
+        }
+        &:hover {
+            .tit {
+                color: color(key3);
+            }
+            .desc {
+                text-decoration: underline;
+            }
+            // img {
+            //     transform: scale(1.1);
+            // }
+            
+        }
+        .img_box {
+            width: 148px;
+            height: 148px;
+            position: relative;
+            background-color: color(bg);
+            flex-shrink: 0;
+            background-image: url(../img/logo_foot.svg);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center center;
+            overflow: hidden;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                object-fit: cover;
+                //transition: all .2s ease-in-out;
+            }
+            @include mobile {
+                width: 100%;
+                padding-top: 100%;
+                height: 0;
+            }
+        }
+        .txt_box {
+            flex: 1;
+            padding-left: 24px;
+            min-width: 0;
+            @include mobile {
+                padding-left: 0;
+                margin-top: 24px;
+            }
+            .tit {
+                display: block;
+                font-size: 24px;
+                line-height: 1.5;
+                @include text-hidden-single;
+                @include mobile {
+                    font-size: 20px;
+                    @include text-hidden(2, 1.5, auto);
+                }
+            }
+            .desc {
+                margin-top: 8px;
+                font-size: 16px;
+                color: #666;
+                @include text-hidden(3, 1.5, auto);
+                @include mobile {
+                    font-size: 14px;
+                }
+                
+            }
+        }
+    }
+}
+
+
+.sc_top {
+    &_1 {
+        display: flex;
+        flex-direction: row-reverse;
+        img {
+            width: 35%;
+        }
+        .txt_box {
+            margin-right: -10%;
+            position: relative;
+            z-index: 10;
+            flex: 1;
+            padding-top: 40px;
+            line-height: 1.5;
+        }
+        .tit {
+            font-size: 64px;
+            color: color(key3);
+            font-weight: bold;
+            line-height: 1.3;
+            padding-top: 24px;
+            position: relative;
+            &::before {
+                content:'';
+                width: 16px;
+                height: 16px;
+                background-color: color(key3);
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        .desc {
+            font-size: 24px;
+            margin-top: 1em;
+        }
+    }
+    &_2 {
+        margin-top: 60px;
+        display: flex;
+        align-items: flex-end;
+        img {
+            width: 31.128%;
+        }
+        .txt_box {
+            flex: 1;
+            padding-left: 64px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}
+
+.sc_sec {
+    & + & {
+        margin-top: 120px;
+    }
+    &_tit {
+        display: flex;
+        padding-bottom: 23px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid color(line);
+        .tit {
+            position: relative;
+            padding-right: 16px;
+            font-size: 28px;
+            line-height: 1.28;
+            &::after {
+                content:'';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: color(key3);
+                border-radius: 50%;
+                right: 0;
+                bottom: 14%;
+                
+            }
+        }
+    }
+}
+
+.sc_vision {
+    padding: 120px 60px;
+    text-align: center;
+    background-image: url(../img/service/center_vision_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &_1 {
+        padding: 0 24px;
+        height: 60px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.2;
+        background-color: color(key2);
+        position: relative;
+    }
+    &_2 {
+        display: flex;
+        width: 772px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid color(line);
+        height: 270px;
+        border-radius: 135px;
+        margin-top: -30px;
+        gap: 24px;
+        .item {
+            width: 162px;
+            height: 162px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 50%;
+            &:nth-child(odd) {
+                background-color: #E6F5F7;
+            }
+            &:nth-child(even) {
+                background-color: #F1F5F9;
+            }
+        }
+    }
+    &_arrow {
+        margin-top: -30px;
+        position: relative;
+    }
+    &_3 {
+        margin-top: -52px;
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        width: 720px;
+        border-top: 1px solid color(line);
+        border-left: 1px solid color(line);
+        max-width: 100%;
+        .item {
+            padding: 24px;
+            flex: 1;
+            border-right: 1px solid color(line);
+            border-bottom: 1px solid color(line);
+            line-height: 1.5;
+            .tit {
+                color: color(key3);
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .list {
+                margin-top: 12px;
+                text-align: left;
+                li {
+                    font-size: 16px;
+                    padding-left: 0.7em;
+                    position: relative;
+                    &::before {
+                        content:'•';
+                        left: 0;
+                        top: 0;
+                        position: absolute;
+                    }
+                    & + li {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sc_org {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.4;
+    &_item {
+        $item_color: #0171CB, #01B7FD, #01BA4E, #FAC301;
+            
+        .list_dot {
+            margin-top: 16px;
+        }
+        &:nth-of-type(odd) {
+            text-align: right;
+            .list_dot {
+                li {
+                    padding-left: 0;
+                    padding-right: 0.7em;
+                    
+                    &::before {
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+        }
+        .logo_box {
+            img {
+                max-width: 100%
+            }
+        }
+        .num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        @each  $c in $item_color {
+            $i : index($item_color, $c);
+            &#{$i} {
+                .num {
+                    background-color: $c;
+                }
+                .list_dot li::before {
+                    color: $c;
+                }
+            }
+        }
+    }
+    &_img {
+        width: 100%;
+        text-align: center;
+    }
+    @for $i from 1 through 5 {
+        .od#{$i}{
+            order: $i;
+        }
+    }
+   
+}
