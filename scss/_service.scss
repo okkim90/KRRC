@@ -334,3 +334,68 @@
     }
    
 }
+
+
+.service_info {
+    &_top {
+        height: 360px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 40px;
+        box-sizing: border-box;
+        &::before {
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-image: url(../img/service/info_bg.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            @include mobile {
+                display: block;
+                position: static;
+                height: 0;
+                padding-top: 59.375%;
+            }
+        }
+        
+        
+        @include mobile {
+            height: auto;
+            display: block;
+            padding: 0;
+        }
+        .txt {
+            font-size: 22px;
+            line-height: 1.5;
+            color: #fff;
+            position: relative;
+            z-index: 10;
+            @include mobile {
+                color: #000;
+                font-size: 18px;
+                margin-top: 40px;
+            }
+        }
+    }
+    &_txt {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 60px;
+        color: #666;
+        @include mobile { 
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+    &_img {
+        margin-top: 80px;
+        @include mobile { 
+            margin-top: 60px;
+        }
+    }
+}
