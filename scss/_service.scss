@@ -389,23 +389,27 @@
         display: block;
     }
     &_item {
-        $item_color: #0171CB, #01B7FD, #01BA4E, #FAC301;
+        $item_color: #0171CB, #01B7FD, #FAC301, #01BA4E;
            
         @include mobile {
             margin-top: 40px;
         }
         .list_dot {
             margin-top: 16px;
+            li {
+                padding-left: 0.8em;
+            }
+            
             @include mobile {
                 font-size: 14px;
             }
         }
-        &:nth-of-type(odd) {
+        &2, &3 {
             text-align: right;
             .list_dot {
                 li {
                     padding-left: 0;
-                    padding-right: 0.7em;
+                    padding-right: 0.8em;
                     
                     &::before {
                         right: 0;

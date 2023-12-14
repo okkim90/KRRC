@@ -5053,31 +5053,34 @@
 .sc_org_item .list_dot {
   margin-top: 16px;
 }
+.sc_org_item .list_dot li {
+  padding-left: 0.8em;
+}
 @media only screen and (max-width: 767px) {
   .sc_org_item .list_dot {
     font-size: 14px;
   }
 }
-.sc_org_item:nth-of-type(odd) {
+.sc_org_item2, .sc_org_item3 {
   text-align: right;
 }
-.sc_org_item:nth-of-type(odd) .list_dot li {
+.sc_org_item2 .list_dot li, .sc_org_item3 .list_dot li {
   padding-left: 0;
-  padding-right: 0.7em;
+  padding-right: 0.8em;
 }
-.sc_org_item:nth-of-type(odd) .list_dot li::before {
+.sc_org_item2 .list_dot li::before, .sc_org_item3 .list_dot li::before {
   right: 0;
   left: auto;
 }
 @media only screen and (max-width: 767px) {
-  .sc_org_item:nth-of-type(odd) {
+  .sc_org_item2, .sc_org_item3 {
     text-align: left;
   }
-  .sc_org_item:nth-of-type(odd) .list_dot li {
+  .sc_org_item2 .list_dot li, .sc_org_item3 .list_dot li {
     padding-left: 0.7em;
     padding-right: 0;
   }
-  .sc_org_item:nth-of-type(odd) .list_dot li::before {
+  .sc_org_item2 .list_dot li::before, .sc_org_item3 .list_dot li::before {
     left: 0;
     right: auto;
   }
@@ -5117,19 +5120,19 @@
   height: 32px;
 }
 .sc_org_item3 .num {
-  background-color: #01BA4E;
+  background-color: #FAC301;
 }
 .sc_org_item3 .list_dot li::before {
-  color: #01BA4E;
+  color: #FAC301;
 }
 .sc_org_item3 .logo_box img {
   height: 48px;
 }
 .sc_org_item4 .num {
-  background-color: #FAC301;
+  background-color: #01BA4E;
 }
 .sc_org_item4 .list_dot li::before {
-  color: #FAC301;
+  color: #01BA4E;
 }
 .sc_org_item4 .logo_box img {
   height: 48px;
