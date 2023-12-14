@@ -14,11 +14,7 @@
 	<script src="../js/jquery.easing.1.3.js"></script>
 	<script src="../js/script.js"></script>
 
-	<!-- datepicker 사용시 필요 -->
-	<link rel="stylesheet" href="../css/jquery-ui.css">
-	<link rel="stylesheet" href="../css/datepicker.css">
-	<script src="../js/jquery-ui.js"></script>
-	<!--// datepicker -->
+	
 </head>
 <body>
 	<header class="header">
@@ -243,13 +239,13 @@
 						<div class="ly-l">
 							<div class="snb">
 								<div class="box">
-									<a href="" class="menu active">센터 소개</a>
+									<a href="" class="menu ">센터 소개</a>
 								</div>
 								<div class="box">
 									<a href="" class="menu ">서비스 안내</a>
 								</div>
 								<div class="box">
-									<a href="" class="menu ">찾아오시는 길</a>
+									<a href="" class="menu active">찾아오시는 길</a>
 								</div>
 								<div class="box">
 									<a href="" class="menu ">리퍼브 사례</a>
@@ -266,11 +262,11 @@
 								</div>
 								<div class="dropdown">
 									<div class="tit fold js-fold">
-										<div class="menu">센터 소개</div>
+										<div class="menu">찾아오시는 길</div>
 									</div>
 									<div class="list js-unfold">
+										<a href="#">센터 소개</a>
 										<a href="#">서비스 안내</a>
-										<a href="#">찾아오시는 길</a>
 										<a href="#">리퍼브 사례</a>
 										<a href="#">리퍼브 공정 소개</a>
 									</div>
@@ -279,120 +275,65 @@
 						</div>
 
 						<div class="ly-r">
-							<section class="sc_top sc_sec">
-								<div class="sc_top_1">
-									<img src="../img/service/center_img1.png" alt="">
-									<div class="txt_box">
-										<h2 class="tit">
-											<div class="tit_box">
-												스마트 산업의 거점 <br> 전국 최초의 <br class="m_only2"> 로봇 리퍼브 센터
-											</div>
-										</h2>
-										<p class="desc">로봇재 제조 인프라의 구축을 통해 <br> 기업의 제조업 경쟁력을 높입니다.</p>
+							<div class="top-page">
+								<div class="tit">찾아오시는 길</div>                             
+							</div>
+							<div class="service_location">
+								<div id="map" class="map"></div>
+								<ul class="map_info">
+									<li class="map_info_item">
+										<strong class="tit">
+											<i class="ico ty_address"></i>주소
+										</strong>
+										<div class="cont">경남 김해시 주촌면 골든루트로 80-59, 테크노타운동 706호, 로봇리퍼브 센터 (임시센터)</div>
+									</li>
+									<li class="map_info_item">
+										<strong class="tit">
+											<i class="ico ty_pos"></i>위치
+										</strong>
+										<div class="cont">대중교통으로 방문할 수 있을 경우 설명문구</div>
+									</li>
+									<li class="map_info_item">
+										<strong class="tit">
+											<i class="ico ty_tel"></i>전화
+										</strong>
+										<div class="cont">055-328-1800</div>
+									</li>
+									<li class="map_info_item">
+										<strong class="tit">
+											<i class="ico ty_fax"></i>팩스
+										</strong>
+										<div class="cont">055-339-1899</div>
+									</li>
+								</ul>
+								<div class="way2com">
+									<div class="sc_sec_tit">
+										<h2 class="tit">오시는 길 안내</h2>
+									</div>
+									<div class="way2com_item">
+										<h3 class="blind">자차 이용</h3>	
+										<i class="ico ty_car"></i>
+										<dl>
+											<dt>부산 방면 에서 오실 때</dt>
+											<dd>서김해IC → 서김해TG → 금관대로 내외동 방면으로 좌회전 후 553m 이동 → 골든루트로66번길 좌회전 후 388m 이동 → 골든루트로66번길 좌측도로 418m 이동 → 우회전 후 123m 이동 → 소망길 좌회전 후 609m 이동 → 좌회전 후 55m 이동 → 도착</dd>
+											<dt>창원 방면 에서 오실 때</dt>
+											<dd>장유IC → 무계지하차도 → 골든루트일반산업단지 방면으로 우측도로 1.5Km 이동 → 소망길 우회전 후 382m 이동 → 우측도로 61m 이동 → 도착</dd>
+										</dl>
+									</div>
+									<div class="way2com_item">
+										<h3 class="blind">버스 이용</h3>	
+										<i class="ico ty_bus"></i>
+										<dl>
+											<dt>3번</dt>
+											<dd>중소기업비즈니스센터 하차(한발매스테크 방향)</dd>
+											<dt>31번</dt>
+											<dd>김해의생명센터 하차(금광테크 방향)</dd>
+											<dt>220번</dt>
+											<dd>중소기업비즈니스센터 하차(한발매스테크 방향)</dd>
+										</dl>
 									</div>
 								</div>
-								<div class="sc_top_2">
-									<img src="../img/service/center_img2.png" alt="">
-									<div class="txt_box">
-										<p class="desc">
-											로봇리퍼브 센터는 로봇 리퍼브 종합 기술지원을 위해 설립되었으며 로봇 리퍼브 성능시험 및
-											인증장비를 10여종 구축하여 신뢰성 평가 체계 수립 및 기술지원을 목적으로 합니다. <br><br>
-											또한 기반서비스 지원 플랫폼을 통한 기업 기술 지원, 애로 기술 자문과 선행기술 개발 지원,
-											관계기업 네트워크 구축 및 운영, 기술세미나 및 설명회 등 리퍼브 기술의 보급 확산을
-											지원하고 있습니다.
-										</p>
-									</div>
-								</div>
-							</section>
-							<section class="sc_sec">
-								<div class="sc_sec_tit"><h2 class="tit">로봇리퍼브플랫폼 비전</h2></div>
-								<div class="sc_vision">
-									<div class="sc_vision_1">로봇 재제조 리퍼브 인프라 기반 <br class="m_only2"> 재자원화 지원 거점 마련</div>
-									<div class="sc_vision_2">
-										<strong class="item">로봇 보급 확산 정책 <br> 활성화</strong>
-										<strong class="item">로봇 재자원화 산업 <br> 기업 첨단화 실현</strong>
-										<strong class="item">로봇 활용 기회 확대 <br> 신산업 고용 창출</strong>
-									</div>
-									<img src="../img/service/center_vision_arrow.svg" alt="" class="sc_vision_arrow">
-									<div class="sc_vision_3">
-										<div class="item">
-											<h4 class="tit">재제조 지원 <br class="m_only2"> 인프라 구축</h4>
-											<ul class="list">
-												<li>중고로봇 / 부품 리퍼브 기술 지원센터 설립</li>
-												<li>재제조 기업기술 · 공정 지원</li>
-											</ul>
-										</div>
-										<div class="item">
-											<h4 class="tit">기업지원  <br class="m_only2"> 서비스 제공</h4>
-											<ul class="list">
-												<li>중고로봇 / 부품 기술 고도화</li>
-												<li>선행기술 지원체계 수립</li>
-												<li>리퍼브 성능 평가</li>
-											</ul>
-										</div>
-										<div class="item">
-											<h4 class="tit">로봇시장  <br class="m_only2"> 활성화</h4>
-											<ul class="list">
-												<li>거점 지역 유망기업 발굴</li>
-												<li>리퍼브 로봇 활용 기업 확대</li>
-												<li>로봇/부품 판매망 지원</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section class="sc_sec">
-								<div class="sc_sec_tit"><h2 class="tit">로봇리퍼브플랫폼 지원 기관 및 역할</h2></div>
-								<div class="sc_org">
-									
-									<div class="sc_org_img od3">
-										<img src="../img/service/center_img3.svg" alt="">
-									</div>
-									<div class="sc_org_item sc_org_item1 od1">
-										<div class="num">01</div>
-										<div class="logo_box"><img src="../img/service/center_logo1.svg" alt=""></div>
-										<ul class="list_dot">
-											<li>사업 총괄</li>
-											<li>로봇리퍼브센터 설계 및 건축</li>
-											<li>로봇/부품 성능시험평가 장비 구축</li>
-											<li>장비 활용 기업 기술지원</li>
-											<li>네트워크 운영</li>
-										</ul>
-									</div>
-									<div class="sc_org_item sc_org_item2 od2">
-										<div class="num">02</div>
-										<div class="logo_box"><img src="../img/service/center_logo2.svg" alt=""></div>
-										<ul class="list_dot">
-											<li>기술지원 및 보급확산</li>
-											<li>애로 기술지원(자문), 시험평가</li>
-											<li>선행기술 개발지원(시제품 제작)</li>
-											<li>기술 세미나/설명회 개최</li>
-										</ul>
-									</div>
-									<div class="sc_org_item sc_org_item3 od4">
-										<div class="num">03</div>
-										<div class="logo_box"><img src="../img/service/center_logo3.svg" alt=""></div>
-										<ul class="list_dot">
-											<li>
-												네트워크 운영(제조용 로봇) 및 홍보
-												<p class="fc_grey1">협의체 네트워크 운영(제조용 로봇)</p>
-											</li>
-											<li>홍보 간행물 제작, 전시회 개최</li>
-										</ul>
-									</div>
-									<div class="sc_org_item sc_org_item4 od5">
-										<div class="num">04</div>
-										<div class="logo_box"><img src="../img/service/center_logo4.svg" alt=""></div>
-										<ul class="list_dot">
-											<li>
-												네트워크 운영(서비스/전문서비스 로봇)
-												<p class="fc_grey1">협의체 네트워크 운영(서비스 로봇)</p>
-											</li>
-											<li>서비스 분양 관계기업 워크숍</li>
-										</ul>
-									</div>
-								</div>
-							</section>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -462,5 +403,32 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- kakao map api  -->
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0d17b1bcdf1c5aa8442636eb225da27b"></script>
+	<script>
+		var mapContainer = document.getElementById('map'),
+			mapOption = { 
+				center: new kakao.maps.LatLng(35.214993, 128.832401), 
+				level: 3 
+			};
+
+		var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+		var markerPosition  = new kakao.maps.LatLng(35.214993, 128.832401); 
+
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+		marker.setMap(map);
+
+		var mapTypeControl = new kakao.maps.MapTypeControl();
+		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+		var zoomControl = new kakao.maps.ZoomControl();
+		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+		map.setZoomable(false);    
+	</script>
 </body>
 </html>
