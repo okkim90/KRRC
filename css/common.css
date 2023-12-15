@@ -2572,71 +2572,6 @@ textarea.inp-frm {
 .list-board-v1 .t5 {
 	width: 12%;
 }
-/* 
-.list-board-v2 .t1 {
-	width: 10%;
-}
-.list-board-v2 .t2 {
-	width: 65%;
-}
-.list-board-v2 .t3 {
-	width: 15%;
-}
-.list-board-v2 .t4 {
-	width: 10%;
-} */
-
-/* .list-board-v3 .t1 {
-	width: 10%;
-}
-.list-board-v3 .t2 {
-	width: 49%;
-}
-.list-board-v3 .t3 {
-	width: 15%;
-}
-.list-board-v3 .t4 {
-	width: 13%;
-}
-.list-board-v3 .t5 {
-	width: 13%;
-} */
-
-/* .list-board-v4 .t1 {
-	width: 10%;
-}
-.list-board-v4 .t2 {
-	width: 64%;
-}
-.list-board-v4 .t3 {
-	width: 13%;
-}
-.list-board-v4 .t4 {
-	width: 13%;
-} */
-
-/* .list-board-v5 .t1 {
-	width: 7%;
-}
-.list-board-v5 .t2 {
-	width: 9%;
-}
-.list-board-v5 .t3 {
-	width: 43%;
-}
-.list-board-v5 .t4 {
-	width: 15%;
-}
-.list-board-v5 .t5 {
-	width: 13%;
-}
-.list-board-v5 .t6 {
-	width: 13%;
-}
-.list-board-v5 .ck-custom4 + label .custom {
-	margin-right: 0;
-} */
-
 .list-board-v6 li {
 	cursor: pointer;
 }
@@ -4689,13 +4624,6 @@ ul.sign-group:last-of-type {
 	.list-frm.v2:first-child .tr .th {
 		background: #fff;
 	}
-	/* .list-frm.v2 .td + .td {
-		width: 100%;
-		padding: 0;
-		margin-top: 8px;
-		position: absolute;
-		top: 40px;
-	} */
 
 	/*header style*/
 	.hd {
@@ -4838,9 +4766,6 @@ ul.sign-group:last-of-type {
 	}
 
 	/*article style*/
-	/* .article-group:last-child {
-		margin-bottom: 40px;
-	} */
 	.top-article {
 		margin-bottom: 12px;
 	}
@@ -5013,51 +4938,6 @@ ul.sign-group:last-of-type {
 	.list-board-v1 .t4 {
 		margin-right: 15px;
 	}
-
-	/* .list-board-v2 .t1,
-	.list-board-v2 .t3 {
-		margin-right: 15px;
-	}
-	.list-board-v2 .t2 {
-		width: 100%;
-		margin: 10px 0;
-		font-size: 14px;
-	} */
-
-	/* .list-board-v3 .t1,
-	.list-board-v3 .t3,
-	.list-board-v3 .t4 {
-		margin-right: 15px;
-	}
-	.list-board-v3 .t2 {
-		width: 100%;
-		margin: 10px 0;
-		font-size: 14px;
-	} */
-
-	/* .list-board-v4 .t1,
-	.list-board-v4 .t3 {
-		margin-right: 15px;
-	}
-	.list-board-v4 .t2 {
-		width: 100%;
-		margin: 10px 0;
-		font-size: 14px;
-	} */
-
-	/* .list-board-v5 .t4,
-	.list-board-v5 .t5 {
-		margin-right: 15px;
-	}
-	.list-board-v5 .t3 {
-		width: 100%;
-		margin: 10px 0;
-		font-size: 14px;
-	}
-	.list-board-v5 .ck-custom4 + label .custom {
-		width: 18px;
-		height: 18px;
-	} */
 
 	.list-board-v6 li {
 		padding: 15px;
