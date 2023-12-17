@@ -19,29 +19,6 @@
 </head>
 
 <body>
-
-	<!--메인 모달창-->
-	<!-- <div class="dim-layer dim-layer-on js-modal">
-	<div class="modal-group">
-		<div id="layer" class="modal-layer modal-layer-v4">
-			<div class="modal-container">
-				<div class="box-modal">
-					<a href="sub/participation-intro.html">
-						<img src="img/tmp/img_pop1.png" alt=" ">
-					</a>
-					<div class="modal-util">
-						<div class="ck-group">
-							<input id="close_ck1" type="checkbox" name="close_ck" class="ck-custom4">
-							<label for="close_ck1"><span class="custom"></span><span class="label">오늘 하루 안보기</span></label>
-						</div>
-						<button type="button" class="btn-close js-modal-master-close"></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
-
 	<header class="header">
 		<div class="hd">
 			<div class="inner">
@@ -588,14 +565,18 @@
 				</div>
 			</div>
 			<!-- 리퍼브 홍보영상/사례 -->
-			<div class="main_sec_wrap">
+			<div class="main_sec_wrap mr0">
 				<div class="inner">
 					<div class="main_sec main_board">
 						<div class="main_sec_tit">
 							<h2 class="tit">리퍼브 홍보영상</h2>
 						</div>
 						<div class="main_board_cont">
-							<div class="main_video"></div>
+							<div class="main_video">
+								<iframe id="video" class="yt-player" stye="background-color: #FFFFFF"
+									src="https://www.youtube.com/embed/VwZNyWTIYy8?rel=0&modestbranding=1&showinfo=0&controls=0&autoplay=0&enablejsapi=1&html5=1"
+									allow="autoplay; encrypted-media" donotallowfullscreen></iframe>
+							</div>
 						</div>
 					</div>
 					<div class="main_sec main_board">
@@ -615,13 +596,13 @@
 										<div class="swiper-slide ex_slide_item">
 											<div class="txt_box">
 												<strong>가나다 기업 리퍼브 로봇 대량 도입</strong>
-												<a href="#" class="btn_view_more">자세히 보기 <i class="ico_more"></i></a>
+												<a href="#" class="btn_view">자세히 보기 <i class="ico_more"></i></a>
 											</div>
 										</div>
 										<div class="swiper-slide ex_slide_item">
 											<div class="txt_box">
 												<strong>가나다 기업 리퍼브 로봇 대량 도입</strong>
-												<a href="#" class="btn_view_more">자세히 보기 <i class="ico_more"></i></a>
+												<a href="#" class="btn_view">자세히 보기 <i class="ico_more"></i></a>
 											</div>
 										</div>
 									</div>
@@ -735,6 +716,7 @@
 								<span class="tag">Inquiry</span>
 								<h2 class="tit">1:1 문의</h2>
 							</div>
+							<i class="ico_inquiry"></i>
 							<a href="#" class="btn_view_more">자세히 보기</a>
 						</div>
 					</div>
@@ -744,6 +726,7 @@
 								<span class="tag">FAQ</span>
 								<h2 class="tit">FAQ</h2>
 							</div>
+							<i class="ico_faq"></i>
 							<a href="#" class="btn_view_more">자세히 보기</a>
 						</div>
 					</div>
