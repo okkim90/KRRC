@@ -79,6 +79,9 @@ $(function () {
 		e.preventDefault();
 		$(this).toggleClass('open');
 	});
+	$('.hd-menu-sub').click(function(e){
+		e.stopPropagation();
+	})
 
 	/*햄버거 메뉴*/
 	$('.js-hamburger').click(function () {
