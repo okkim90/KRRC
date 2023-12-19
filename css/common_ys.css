@@ -4735,7 +4735,6 @@
 .sc_top_1 .txt_box {
   margin-right: -10%;
   position: relative;
-  z-index: 10;
   flex: 1;
   padding-top: 40px;
   line-height: 1.5;
