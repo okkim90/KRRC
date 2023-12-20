@@ -19,6 +19,27 @@
 </head>
 
 <body>
+	<!--메인 모달창-->
+	<div class="dim-layer dim-layer-on js-modal">
+		<div class="modal-group">
+			<div id="layer" class="modal-layer modal-layer-v4">
+				<div class="modal-container">
+					<div class="box-modal">
+						<a href="sub/participation-intro.html">
+							<img src="img/tmp/img_pop1.png" alt=" ">
+						</a>
+						<div class="modal-util">
+							<div class="ck-group">
+								<input id="close_ck1" type="checkbox" name="close_ck" class="ck-custom4">
+								<label for="close_ck1"><span class="custom"></span><span class="label">오늘 하루 안보기</span></label>
+							</div>
+							<button type="button" class="btn-close js-modal-master-close"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header class="header">
 		<div class="hd">
 			<div class="inner">
@@ -305,6 +326,7 @@
 			</div>
 			<!-- 리버프 로봇 슬라이드 -->
 			<div class="main_sec main_product swiepr-ver01">
+				<!-- <div class="inner"> -->
 				<div class="main_side_box">
 					<div class="main_side_tit">
 						<h2 class="tit">리퍼브 로봇</h2>
@@ -432,6 +454,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- </div> -->
 			</div>
 			<!-- 신품 로봇 슬라이드 -->
 			<div class="main_sec main_product swiepr-ver02">
@@ -871,13 +894,13 @@
 
 
 		const main_product2 = new Swiper('.swiepr-ver02 .main_product_list', {
-			slidesPerView: 1.1,
+			//slidesPerView: 1.1,
 			spaceBetween: 16,
 			speed: 700,
 
 			breakpoints: {
 				1280: {
-					slidesPerView: 2.5,
+					//slidesPerView: 2.5,
 					spaceBetween: 40,
 				},
 			},

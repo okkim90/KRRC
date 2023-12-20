@@ -324,7 +324,8 @@ section.main {
 	z-index: 2;
 }
 .main_product_list {
-	padding: 6.25vw 0;
+	/* padding: 6.25vw 0; */
+	padding: 120px 0;
 }
 .main_product.swiepr-ver02 .main_product_list,
 .main_product.swiepr-ver02 .main_product_scrollbar {
@@ -339,17 +340,23 @@ section.main {
 .main_product.swiepr-ver02 .swiper_control {
 	transform: rotate(180deg);
 }
+.main_product .main_product_item {
+	max-width: 512px;
+}
 .main_product .card_box {
-	/* min-height: 19.9vmax;
-	width: 100%; */
-	aspect-ratio: 4 / 3;
 	display: flex;
 	align-items: stretch;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	aspect-ratio: 4 / 3;
 	border: 1px solid rgba(234, 234, 234, 0.5);
 	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
 	transition: transform 0.2s ease-in-out;
+}
+@supports not (aspect-ratio: 1) {
+	.main_product .card_box {
+		min-height: 19.9vmax;
+	}
 }
 .main_product .card_box:hover {
 	transform: translateY(-40px);
