@@ -334,7 +334,6 @@ section.main {
 	z-index: 2;
 }
 .main_product_list {
-	/* padding: 6.25vw 0; */
 	padding: 120px 0;
 }
 .main_product.swiepr-ver02 .main_product_list,
@@ -471,7 +470,6 @@ section.main {
 	justify-content: space-between;
 	padding: 0 40px;
 	gap: 40px;
-	/* box-sizing: border-box; */
 }
 .main_sec_wrap .main_sec_tit {
 	justify-content: flex-start;
@@ -526,9 +524,6 @@ section.main {
 	flex-direction: column;
 	justify-content: flex-end;
 	height: 100%;
-	/* position: absolute;
-	bottom: 40px;
-	left: 40px; */
 }
 .ex_slide_item .txt_box strong {
 	display: block;
@@ -702,18 +697,6 @@ section.main {
 .main_link_box i.ico_faq {
 	background: url('../img/main/ico_faq.svg') no-repeat center;
 	background-size: 48.5px auto;
-}
-@media only screen and (max-width: 1402px) {
-	/* .main_side_box {
-		left: 0;
-		padding-left: 40px;
-		transform: translate(0);
-	}
-	.main_product.swiepr-ver02 .main_side_box {
-		right: 0;
-		padding-right: 40px;
-		transform: translate(0);
-	} */
 }
 @media only screen and (max-width: 1280px) {
 	section.main {

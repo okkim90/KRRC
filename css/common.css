@@ -752,14 +752,6 @@ a.btn-wrtie {
 	color: #999;
 	text-align: right;
 }
-/* .frm .required-info .required {
-	width: 7px;
-	height: 7px;
-	margin-right: 5px;
-	border-radius: 50%;
-	box-sizing: border-box;
-	background: url('../img/ico_star1.svg') center center no-repeat;
-} */
 
 .top-frm {
 	display: flex;
@@ -966,7 +958,6 @@ textarea.inp-frm {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* width: 120px; */
 	height: 40px;
 	border: none;
 	background: #035c77;
@@ -3118,43 +3109,6 @@ textarea.inp-frm {
 .btn-group-bottom {
 	margin-top: 60px;
 }
-/* .btn-group-bottom .btn {
-	min-width: 160px;
-} */
-/* .board-content + .btn-group-bottom {
-	margin-top: 40px;
-}
-.file-group + .btn-group-bottom,
-.comment-group + .btn-group-bottom {
-	margin-top: 60px;
-} */
-/* .video-group {
-	position: relative;
-	width: 720px;
-	height: 406px;
-	margin: 0 auto 60px;
-}
-.video-group:last-child {
-	margin-bottom: 0;
-}
-.video-group .btn-play {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 1;
-	transform: translate(-50%, -50%) scale(1);
-	-webkit-transform: translate(-50%, -50%) scale(1);
-	-moz-transform: translate(-50%, -50%) scale(1);
-	-ms-transform: translate(-50%, -50%) scale(1);
-	-o-transform: translate(-50%, -50%) scale(1);
-	border: none;
-	background: none;
-	filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.3));
-}
-.video-group video {
-	width: 100%;
-	height: 100%;
-} */
 
 .board-navigation {
 	margin-top: 60px;
@@ -4333,11 +4287,7 @@ ul.sign-group:last-of-type {
 		margin-bottom: 8px;
 		font-size: 13px;
 	}
-	/* .frm .required-info .required {
-		width: 5px;
-		height: 5px;
-		margin-right: 3px;
-	} */
+
 	.top-frm {
 		flex-direction: column;
 		align-items: flex-start;
@@ -4560,31 +4510,6 @@ ul.sign-group:last-of-type {
 		flex: 1;
 	}
 
-	/* .list-frm2 .th {
-		padding: 12px 6px;
-		box-sizing: border-box;
-		font-size: 14px;
-	}
-	.list-frm2 .td {
-		padding: 12px 6px;
-		box-sizing: border-box;
-	}
-	.list-frm2 .td .btn-frm {
-		width: 100%;
-	}
-
-	.list-frm2-v1 .th:nth-child(1),
-	.list-frm2-v1 .td:nth-child(1) {
-		width: 40%;
-	}
-	.list-frm2-v1 .th:nth-child(2),
-	.list-frm2-v1 .td:nth-child(2) {
-		width: 50%;
-	}
-	.list-frm2-v1 .th:nth-child(3),
-	.list-frm2-v1 .td:nth-child(3) {
-		width: 20%;
-	} */
 	.list-frm.v2:not(:last-child) {
 		padding-bottom: 20px;
 		margin-bottom: 20px;
