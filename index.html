@@ -20,7 +20,7 @@
 
 <body>
 	<!--메인 모달창-->
-	<div class="dim-layer dim-layer-on js-modal">
+	<!-- <div class="dim-layer dim-layer-on js-modal">
 		<div class="modal-group">
 			<div id="layer" class="modal-layer modal-layer-v4">
 				<div class="modal-container">
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<header class="header">
 		<div class="hd">
 			<div class="inner">
@@ -328,15 +328,17 @@
 			<div class="main_sec main_product swiepr-ver01">
 				<!-- <div class="inner"> -->
 				<div class="main_side_box">
-					<div class="main_side_tit">
-						<h2 class="tit">리퍼브 로봇</h2>
-						<a href="#">전체보기 + </a>
+					<div class="inner_con">
+						<div class="main_side_tit">
+							<h2 class="tit">리퍼브 로봇</h2>
+							<a href="#">전체보기 + </a>
+						</div>
+						<div class="swiper_control">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<div class="main_product_scrollbar"></div>
 					</div>
-					<div class="swiper_control">
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-					<div class="main_product_scrollbar"></div>
 				</div>
 				<div class="main_swiper_wrap">
 					<div class="main_product_list">
@@ -459,15 +461,17 @@
 			<!-- 신품 로봇 슬라이드 -->
 			<div class="main_sec main_product swiepr-ver02">
 				<div class="main_side_box">
-					<div class="main_side_tit">
-						<h2 class="tit">신품 로봇</h2>
-						<a href="#">전체보기 + </a>
+					<div class="inner_con">
+						<div class="main_side_tit">
+							<h2 class="tit">신품 로봇</h2>
+							<a href="#">전체보기 + </a>
+						</div>
+						<div class="swiper_control">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<div class="main_product_scrollbar"></div>
 					</div>
-					<div class="swiper_control">
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-					<div class="main_product_scrollbar"></div>
 				</div>
 				<div class="main_swiper_wrap">
 					<div class="main_product_list">
@@ -894,13 +898,13 @@
 
 
 		const main_product2 = new Swiper('.swiepr-ver02 .main_product_list', {
-			//slidesPerView: 1.1,
+			slidesPerView: 1.1,
 			spaceBetween: 16,
 			speed: 700,
 
 			breakpoints: {
 				1280: {
-					//slidesPerView: 2.5,
+					slidesPerView: 2.5,
 					spaceBetween: 40,
 				},
 			},
