@@ -4631,8 +4631,8 @@
   text-decoration: underline;
 }
 .list_ref_link .img_box {
-  width: 148px;
-  height: 148px;
+  width: 196px;
+  height: 110px;
   position: relative;
   background-color: var(--bg);
   flex-shrink: 0;
@@ -4654,7 +4654,7 @@
 @media only screen and (max-width: 767px) {
   .list_ref_link .img_box {
     width: 100%;
-    padding-top: 100%;
+    padding-top: 56.1224%;
     height: 0;
   }
 }
