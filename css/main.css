@@ -516,14 +516,25 @@ section.main {
 	}
 }
 .ex_slide_item {
-	padding: 40px;
-	box-sizing: border-box;
+	position: relative;
+}
+.ex_slide_item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .ex_slide_item .txt_box {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	height: 100%;
+	width: 100%;
+	padding: 40px;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	box-sizing: border-box;
 }
 .ex_slide_item .txt_box strong {
 	display: block;
